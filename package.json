@@ -1,12 +1,12 @@
 {
   "name": "careforce_1",
   "version": "1.0.0",
-  "description": "",
+  "description": "careforce business website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Evan Marshall",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.0.0-beta"

@@ -48,9 +48,11 @@
   <meta itemprop="description" content="Content description less than 200 characters">
   <meta itemprop="image" content="https://example.com/image.jpg">
 
-  <!-- BOOTSTRAP 4 STYLESHEETS - before all other stylesheets -->
+  <!-- BOOTSTRAP 4 STYLESHEETS & CUSTOM - before all other stylesheets -->
   <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,16 +65,9 @@
 
 <body id="page-top">
 
-  <h1>Careforce</h1>
-
 <!-- HEADER ////////////////////////////////////////////////////////////////////////////////////////// -->
   <header>
-    <div class="">
       <div class="container">
-        <div class="">
-          <span></span>
-          <span></span>
-          <span></span>
           <div class="location">
             <div class="icon">
               <i></i>
@@ -100,9 +95,38 @@
               <h6 class="subtitle"></h6>
             </div>
           </div>
+          <ul class="justify-content-end social-icons">
+            <li>
+              <span><i class="fa fa-instagram"></i></span>
+            </li>
+            <li>
+              <span><i class="fa fa-facebook"></i></span>
+            </li>
+            <li>
+              <span><i class="fa fa-twitter"></i></span>
+            </li>
+          </ul><!-- /.social-icons -->
+        </div><!-- /.container -->
+
+<!-- NAVIGATION //////////////////////////////////////////////////////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="#page-top" class="navbar-brand">
+        <img src="#" alt="company logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Link</a>
+          <a class="nav-item nav-link" href="#">Link</a>
+          <a class="nav-item nav-link" href="#">Link</a>
         </div>
       </div>
-    </div>
+    </nav>
+
   </header>
 
 <!-- HTML5 HERO VIDEO //////////////////////////////////////////////////////////////////////////////// -->
