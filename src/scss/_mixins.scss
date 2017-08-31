@@ -1,0 +1,22 @@
+/*******************
+	STYLE ASSETS
+*******************/
+
+// 	Primary Dark
+//	#2CA8A9
+
+//	Primary Light
+//	#2CA8A9
+
+//	Brown
+//	#4B3D34
+
+@mixin vidOverlay (){
+	content: "";
+	position: absolute;
+	background: rgba(44, 168, 169, 0.3);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

@@ -1,0 +1,26 @@
+/*******************
+	STYLE ASSETS
+*******************/
+
+// 	Primary Dark
+//	#2CA8A9
+
+//	Primary Light
+//	#2CA8A9
+
+//	Brown
+//	#4B3D34
+
+.hero-vid{
+	position: relative;
+	z-index: -1;
+}
+
+.hero-vid:before{
+	@include vidOverlay ();
+}
+
+.hero-text{
+	z-index: 1;
+	position: absolute;
+}

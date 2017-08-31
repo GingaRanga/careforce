@@ -1,0 +1,37 @@
+/*******************
+	STYLE ASSETS
+*******************/
+/*******************
+	STYLE ASSETS
+*******************/
+/*******************
+	STYLE ASSETS
+*******************/
+/*******************
+	STYLE ASSETS
+*******************/
+/*******************
+	STYLE ASSETS
+*******************/
+.main-header {
+  color: #4B3D34; }
+
+/*******************
+	STYLE ASSETS
+*******************/
+.hero-vid {
+  position: relative;
+  z-index: -1; }
+
+.hero-vid:before {
+  content: "";
+  position: absolute;
+  background: rgba(44, 168, 169, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.hero-text {
+  z-index: 1;
+  position: absolute; }
