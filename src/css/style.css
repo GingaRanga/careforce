@@ -13,25 +13,64 @@
 /*******************
 	STYLE ASSETS
 *******************/
-.main-header {
-  color: #4B3D34; }
+i {
+  color: #fff; }
+
+.contact-header {
+  height: 95px;
+  color: #fff;
+  line-height: 95px; }
+
+.main-nav {
+  height: 80px; }
 
 /*******************
 	STYLE ASSETS
 *******************/
 .hero-vid {
-  position: relative;
-  z-index: -1; }
+  position: relative; }
+
+video {
+  vertical-align: middle; }
 
 .hero-vid:before {
   content: "";
   position: absolute;
-  background: rgba(44, 168, 169, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0; }
 
 .hero-text {
-  z-index: 1;
-  position: absolute; }
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.hero-img {
+  position: relative;
+  background-image: url(../assets/img/with-heart.jpg);
+  height: 80vh;
+  background-attachment: scroll;
+  background-color: #00b2b7;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-img:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }

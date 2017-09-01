@@ -13,14 +13,44 @@
 
 .hero-vid{
 	position: relative;
-	z-index: -1;
+}
+
+video{
+	vertical-align: middle;
 }
 
 .hero-vid:before{
-	@include vidOverlay ();
+	@include vidOverlay();
 }
 
 .hero-text{
-	z-index: 1;
 	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.hero-img{
+	position: relative;
+	background-image:url(../assets/img/with-heart.jpg);
+	height: 80vh;
+	background-attachment: scroll;
+	background-color: $brand-dark;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-img:before{
+	@include imgOverlay();
+}
+
+.hero-text{
+	//background: rgba(0,0,0,0);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
