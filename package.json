@@ -9,7 +9,8 @@
   "author": "Evan Marshall",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta"
+    "bootstrap": "^4.0.0-beta",
+    "owl.carousel": "^2.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
