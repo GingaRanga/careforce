@@ -14,11 +14,13 @@
 	STYLE ASSETS
 *******************/
 i {
-  color: #fff; }
+  color: #00b2b7; }
+
+.main-header {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .contact-header {
   height: 95px;
-  color: #fff;
   line-height: 95px; }
 
 .main-nav {
@@ -27,31 +29,22 @@ i {
 /*******************
 	STYLE ASSETS
 *******************/
-.hero-vid {
-  position: relative; }
+/*
+.hero-vid{
+	position: relative;
+}
 
-video {
-  vertical-align: middle; }
+video{
+	vertical-align: middle;
+}
 
-.hero-vid:before {
-  content: "";
-  position: absolute;
-  background: rgba(0, 0, 0, 0.3);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.hero-text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
+.hero-vid:before{
+	@include vidOverlay();
+}
+*/
 .hero-img {
   position: relative;
-  background-image: url(../assets/img/with-heart.jpg);
+  background-image: url(../assets/img/carousel-2.jpg);
   height: 80vh;
   background-attachment: scroll;
   background-color: #00b2b7;

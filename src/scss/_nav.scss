@@ -12,15 +12,30 @@
 //	#4B3D34
 
 i{
-	color: #fff;
+	color: $brand-dark;
+}
+
+.main-header{
+	font-family: $brand-font;
 }
 
 .contact-header{
 	height: 95px;
-	color: #fff;
 	line-height: 95px;
 }
 
 .main-nav{
 	height: 80px;
+}
+
+.icon{
+	
+}
+
+.text .title{
+	
+}
+
+.text .subtitle{
+	
 }
