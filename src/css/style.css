@@ -13,24 +13,20 @@
 /*******************
 	STYLE ASSETS
 *******************/
+body {
+  padding-top: 68px; }
+
 i {
   color: #00b2b7; }
 
-.main-header {
-  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.contact-header {
-  height: 95px;
-  line-height: 95px; }
-
-.main-nav {
-  height: 80px; }
+.top-nav.hidden {
+  display: none;
+  visibility: hidden; }
 
 /*******************
 	STYLE ASSETS
 *******************/
-/*
-.hero-vid{
+/*.hero-vid{
 	position: relative;
 }
 
@@ -40,11 +36,10 @@ video{
 
 .hero-vid:before{
 	@include vidOverlay();
-}
-*/
-.hero-img {
+}*/
+.hero-img-1 {
+  background-image: url(../assets/img/carousel-1.jpg);
   position: relative;
-  background-image: url(../assets/img/carousel-2.jpg);
   height: 80vh;
   background-attachment: scroll;
   background-color: #00b2b7;
@@ -52,7 +47,45 @@ video{
   background-repeat: no-repeat;
   background-size: cover; }
 
-.hero-img:before {
+.hero-img-1:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.hero-img-2 {
+  background-image: url(../assets/img/carousel-2.jpg);
+  position: relative;
+  height: 80vh;
+  background-attachment: scroll;
+  background-color: #00b2b7;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-img-2:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.hero-img-3 {
+  background-image: url(../assets/img/carousel-3.jpg);
+  position: relative;
+  height: 80vh;
+  background-attachment: scroll;
+  background-color: #00b2b7;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-img-3:before {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
@@ -67,3 +100,20 @@ video{
   right: 0;
   bottom: 0;
   left: 0; }
+
+.owl-carousel {
+  position: relative; }
+
+.owl-theme .owl-nav {
+  background-color: transparent;
+  margin-top: 0px; }
+
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0; }
+
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0; }

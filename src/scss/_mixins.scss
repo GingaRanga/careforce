@@ -11,7 +11,7 @@
 //	Brown
 //	#4B3D34
 
-@mixin vidOverlay (){
+@mixin vidOverlay(){
 	content: "";
 	position: absolute;
 	background: rgba(0,0,0,0.3);
@@ -21,7 +21,7 @@
 	left: 0;
 }
 
-@mixin imgOverlay (){
+@mixin imgOverlay(){
 	content: "";
 	position: absolute;
 	background: rgba(0,0,0,0.6);
@@ -29,4 +29,14 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+@mixin heroImg(){
+	position: relative;
+	height: 80vh;
+	background-attachment: scroll;
+	background-color: $brand-dark;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

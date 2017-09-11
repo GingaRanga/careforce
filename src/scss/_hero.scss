@@ -11,8 +11,7 @@
 //	Brown
 //	#4B3D34
 
-/*
-.hero-vid{
+/*.hero-vid{
 	position: relative;
 }
 
@@ -22,21 +21,33 @@ video{
 
 .hero-vid:before{
 	@include vidOverlay();
-}
-*/
+}*/
 
-.hero-img{
-	position: relative;
+
+.hero-img-1{
+	background-image:url(../assets/img/carousel-1.jpg);
+	@include heroImg();
+}
+
+.hero-img-1:before{
+	@include imgOverlay();
+}
+
+.hero-img-2{
 	background-image:url(../assets/img/carousel-2.jpg);
-	height: 80vh;
-	background-attachment: scroll;
-	background-color: $brand-dark;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	@include heroImg();
 }
 
-.hero-img:before{
+.hero-img-2:before{
+	@include imgOverlay();
+}
+
+.hero-img-3{
+	background-image:url(../assets/img/carousel-3.jpg);
+	@include heroImg();
+}
+
+.hero-img-3:before{
 	@include imgOverlay();
 }
 
@@ -46,4 +57,25 @@ video{
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+.owl-carousel{
+	position: relative;
+}
+
+.owl-theme .owl-nav{
+	background-color: transparent;
+	margin-top: 0px;
+}
+
+.owl-prev{
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+.owl-next{
+	position: absolute;
+	top: 50%;
+	right: 0;
 }

@@ -54,8 +54,9 @@
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<!-- Owl carousel -->
-	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.css" />
+	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,133 +67,107 @@
 
 </head>
 
-<body id="page-top">
-
-<!-- HEADER ///////////////////////////////////////////////////////////////////////////////// -->
-	<header class="main-header">
-	
-		<div class="card-group text-center">
-			<div class="card">
-				<div class="card-body" style="line-height: 1px;">
-					<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-					<h4 class="card-title">Location</h4>
-					<p class="card-text"><small class="text-muted">6 Webster Court</small></p>
-					<p class="card-text"><small class="text-muted">Kentville NS</small></p>
-					<p class="card-text"><small class="text-muted">B4N 1H2</small></p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body" style="line-height: 1px;">
-					<i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
-					<h4 class="card-title">Hours</h4>
-					<p class="card-text"><small>Monday &#45; Friday</small></p>
-					<p class="card-text"><small class="text-muted">9am &#45; 4&#58;30pm</small></p>
-					<p class="card-text"><small>Saturday &#45; Sunday</small></p>
-					<p class="card-text"><small class="text-muted">Closed</small></p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body" style="line-height: 1px;">
-					<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-					<h4 class="card-title">Contact</h4>
-					<p class="card-text"><small>Phone</small></p>
-					<p class="card-text"><small class="text-muted">1&#45;902&#45;365&#45;3155</small></p>
-					<p class="card-text"><small>Toll Free</small></p>
-					<p class="card-text"><small class="text-muted">1&#45;800&#45;XXX&#45;XXXX</small></p>
-				</div>
-			</div>
-		</div>
-	
-		<!--<div class="contact-header">
-		  	<div class="container wrap d-flex justify-content-end align-items-center">
-				<div class="icon">
-					<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-				</div>
-				<div class="text">
-					<h5 class="title">Office Location</h5>
-					<h6 class="subtitle">6 Webster Court, <br> Kentville, <br> NS B4N 1H2</h6>
-				</div>
-				<div class="icon">
-					<i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
-				</div>
-				<div class="text">
-					<h5 class="title">Office Hours</h5>
-					<h6 class="subtitle">Monday - Friday: <br> 9:00am - 4:30pm</h6>
-				</div>
-				<div class="icon">
-					<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-				</div>
-				<div class="text">
-					<h5 class="title">Contact</h5>
-					<h6 class="subtitle">reg: 902-365-3155, <br> toll free: 1-866-966-1466, <br> fax: 902-365-3125</h6>
-				</div>
-		  	
-				<div class="p-2">
-					<a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-				</div>
-			</div><!-- /.wrap -->
-		<!--</div><!-- /.container -->
+<body id="page-top">	
 
 <!-- NAVIGATION ///////////////////////////////////////////////////////////////////////////// -->
-		<nav class="navbar navbar-expand-lg main-nav container">
-	  		<a href="#page-top" class="navbar-brand">
-				<img src="assets/img/brand-logo-trans-2.svg" alt="company logo" width="150" height="50">
-	  		</a>
-	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-	  		</button>
+	<nav class="navbar navbar-expand-md main-nav navbar-light bg-light fixed-top">
+		<a href="#page-top" class="navbar-brand">
+			<img src="assets/img/brand-logo-trans-2.svg" alt="company logo" width="150" height="50">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	  		<div class="collapse navbar-collapse justify-content-end" id="mainNav">
-				<div class="navbar-nav">
-		  			<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-		  			<a class="nav-item nav-link" href="#">Link</a>
-		  			<a class="nav-item nav-link" href="#">Link</a>
-		  			<a class="nav-item nav-link" href="#">Link</a>
-				</div>
-	  		</div>
-		</nav>
-
-	</header>
-	
-<!-- HTML5 HERO IMAGES /////////////////////////////////////////////////////////////////// -->
-	<div class="hero-img">
-		<div class="hero-text d-flex flex-column justify-content-center align-items-center">
-			<img src="assets/img/brand-logo-trans-2.svg" width="50%" height="100%" alt="company logo">
+		<div class="collapse navbar-collapse justify-content-end" id="mainNav">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="#">Link</a>
+				<a class="nav-item nav-link" href="#">Link</a>
+				<a class="nav-item nav-link" href="#">Link</a>
+			</div>
 		</div>
-	</div> 
+	</nav>
+			
+<!-- CONTACT BANNER //////////////////////////////////////////////////////////////////// -->
+				
+	<div class="card-group text-center top-nav">
+		<div class="card bg-light">
+			<div class="card-body" style="line-height: 1px;">
+				<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+				<h4 class="card-title">Location</h4>
+				<p class="card-text"><small class="text-muted">6 Webster Court</small></p>
+				<p class="card-text"><small class="text-muted">Kentville NS</small></p>
+				<p class="card-text"><small class="text-muted">B4N 1H2</small></p>
+			</div>
+		</div>
+		<div class="card bg-light">
+			<div class="card-body" style="line-height: 1px;">
+				<i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+				<h4 class="card-title">Hours</h4>
+				<p class="card-text"><small>Monday &#45; Friday</small></p>
+				<p class="card-text"><small class="text-muted">9am &#45; 4&#58;30pm</small></p>
+				<p class="card-text"><small>Saturday &#45; Sunday</small></p>
+				<p class="card-text"><small class="text-muted">Closed</small></p>
+			</div>
+		</div>
+		<div class="card bg-light">
+			<div class="card-body" style="line-height: 1px;">
+				<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+				<h4 class="card-title">Contact</h4>
+				<p class="card-text"><small>Phone</small></p>
+				<p class="card-text"><small class="text-muted">1&#45;902&#45;365&#45;3155</small></p>
+				<p class="card-text"><small>Toll Free</small></p>
+				<p class="card-text"><small class="text-muted">1&#45;800&#45;XXX&#45;XXXX</small></p>
+			</div>
+		</div>
+	</div>
+		
+<!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////// -->
 
-<!-- HTML5 HERO VIDEO /////////////////////////////////////////////////////////////////////// 
-	<section class="hero-vid">
-		<video style="width: 100%; height: auto; pointer-events: none;" loop autoplay> 
-			<source src="assets/vid/homecare_nested.webm" type="application/webm" />
-			<source src="assets/vid/homecare_nested.mp4" type="video/mp4" />
-			<source src="assets/vid/homecare_nested.ogv" type="application/ogg" />
-			<img src="assets/img/homecare_hero_frame.jpg" />
-			Your browser does not support the video tag.
-		</video>
-		<div class="hero-text d-flex flex-column justify-content-center align-items-center">
-			<img src="assets/img/brand-logo.png" alt="company logo">
-			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quisquam, itaque dolores veritatis.</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis amet nisi enim. Fuga debitis, labore dolorem in, possimus similique illo consectetur earum ipsam quod veritatis, magnam nulla nisi eius beatae!</p>
+	<div class="owl-carousel owl-theme">
+		<div class="hero-img-1">
+			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
+				<img src="assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
+			</div>
+		</div>
+		<div class="hero-img-2">
+		</div>
+		<div class="hero-img-3">
+		</div>
+	</div>	
+	
+<!-- SERVICES BANNER //////////////////////////////////////////////////////////////////// -->
+
+	<section class="bg-light d-flex">
+		<div>
+			<div class="icon"><i class="fa fa-bath" aria-hidden="true"></i></div>
+			<div class="title">Service 1</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita, sequi cupiditate quis, eligendi. Quisquam, vel ex consectetur eaque quo repellendus ad doloribus harum aut.</p>
+		</div>
+		<div>
+			<div class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
+			<div class="title">Service 2</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus atque animi quis optio fugit nostrum amet temporibus velit obcaecati laborum incidunt et laboriosam sapiente, aliquid ad! Veritatis ullam suscipit, sapiente.</p>
+		</div>
+		<div>
+			<div class="icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
+			<div class="title">Service 3</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum commodi error architecto veritatis quam repellendus culpa obcaecati doloremque numquam, ipsa aspernatur provident soluta velit saepe fugiat, cupiditate quo enim corporis?</p>
+		</div>
+		<div>
+			<div class="icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
+			<div class="title">Service 4</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio animi culpa repellat, dolore dolores nisi enim quae cumque sunt nulla numquam. Facere inventore repudiandae quas autem architecto non, aperiam.</p>
 		</div>
 	</section>
-	-->
 
-<!-- PLACEHOLDER TEXT //////////////////////////////////////////////////////////////////// -->
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus, nemo consectetur nam, ea consequatur, libero doloribus blanditiis sit, inventore aut officia? Est tempore odio maxime ratione vel suscipit ipsum!</p>
+<!-- ABOUT SECTION //////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- TESTIMONIALS SECTION //////////////////////////////////////////////////////////////////// -->
+
+
 
 <!-- BOOTSTRAP 4 JS & JQUERY - jquery and popper first ////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

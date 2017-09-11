@@ -11,31 +11,18 @@
 //	Brown
 //	#4B3D34
 
+body{
+	padding-top: 68px;
+}
+
 i{
 	color: $brand-dark;
 }
 
-.main-header{
-	font-family: $brand-font;
-}
-
-.contact-header{
-	height: 95px;
-	line-height: 95px;
+.top-nav.hidden{
+	display: none;
+	visibility: hidden;
 }
 
 .main-nav{
-	height: 80px;
-}
-
-.icon{
-	
-}
-
-.text .title{
-	
-}
-
-.text .subtitle{
-	
 }
