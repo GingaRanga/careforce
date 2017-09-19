@@ -1,5 +1,10 @@
-.icon-bg{
-	background: #000;
+.icon{
+	background: $brand-brown;
 	width: 100px;
 	height: 100px;
+}
+
+i.icon{
+	line-height: 100px;
+	color: #fff;
 }
