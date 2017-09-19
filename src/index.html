@@ -51,6 +51,8 @@
 	<!-- BOOTSTRAP 4 STYLESHEETS & CUSTOM - before all other stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<!-- Owl carousel -->
@@ -90,7 +92,7 @@
 			
 <!-- CONTACT BANNER //////////////////////////////////////////////////////////////////// -->
 				
-	<div class="card-group text-center top-nav">
+	<!--<div class="card-group text-center top-nav">
 		<div class="card bg-light">
 			<div class="card-body" style="line-height: 1px;">
 				<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
@@ -120,7 +122,7 @@
 				<p class="card-text"><small class="text-muted">1&#45;800&#45;XXX&#45;XXXX</small></p>
 			</div>
 		</div>
-	</div>
+	</div>-->
 		
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////// -->
 
@@ -136,28 +138,81 @@
 		</div>
 	</div>	
 	
+	<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+		<li class="mfb-component__wrap">
+			<!-- the main menu button -->
+			<a data-mfb-label="Let's get in touch&#33;" class="mfb-component__button--main">
+				<!-- the main button icon visibile by default -->
+				<i class="mfb-component__main-icon--resting material-icons">add</i>
+				<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
+				<i class="mfb-component__main-icon--active material-icons">clear</i>
+			</a>
+			<ul class="mfb-component__list">
+			<!-- a child button, repeat as many times as needed -->
+				<li>
+					<a href="#" type="button" data-toggle="modal" data-target="#" data-mfb-label="Request a proposal" class="mfb-component__button--child">
+						<i class="mfb-component__child-icon material-icons">assignment</i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_top" data-mfb-label="Send us an email" class="mfb-component__button--child">
+						<i class="mfb-component__child-icon material-icons">email</i>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+19023855551" target="_top" data-mfb-label="Phone us at +19023855551" class="mfb-component__button--child">
+						<i class="mfb-component__child-icon material-icons">phone</i>
+					</a>
+				</li>
+				<li>
+					<a href="#page-top" data-mfb-label="Back to top of page" class="mfb-component__button--child">
+						<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
+					</a>
+				</li>
+			</ul><!-- /.mfb-component__list -->
+		</li><!-- /.mfb-component__wrap -->
+	</ul><!-- /#menu -->
+	
 <!-- SERVICES BANNER //////////////////////////////////////////////////////////////////// -->
 
-	<section class="bg-light d-flex">
-		<div>
-			<div class="icon"><i class="fa fa-bath" aria-hidden="true"></i></div>
-			<div class="title">Service 1</div>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita, sequi cupiditate quis, eligendi. Quisquam, vel ex consectetur eaque quo repellendus ad doloribus harum aut.</p>
-		</div>
-		<div>
-			<div class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-			<div class="title">Service 2</div>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus atque animi quis optio fugit nostrum amet temporibus velit obcaecati laborum incidunt et laboriosam sapiente, aliquid ad! Veritatis ullam suscipit, sapiente.</p>
-		</div>
-		<div>
-			<div class="icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
-			<div class="title">Service 3</div>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum commodi error architecto veritatis quam repellendus culpa obcaecati doloremque numquam, ipsa aspernatur provident soluta velit saepe fugiat, cupiditate quo enim corporis?</p>
-		</div>
-		<div>
-			<div class="icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
-			<div class="title">Service 4</div>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio animi culpa repellat, dolore dolores nisi enim quae cumque sunt nulla numquam. Facere inventore repudiandae quas autem architecto non, aperiam.</p>
+	<section class="bg-light">
+		<div class="container d-flex text-center">
+			<div class="p-2">
+				<div class="icon-bg rounded-circle">
+					<div class="icon pt-5 pb-5">
+						<i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h3 class="title">Service 1</h3>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			</div>
+			<div class="p-2">
+				<div class="icon-bg rounded-circle">
+					<div class="icon pt-5 pb-5">
+						<i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h3 class="title">Service 2</h3>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			</div>
+			<div class="p-2">
+				<div class="icon-bg rounded-circle">
+					<div class="icon pt-5 pb-5">
+						<i class="fa fa-medkit fa-3x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h3 class="title">Service 3</h3>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			</div>
+			<div class="p-2">
+				<div class="icon-bg rounded-circle">
+					<div class="icon pt-5 pb-5">
+						<i class="fa fa-user-md fa-3x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h3 class="title">Service 4</h3>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			</div>
 		</div>
 	</section>
 
@@ -175,6 +230,7 @@
 	<script src="js/bootstrap.min.js"></script>
 <!-- OWL CAROUSEL /////////////////////////////////////////////////////////////////////////// -->
 	<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="../node_modules/mfb/src/mfb.min.js"></script>
 <!-- CUSTOM JS ////////////////////////////////////////////////////////////////////////////// -->
 	<script src="js/custom.js"></script>
 

@@ -23,6 +23,9 @@ i {
   display: none;
   visibility: hidden; }
 
+.owl-theme .owl-nav {
+  margin-top: 0; }
+
 /*******************
 	STYLE ASSETS
 *******************/
@@ -40,7 +43,7 @@ video{
 .hero-img-1 {
   background-image: url(../assets/img/carousel-1.jpg);
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background-attachment: scroll;
   background-color: #00b2b7;
   background-position: center center;
@@ -59,7 +62,7 @@ video{
 .hero-img-2 {
   background-image: url(../assets/img/carousel-2.jpg);
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background-attachment: scroll;
   background-color: #00b2b7;
   background-position: center center;
@@ -78,7 +81,7 @@ video{
 .hero-img-3 {
   background-image: url(../assets/img/carousel-3.jpg);
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background-attachment: scroll;
   background-color: #00b2b7;
   background-position: center center;
@@ -117,3 +120,8 @@ video{
   position: absolute;
   top: 50%;
   right: 0; }
+
+.icon-bg {
+  background: #000;
+  width: 100px;
+  height: 100px; }
