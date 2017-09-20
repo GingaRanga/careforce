@@ -25,31 +25,27 @@ video{
 
 
 .hero-img-1{
-	background-image:url(../assets/img/carousel-1.jpg);
+	background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/carousel-1.jpg);
 	@include heroImg();
-}
-
-.hero-img-1:before{
-	@include imgOverlay();
 }
 
 .hero-img-2{
-	background-image:url(../assets/img/carousel-2.jpg);
+	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/carousel-2.jpg);
 	@include heroImg();
 }
 
-.hero-img-2:before{
-	@include imgOverlay();
-}
+//.hero-img-2:before{
+	//@include imgOverlay();
+//}
 
 .hero-img-3{
-	background-image:url(../assets/img/carousel-3.jpg);
+	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/carousel-3.jpg);
 	@include heroImg();
 }
 
-.hero-img-3:before{
-	@include imgOverlay();
-}
+//.hero-img-3:before{
+	//@include imgOverlay();
+//}
 
 .hero-text{
 	position: absolute;

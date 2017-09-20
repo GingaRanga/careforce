@@ -51,8 +51,10 @@
 	<!-- BOOTSTRAP 4 STYLESHEETS & CUSTOM - before all other stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- Google Material Icons -->
+	<!-- Google Material Icons & MFB & MODERNIZR-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../node_modules/mfb/src/mfb.css">
+	<script src="../node_modules/mfb/src/lib/modernizr.touch.js"></script>
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<!-- Owl carousel -->
@@ -92,40 +94,25 @@
 			
 <!-- CONTACT FLOAT //////////////////////////////////////////////////////////////////// -->
 				
-	<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
-		<li class="mfb-component__wrap">
-			<!-- the main menu button -->
-			<a data-mfb-label="Let's get in touch&#33;" class="mfb-component__button--main">
-				<!-- the main button icon visibile by default -->
-				<i class="mfb-component__main-icon--resting material-icons">add</i>
-				<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-				<i class="mfb-component__main-icon--active material-icons">clear</i>
-			</a>
-			<ul class="mfb-component__list">
-			<!-- a child button, repeat as many times as needed -->
-				<li>
-					<a href="#" type="button" data-toggle="modal" data-target="#" data-mfb-label="Request a proposal" class="mfb-component__button--child">
-						<i class="mfb-component__child-icon material-icons">assignment</i>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_top" data-mfb-label="Send us an email" class="mfb-component__button--child">
-						<i class="mfb-component__child-icon material-icons">email</i>
-					</a>
-				</li>
-				<li>
-					<a href="tel:+19023855551" target="_top" data-mfb-label="Phone us at +19023855551" class="mfb-component__button--child">
-						<i class="mfb-component__child-icon material-icons">phone</i>
-					</a>
-				</li>
-				<li>
-					<a href="#page-top" data-mfb-label="Back to top of page" class="mfb-component__button--child">
-						<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
-					</a>
-				</li>
-			</ul><!-- /.mfb-component__list -->
-		</li><!-- /.mfb-component__wrap -->
-	</ul><!-- /#menu -->
+	<ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
+  		<li class="mfb-component__wrap">
+    		<!-- the main menu button -->
+    		<a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
+      			<!-- the main button icon visibile by default -->
+      			<i class="mfb-component__main-icon--resting material-icons">add</i>
+      			<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
+      			<i class="mfb-component__main-icon--active material-icons">clear</i>
+    		</a>
+    		<ul class="mfb-component__list">
+      			<!-- a child button, repeat as many times as needed -->
+      			<li>
+        			<a href="link.html" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
+          				<i class="mfb-component__child-icon material-icons"></i>
+        			</a>
+      			</li>
+    		</ul>
+  		</li>
+	</ul>
 		
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////// -->
 
@@ -143,7 +130,7 @@
 	
 <!-- SERVICES BANNER //////////////////////////////////////////////////////////////////// -->
 
-	<section class="bg-light text-center">
+	<section class="bg-light text-center" id="services">
 		<div class="container d-flex">
 			<div class="p-2">
 				<i class="fa fa-bath fa-3x icon mt-5 mb-5 rounded-circle" aria-hidden="true"></i>
@@ -170,7 +157,7 @@
 
 <!-- ABOUT SECTION //////////////////////////////////////////////////////////////////// -->
 
-	<section>
+	<section id="about">
 		<div class="container text-center title">
 			<h1>About Us</h1>
 			<hr class="style15">
@@ -215,14 +202,26 @@
 
 <!-- TESTIMONIALS SECTION //////////////////////////////////////////////////////////////////// -->
 
-
+	<section id="testimonials">
+		<div class="container-fluid">
+			<div class="row justify-content-end align-items-center">
+				<div class="col-3">
+					<blockquote class="blockquote">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<footer class="blockquote-footer">Careforce client <cite title="Source Title">John Doe</cite></footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- BOOTSTRAP 4 JS & JQUERY - jquery and popper first ////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 <!-- OWL CAROUSEL /////////////////////////////////////////////////////////////////////////// -->
-	<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="../node_modules/owl.carousel/dist/owl.carousel.js"></script>
+<!-- MFB JS ///////////////////////////////////////////////////////////////////////////////// -->
 	<script src="../node_modules/mfb/src/mfb.min.js"></script>
 <!-- CUSTOM JS ////////////////////////////////////////////////////////////////////////////// -->
 	<script src="js/custom.js"></script>

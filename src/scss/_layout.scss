@@ -1,3 +1,28 @@
+body{
+	padding-top: 68px;
+}
+
+i{
+	color: $brand-dark;
+}
+
+section{
+	padding: 85px 0;
+}
+
+.material-icons{
+	color: #fff;
+}
+
+.title p{
+	padding: 0 20%;
+	margin-bottom: 50px;
+}
+
+.card{
+	margin: 0 2%;
+}
+
 hr.style15 {
 	border-top: 1px solid #CDCDCD;
 	text-align: center;
@@ -33,17 +58,4 @@ hr.style18:before {
 	border-color:#CDCDCD;
 	border-width: 0 0 1px 0; 
 	border-radius: 20px; 
-}
-
-section{
-	padding: 85px 0;
-}
-
-.title p{
-	padding: 0 20%;
-	margin-bottom: 50px;
-}
-
-.card{
-	margin: 0 2%;
 }
