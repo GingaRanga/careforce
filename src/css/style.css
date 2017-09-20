@@ -93,7 +93,7 @@ video{
   background-size: cover; }
 
 .hero-img-2 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../assets/img/carousel-2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../assets/img/crossed-hands.jpg);
   position: relative;
   height: 90vh;
   background-attachment: scroll;
@@ -103,7 +103,7 @@ video{
   background-size: cover; }
 
 .hero-img-3 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../assets/img/carousel-3.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../assets/img/grandparents.jpeg);
   position: relative;
   height: 90vh;
   background-attachment: scroll;
@@ -136,7 +136,7 @@ video{
   top: 50%;
   right: 0; }
 
-#services {
+#quicklook {
   margin-top: -10px; }
 
 .icon {
@@ -159,3 +159,15 @@ i.icon {
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh; }
+
+#services {
+  background: #756458; }
+  #services hr.style15:after {
+    background: #756458; }
+
+#contact hr.style15:after {
+  background: #f8f9fa; }
+
+#footer {
+  background: #756458;
+  padding-top: 0; }

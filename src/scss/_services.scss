@@ -1,14 +1,6 @@
 #services{
-	margin-top: -10px;
-}
-
-.icon{
 	background: $brand-brown;
-	width: 100px;
-	height: 100px;
-}
-
-i.icon{
-	line-height: 100px;
-	color: #fff;
+	hr.style15:after {
+		background: $brand-brown;
+	}
 }

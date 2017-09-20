@@ -8,7 +8,7 @@ $(document).ready(function(){
 		nav:true,
 		dots:false,
 		autoplayHoverPause:true,
-		autoplayTimeout:5000
+		autoplayTimeout:3000
 	});
 	
 	$(window).scroll(function() {
