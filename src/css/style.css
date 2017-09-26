@@ -158,16 +158,23 @@ i.icon {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh; }
+  height: 60vh;
+  background-attachment: fixed; }
 
-#services {
+#career {
   background: #756458; }
-  #services hr.style15:after {
+  #career hr.style15:after {
     background: #756458; }
 
-#contact hr.style15:after {
-  background: #f8f9fa; }
+#services {
+  background: #fff; }
+  #services hr.style15:after {
+    background: #fff; }
 
-#footer {
+.footer {
   background: #756458;
-  padding-top: 0; }
+  padding: 0;
+  color: #fff; }
+
+.copyright {
+  background: rgba(117, 100, 88, 0.5); }
