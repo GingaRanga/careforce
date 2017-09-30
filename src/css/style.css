@@ -101,6 +101,10 @@ video{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .hero-img-2 .card {
+    position: absolute;
+    top: 200px;
+    right: 50%; }
 
 .hero-img-3 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../assets/img/grandparents.jpeg);
@@ -135,6 +139,16 @@ video{
   position: absolute;
   top: 50%;
   right: 0; }
+
+.apply {
+  background: rgba(0, 0, 0, 0.61);
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.hero-card {
+  background: rgba(0, 0, 0, 0.61);
+  color: #fff; }
 
 #quicklook {
   margin-top: -10px; }
@@ -175,6 +189,7 @@ i.icon {
   background: #756458;
   padding: 0;
   color: #fff; }
-
-.copyright {
-  background: rgba(117, 100, 88, 0.5); }
+  .footer p {
+    margin-bottom: 0; }
+  .footer .copyright {
+    background: rgba(255, 255, 255, 0.5); }

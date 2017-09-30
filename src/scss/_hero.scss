@@ -32,6 +32,11 @@ video{
 .hero-img-2{
 	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/crossed-hands.jpg);
 	@include heroImg();
+	.card{
+		position: absolute;
+		top: 200px;
+		right: 50%;
+	}
 }
 
 //.hero-img-2:before{
@@ -74,4 +79,16 @@ video{
 	position: absolute;
 	top: 50%;
 	right: 0;
+}
+
+.apply{
+	background: rgba(0,0,0,0.61);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.hero-card{
+	background: rgba(0,0,0,0.61);
+	color: #fff;
 }

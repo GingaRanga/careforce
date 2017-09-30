@@ -2,8 +2,10 @@
 	background: $brand-brown;
 	padding: 0;
 	color: #fff;
-}
-
-.copyright{
-	background: rgba(117,100,88,0.5);
+	p{
+		margin-bottom: 0;
+	}
+	.copyright{
+		background: rgba(255,255,255,0.5);
+	}
 }
