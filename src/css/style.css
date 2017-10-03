@@ -193,3 +193,6 @@ i.icon {
     margin-bottom: 0; }
   .footer .copyright {
     background: rgba(255, 255, 255, 0.5); }
+
+.main-footer {
+  padding: 40px 0; }
