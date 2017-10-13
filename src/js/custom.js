@@ -27,4 +27,15 @@ $(document).ready(function(){
 	TweenLite.from('.apply', 1, {opacity: 0, y: 50, delay: 2}); // moves .apply from opacity zero and y offset 50px
 	// setting delay to the duration of first tween allows the animation to happen in sequence
 	
+	//OWL CAROUSEL
+	$(".owl-carousel-1").owlCarousel({
+		items:4,
+		loop:true,
+		autoplay:true,
+		nav:true,
+		dots:false,
+		autoplayHoverPause:true,
+		autoplayTimeout:3000
+	});
+	
 });
