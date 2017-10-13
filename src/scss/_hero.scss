@@ -11,21 +11,8 @@
 //	Brown
 //	#4B3D34
 
-/*.hero-vid{
-	position: relative;
-}
-
-video{
-	vertical-align: middle;
-}
-
-.hero-vid:before{
-	@include vidOverlay();
-}*/
-
-
 .hero-img-1{
-	background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/carousel-1.jpg);
+	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.7)), url(../assets/img/carousel-1.jpg);
 	@include heroImg();
 }
 
@@ -39,46 +26,17 @@ video{
 	}
 }
 
-//.hero-img-2:before{
-	//@include imgOverlay();
-//}
-
 .hero-img-3{
 	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/grandparents.jpeg);
 	@include heroImg();
 }
 
-//.hero-img-3:before{
-	//@include imgOverlay();
-//}
-
 .hero-text{
 	position: absolute;
 	top: 0;
 	right: 0;
+	left: 0;
 	bottom: 0;
-	left: 0;
-}
-
-.owl-carousel{
-	position: relative;
-}
-
-.owl-theme .owl-nav{
-	background-color: transparent;
-	margin-top: 0px;
-}
-
-.owl-prev{
-	position: absolute;
-	top: 50%;
-	left: 0;
-}
-
-.owl-next{
-	position: absolute;
-	top: 50%;
-	right: 0;
 }
 
 .apply{

@@ -1,16 +1,18 @@
 $(document).ready(function(){
 	
-	//OWL CAROUSEL
-	$(".owl-carousel").owlCarousel({
-		animateOut: 'slideOutLeft',
-		items:1,
-		loop:true,
-		autoplay:true,
-		nav:true,
-		dots:false,
-		autoplayHoverPause:true,
-		autoplayTimeout:3000
-	});
+	//SLICK CAROUSEL 1
+	
+	$('.hero').slick({
+		dots: false,
+		slidesToShow: 1,
+		adaptiveHeight: true,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		infinite: true,
+		fade: true,
+		cssEase: 'linear'
+  	});
 	
 	//GSAP
 	var applyBar 	= $('.apply');
@@ -27,15 +29,17 @@ $(document).ready(function(){
 	TweenLite.from('.apply', 1, {opacity: 0, y: 50, delay: 2}); // moves .apply from opacity zero and y offset 50px
 	// setting delay to the duration of first tween allows the animation to happen in sequence
 	
-	//OWL CAROUSEL
-	$(".owl-carousel-1").owlCarousel({
-		items:4,
-		loop:true,
-		autoplay:true,
-		nav:true,
-		dots:false,
-		autoplayHoverPause:true,
-		autoplayTimeout:3000
-	});
+	//SLICK CAROUSEL 2
+
+	$('.quick').slick({
+		dots: true,
+		arrows: false,
+		slidesToShow: 4,
+		adaptiveHeight: true,
+		slidesToScroll: 4,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		infinite: true
+  	});
 	
 });

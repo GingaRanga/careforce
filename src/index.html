@@ -57,9 +57,10 @@
 	<script src="../node_modules/mfb/src/lib/modernizr.touch.js"></script>
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-	<!-- Owl carousel -->
-	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.css" />
-	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
+	<!-- Slick carousel -->
+	<link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css">
+	<!-- Animate CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -85,10 +86,14 @@
 
 		<div class="collapse navbar-collapse justify-content-end" id="mainNav">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="#about">About Careforce<span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#career">Join Our Team</a>
-				<a class="nav-item nav-link" href="#services">Services Offered</a>
+				<a class="nav-item nav-link" href="#services">Our Services</a>
+				<a class="nav-item nav-link" href="#about">About Careforce</a>
+				<a class="nav-item nav-link" href="#veterans">Veterans</a>
+				<a class="nav-item nav-link" href="#team">Our Caregivers</a>
 				<a class="nav-item nav-link" href="#contact">Contact Us</a>
+				<a class="nav-item nav-link" href="#">Resources</a>
+				<a class="nav-item nav-link" href="#">Events</a>
+				<a class="nav-item nav-link" href="#">FAQs</a>
 			</div>
 		</div>
 	</nav>
@@ -131,8 +136,7 @@
 	</ul>
 		
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-	<div class="owl-carousel owl-theme">
+	<div class="slider hero text-light">
 		<div class="hero-img-1">
 			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
 				<img src="assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
@@ -143,42 +147,103 @@
 			</div>
 		</div>
 		<div class="hero-img-2">
-			<div class="card hero-card" style="width: 20rem;">
+			<div class="card hero-card">
 				<div class="card-body">
-					<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="card-link btn btn-info">Card link</a>
+					<h4 class="card-title">Helping you live comfortably &amp; safely at home for over 25 years</h4>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	
 <!-- QUICK LOOK BANNER ///////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-	<section class="bg-light text-center" id="quicklook">
-		<div class="owl-carousel-1 owl-theme d-flex">
-			<div class="p-2">
-				<i class="fa fa-bath fa-3x icon mt-5 mb-5 rounded-circle" aria-hidden="true"></i>
-				<h3 class="title">Service 1</h3>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+	<section class="bg-light text-center title" id="services">
+		<div class="container text-center">
+			<h1>Our Services</h1>
+			<hr class="style15">
+			<p>We provide flexibility in all that we do. Our hours and services are designed around your lifestyle. We will adapt our home care services to meet your requirements whether for a change in your health or your schedule. From assistance in caring for someone with Alzheimers to providing a helping hand while recovering from a hospital stay, a visit from Careforce is always a visit you can look forward to.</p>
+		</div>
+		<div class="quick">
+			<div class="p-4">
+				<i class="fa fa-fast-forward fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Immediate Response</h5>
+				<p class="text-secondary">Peace of mind - days, evenings and weekends with staffed phone service and short notice availability.</p>
 			</div>
-			<div class="p-2">
-				<i class="fa fa-handshake-o fa-3x icon mt-5 mb-5 rounded-circle" aria-hidden="true"></i>
-				<h3 class="title">Service 2</h3>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			<div class="p-4">
+				<i class="fa fa-handshake-o fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Joyful Companionship</h5>
+				<p class="text-secondary">A bright spot in your day - conversation, walks, social outings and more.</p>
 			</div>
-			<div class="p-2">
-				<i class="fa fa-medkit fa-3x icon mt-5 mb-5 rounded-circle" aria-hidden="true"></i>
-				<h3 class="title">Service 3</h3>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			<div class="p-4">
+				<i class="fa fa-shopping-cart fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Outings, Errands and Appointments</h5>
+				<p class="text-secondary">Getting where you want with ease - groceries, pharmacy, visiting friends, classes and more.</p>
 			</div>
-			<div class="p-2">
-				<i class="fa fa-user-md fa-3x icon mt-5 mb-5 rounded-circle" aria-hidden="true"></i>
-				<h3 class="title">Service 4</h3>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse pariatur aliquam nulla suscipit expedita.</p>
+			<div class="p-4">
+				<i class="fa fa-user-md fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Alzheimer &amp; Dementia Care</h5>
+				<p class="text-secondary">Expect patience and compassion - creative and knowledgeable support when you need it.</p>
 			</div>
-		</div>		
+			<div class="p-4">
+				<i class="fa fa-suitcase fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Workers Compensation care provider</h5>
+				<p class="text-secondary">Careforce is an approved provider for the Workers Compensation Board of Nova Scotia, providing care for you when you're unable to return to work.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-bath fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Personal Care</h5>
+				<p class="text-secondary">Nurture your health and personal style - dignified and respectful care to suit your needs.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-bed fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Drop-ins and Check-ins</h5>
+				<p class="text-secondary">Comfort and well-being when a short visit is all you need.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-cutlery fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Housekeeping, Laundry, Meal Planning and Preparation</h5>
+				<p class="text-secondary">Your home kept the way you like it and your favourite meals prepared the way you expect they should be.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-refresh fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Respite Care</h5>
+				<p class="text-secondary">Take some time to rejuvenate, relax or regroup - support for those taking care of others.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-heart fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Palliative Care</h5>
+				<p class="text-secondary">Tenderness and dignity - gracious, end-of-life support for you and your family.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-anchor fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Veterans Affairs and Insurance Provider</h5>
+				<p class="text-secondary">Easily access the benefits you need - we are an approved provider for V.A.C. or insurance coverage.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-pie-chart fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Liaison Services</h5>
+				<p class="text-secondary">Help with the paperwork and navigating the health system.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-car fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Transportation</h5>
+				<p class="text-secondary">Getting you to appointments, social outings, and other important events.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-medkit fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Hospital and Nursing Home Visits</h5>
+				<p class="text-secondary">A friend by your side when you need extra support.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-moon-o fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Overnight, Weekend, and Holiday Care</h5>
+				<p class="text-secondary">Whenever you need us, we will be there; 24 hours a day, 365 days a year.</p>
+			</div>
+			<div class="p-4">
+				<i class="fa fa-phone fa-3x icon rounded-circle" aria-hidden="true"></i>
+				<h5 class="title pt-2">Nurse On Call</h5>
+				<p class="text-secondary">A knowledgeable resource - personal and professional advice when you need it 24 hours a day, seven days a week.</p>
+			</div>
+		</div>
 	</section>
 
 <!-- ABOUT SECTION ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -187,41 +252,59 @@
 		<div class="container text-center title">
 			<h1>About Us</h1>
 			<hr class="style15">
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
+			<p>Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia. We are an approved provider for Veterans Affairs Canada, the Workers' Compensation Board, and most insurance companies.</p>
 		</div>
-		<div class="d-flex container justify-content-center">
-			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="assets/img/card-1.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-				<div class="card-body">
-					<a href="#" class="card-link">Card link</a>
-					<a href="#" class="card-link">Another link</a>
-				</div>
-			</div>
-			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="assets/img/card-2.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-				<div class="card-body">
-					<a href="#" class="card-link">Card link</a>
-					<a href="#" class="card-link">Another link</a>
-				</div>
-			</div>
-			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="assets/img/card-3.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-				<div class="card-body">
-					<a href="#" class="card-link">Card link</a>
-					<a href="#" class="card-link">Another link</a>
-				</div>
+		<div class="container">
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  				<li class="nav-item">
+    				<a class="nav-link active" id="pills-story-tab" data-toggle="pill" href="#pills-story" role="tab" aria-controls="pills-story" aria-expanded="true">Our Story</a>
+  				</li>
+  				<li class="nav-item">
+    				<a class="nav-link" id="pills-vision-tab" data-toggle="pill" href="#pills-vision" role="tab" aria-controls="pills-vision" aria-expanded="true">Our Vision</a>
+  				</li>
+  				<li class="nav-item">
+    				<a class="nav-link" id="pills-mission-tab" data-toggle="pill" href="#pills-mission" role="tab" aria-controls="pills-mission" aria-expanded="true">Our Mission</a>
+  				</li>
+  				<li class="nav-item">
+    				<a class="nav-link" id="pills-values-tab" data-toggle="pill" href="#pills-values" role="tab" aria-controls="pills-values" aria-expanded="true">Our Values &amp; Beliefs</a>
+  				</li>
+  				<li class="nav-item">
+    				<a class="nav-link" id="pills-coop-tab" data-toggle="pill" href="#pills-coop" role="tab" aria-controls="pills-coop" aria-expanded="true">The 7 Co&#45;Op Principles</a>
+  				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+  				<div class="tab-pane fade show active" id="pills-story" role="tabpanel" aria-labelledby="pills-story-tab">
+  					Careforce has been operating in the Annapolis Valley since 1990, and has grown from a small private company into the thriving worker cooperative our clients know today. In 2006, Careforce's owner/operator decided it was time to move on from the business. Although there were many possibilities, a group of motivated employees (including caregivers, administrative, and nursing staff) banded together, pooled their resources and decided to try and buy the business. Nearly two years later, with assistance from the Canadian Worker Cooperative Federation and iNova Credit Union, the Careforce Home Care Worker Cooperative was born. <br><br>
+					What does that mean? It means that Careforce isn't owned by a single person, or even a small partnership of people. Instead, it is owned and operated by a large (and growing) group of employees. In fact, many of the caregivers our clients see in their homes every day are not just employees, but also owners of the business. They help make key management decisions, share in the profit of the business, and ensure we enjoy success together. The quality of service our clients have come to appreciate happens - in large part - because our employees have a direct stake in our success. Pretty cool story, huh? <br><br>
+					Since becoming a worker cooperative, Careforce has continued to be recognized and has played a growing role in the community. We are proud to have received the Eastern Kings Chamber of Commerce Outstanding New Business Award in 2010, and the Annapolis Valley Chamber of Commerce's 'Best in Kings' award in 2014. We are proud to be members in good standing with the Better Business Bureau, and we now have offices in Kentville and Kingston.
+  				</div>
+  				<div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
+  					A community where every person has the opportunity, means, and support to live comfortably and safely for as long as possible.
+  				</div>
+  				<div class="tab-pane fade" id="pills-mission" role="tabpanel" aria-labelledby="pills-mission">
+  					To empower people to live comfortably and safely through our team of compassionate and skillful caregivers. These caregivers will provide physical, social, emotional, and spiritual support to both clients and their families, and will continuously strive to enhance the client's quality of life.
+  				</div>
+  				<div class="tab-pane fade" id="pills-values" role="tabpanel" aria-labelledby="pills-values">
+  					We value - above all else - the safety of our clients and caregivers. A safety-first mentality is a must at all times. <br>
+					We value personalized care because we know every person has unique needs. Every single care plan is different. <br>
+					We value the role that family caregivers and other health practitioners play in a client's care, and consistently try to include them in the care process. <br>
+					We value every individual's right to full privacy and confidentiality at all times. <br>
+					We believe everyone - no matter where they reside - deserves the opportunity to live with dignity and respect for as long as possible. <br>
+					We believe in person-centered care, not task-centered care; completing tasks is important but caring for the whole person is paramount. <br>
+					We believe that seniors are an asset to our community and to our economy; not a liability. <br>
+					We believe people are at their happiest and healthiest at home (and research agrees). <br>
+					We believe that people of all ages and abilities can benefit from compassionate care.
+  				</div>
+  				<div class="tab-pane fade" id="pills-coop" role="tabpanel" aria-labelledby="pills-coop">
+  					As a Cooperative, we also strive to live by the 7 Cooperative Principles&#58; <br><br>
+					1. Voluntary and Open Membership <br>
+					2. Democratic Member Control <br>
+					3. Members' Economic Participation <br>
+					4. Autonomy and Independence <br>
+					5. Education, Training, and Information <br>
+					6. Cooperation Among Cooperatives <br>
+					7. Concern for Community
+  				</div>
 			</div>
 		</div>
 	</section>
@@ -229,12 +312,30 @@
 <!-- TESTIMONIALS SECTION ////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 	<section id="testimonials">
-		<div class="container-fluid">
-			<div class="row justify-content-end align-items-center">
+		<div class="container">
+			<div class="row">
 				<div class="col-3">
 					<blockquote class="blockquote">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">Careforce client <cite title="Source Title">John Doe</cite></footer>
+						<p>Thank you for your excellent care &amp; kindness for our dad over the last few months.</p>
+						<footer class="blockquote-footer">Carefore client&#39;s family &#45; <cite title="Source Title">The M Family</cite></footer>
+					</blockquote>
+				</div>
+				<div class="col-3">
+					<blockquote class="blockquote">
+						<p>My mom seems to be doing well &amp; I think the staff&#39;s daily presence is making a big difference. Thanks.</p>
+						<footer class="blockquote-footer">Carefore client&#39;s family member &#45; <cite title="Source Title">M.L.</cite></footer>
+					</blockquote>
+				</div>
+				<div class="col-3">
+					<blockquote class="blockquote">
+						<p>All the staff care so much for my mother. They are a great team. we couldn&#39;t have managed without them.</p>
+						<footer class="blockquote-footer">Carefore client&#39;s family member &#45; <cite title="Source Title">B.S.</cite></footer>
+					</blockquote>
+				</div>
+				<div class="col-3">
+					<blockquote class="blockquote">
+						<p>Beth is courteous and very knowledgeable... I like someone who is pleasant to have around. I couldn&#39;t do without her.</p>
+						<footer class="blockquote-footer">Careforce client &#45; <cite title="Source Title">E.J.L.</cite></footer>
 					</blockquote>
 				</div>
 			</div>
@@ -243,21 +344,31 @@
 	
 <!-- CAREER //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	
-	<section id="career">
+	<!-- <section id="career">
 		<div class="container text-center title">
 			<h1>Join Our Team</h1>
 			<hr class="style15">
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
+		</div>
+	</section> -->
+	
+<!-- TEAM //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	
+	<section id="veterans">
+		<div class="container text-center title">
+			<h1>A top choice for veterans</h1>
+			<hr class="style15">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
 		</div>
 	</section>
 	
 <!-- SERVICES ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	
-	<section id="services">
+	<section id="team">
 		<div class="container text-center title">
 			<h1>Service with a Smile</h1>
 			<hr class="style15">
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
 		</div>
 		<div class="d-flex container justify-content-center">
 			<div class="card" style="width: 20rem;">
@@ -317,9 +428,9 @@
 			<div class="container main-footer">
 				<div class="row">
 					<div class="col-4 d-flex flex-column justify-content-between">
-						<img src="assets/img/BROCHURE - BBB logo.png" alt="" width="50%">
-						<img src="assets/img/Careforce button RGB full colour png.png" alt="" width="50%">
-						<img src="assets/img/brand-logo-grey.svg" alt="" width="50%">
+						<img src="assets/img/BROCHURE - BBB logo.png" alt="" width="40%">
+						<img src="assets/img/Careforce button RGB full colour png.png" alt="" width="40%">
+						<img src="assets/img/image002.png" alt="" width="40%">
 					</div>
 					<div class="col-4">
 						<address>
@@ -376,8 +487,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-<!-- OWL CAROUSEL ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	<script src="../node_modules/owl.carousel/dist/owl.carousel.js"></script>
+<!-- SLICK CAROUSEL //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<script src="../node_modules/slick-carousel/slick/slick.js"></script>
 <!-- MFB JS //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<script src="../node_modules/mfb/src/mfb.min.js"></script>
 <!-- GSAP JS /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
