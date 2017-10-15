@@ -168,6 +168,9 @@ i.icon {
   #veterans hr.style15:after {
     background: #756458; }
 
+.team-text-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
 .footer {
   background: #756458;
   padding: 0;
