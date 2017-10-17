@@ -8,15 +8,17 @@ $(document).ready(function(){
 		adaptiveHeight: true,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 4000,
+		autoplaySpeed: 3500,
 		infinite: true,
 		fade: true,
 		cssEase: 'linear'
   	});
 	
 	//GSAP
-	var applyBar 	= $('.apply');
-	var navBar		= $('.hero-text');
+	var applyBar 		= $('.apply'),
+		navBar			= $('.hero-text'),
+		socialCard		= $('.hero-social'),
+		tl				= new TimelineLite();
 	
 	// you can also use pure JavaScript instead of jQuery such as
 	// or var applyBar = document.getElementById('.apply');
@@ -24,10 +26,18 @@ $(document).ready(function(){
 	// you can use fromto method as long as you set a starting and ending value or set method to just set a CSS property
 	// set does not require a duration
 	
-	TweenLite.from('.hero-text', 2, {autoAlpha: 0}); // in order. element in quotes, duration, and values in curly braces
+	/*
+	TweenLite.from(navBar, 3, {autoAlpha: 0}); // in order. element in quotes, duration, and values in curly braces
 	// autoAlpha starts at 0 opacity and visibility of none
-	TweenLite.from('.apply', 1, {opacity: 0, y: 50, delay: 2}); // moves .apply from opacity zero and y offset 50px
+	TweenLite.from(applyBar, 1, {autoAlpha: 0, y: 50, delay: 2}); // moves .apply from opacity zero and y offset 50px
 	// setting delay to the duration of first tween allows the animation to happen in sequence
+	TweenLite.from(socialCard, 1, {ease: Power3.easeOut, y: -500, delay: 5});
+	*/
+	
+	tl
+		.from(navBar, 2, {autoAlpha: 0})
+		.from(applyBar, 1, {autoAlpha: 0, y: 50}, '-=0.30') /* use scrollmagic for this eventually. The -=15 is starting the tween 0.15 seconds earlier than the original start of tween so it overlaps by that amount. */
+		.from(socialCard, 1, {ease: Power3.easeOut, y: -500, delay: 1}); /* added delay in timeline bc on another slide */
 	
 	//SLICK CAROUSEL 2
 

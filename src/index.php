@@ -110,12 +110,11 @@
       			<i class="mfb-component__main-icon--active material-icons">clear</i>
     		</a>
     		<ul class="mfb-component__list">
-      			<!-- a child button, repeat as many times as needed -->
-      			<!--<li>
-        			<a href="link.html" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
-          				<i class="mfb-component__child-icon material-icons"></i>
+     			<li>
+        			<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child">
+          				<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
         			</a>
-      			</li>-->
+      			</li>
       			<li>
         			<a href="link.html" data-mfb-label="Give us a call" class="mfb-component__button--child">
           				<i class="mfb-component__child-icon material-icons">phone</i>
@@ -148,12 +147,12 @@
 			</div>
 		</div>
 		<div class="hero-img-2">
-			<div class="card hero-card">
-  				<h4 class="card-header">Featured</h4>
-  				<div class="card-body">
-					<h4 class="card-title">Special title treatment</h4>
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" class="btn btn-primary disabled">Go somewhere</a>
+			<div class="card hero-card hero-social">
+  				<h4 class="card-header">Check us out on Facebook</h4>
+  				<div class="card-body text-center">
+					<!--<h4 class="card-title">Special title treatment</h4>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+					<a href="https://www.facebook.com/careforcehomecare"><i class="fa fa-facebook-official fa-3x"></i></a>
   				</div>
 			</div>
 		</div>
@@ -581,15 +580,16 @@
 								<h5>Phone:</h5>
 								<p>Regular Phone&#58; <a href="tel:+19023653155">&#40;902&#41; 365&#45;3155</a></p>
 								<p>Toll Free &#45; 24/7&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a></p>
+								<p>Fax&#58; <a href="tel:+19023653125">1&#45;902&#45;365&#45;3125</a></p>
 							</div>
 							<div class="pb-3">
 								<h5>Email:</h5>
 								<a href="mailto:careforce@careforce.ca">careforce@careforce.ca</a> <br><br>
 							</div>
 							<div class="pb-3">
-								<h5>Hours:</h5>
-								<p>Monday &#45; Friday&#58;</p>
-								<p>Saturday &#45; Sunday&#58;</p>
+								<h5>Office Hours:</h5>
+								<p>Monday &#45; Friday&#58; 9:00am &#45; 4:30pm</p>
+								<p>Saturday &#45; Sunday&#58; Closed</p>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -649,6 +649,7 @@
 	<script src="../node_modules/mfb/src/mfb.min.js"></script>
 <!-- GSAP JS /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js" integrity="sha256-urKHuZ772q9CZZjbN5geWh0ObNvIL4INeQTSQkZC2/M=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineLite.min.js" integrity="sha256-C4E1OAB7XxX0S7evnj9fNvU/+C2L2hzXwq861HQTVAA=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js" integrity="sha256-DVfSynPZfzB2Mca3EebIt2UJmcQfeWPtUe0+Tghv4cc=" crossorigin="anonymous"></script>
 <!-- CUSTOM JS ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<script src="js/custom.js"></script>
