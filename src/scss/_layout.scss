@@ -10,6 +10,10 @@ section{
 	padding: 85px 0;
 }
 
+h1{
+	text-transform: uppercase;
+}
+
 .material-icons{
 	color: #fff;
 }
@@ -58,4 +62,11 @@ hr.style18:before {
 	border-color:#CDCDCD;
 	border-width: 0 0 1px 0; 
 	border-radius: 20px; 
+}
+
+@media (max-width: 768px) {
+	.lg-only{
+		display: none;
+		visibility: hidden;
+	}
 }
