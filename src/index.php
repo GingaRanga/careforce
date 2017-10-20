@@ -53,13 +53,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Google Material Icons & MFB & MODERNIZR-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="../node_modules/mfb/src/mfb.css">
-	<script src="../node_modules/mfb/src/lib/modernizr.touch.js"></script>
+	<link rel="stylesheet" href="css/mfb.css">
+	<script src="js/modernizr.touch.js"></script>
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<!-- Slick carousel -->
-	<link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
@@ -91,9 +91,9 @@
 				<a class="nav-item nav-link" href="#veterans">Veterans</a>
 				<a class="nav-item nav-link" href="#team">Our Caregivers</a>
 				<a class="nav-item nav-link" href="#contact">Contact Us</a>
-				<a class="nav-item nav-link disabled" href="#">Resources</a>
+				<a class="nav-item nav-link" href="php/resources.php">Resources</a>
 				<a class="nav-item nav-link disabled" href="#">Events</a>
-				<a class="nav-item nav-link disabled" href="#">FAQs</a>
+				<a class="nav-item nav-link" href="php/faqs.php">FAQs</a>
 			</div>
 		</div>
 	</nav>
@@ -152,7 +152,7 @@
   				<div class="card-body text-center">
 					<!--<h4 class="card-title">Special title treatment</h4>
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-					<a href="https://www.facebook.com/careforcehomecare"><i class="fa fa-facebook-official fa-3x"></i></a>
+					<a href="https://www.facebook.com/careforcehomecare"><i class="material-icons fa fa-facebook-official fa-3x"></i></a>
   				</div>
 			</div>
 		</div>
@@ -325,6 +325,7 @@
 						<li><span class="text-muted">We offer the most flexible shifts in the Annapolis Valley.</span> You need care when YOU need it, not when it's convenient for your caregiver.</li>
   					</ol>
   					<p>We've helped hundreds of Valley residents with our expertise, compassion and personalized care and we'd be pleased to help you.</p>
+  					<a href="assets/docs/Resource-Careforce-How to Choose a Homecare Agency.pdf" role="button" class="btn btn-info btn-block">Click here to learn how to choose the right care provider</a>
   				</div>
 			</div>
 		</div>
@@ -360,6 +361,7 @@
 					</blockquote>
 				</div>
 			</div>
+			<a href="assets/docs/Testimonial Letter (Gerald and Linda Gallant) June 2014.pdf" class="btn btn-outline-light" role="button">A Written Letter to Careforce</a>
 		</div>
 	</section>
 	
@@ -569,9 +571,9 @@
 			</div>
 			<div class="main-footer">
 				<hr class="style15 pb-5">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row p-2">
-						<div class="col-lg-6">
+						<div class="col-lg-4">
 							<div class="pb-3">
 								<h5>Address:</h5>
 								<p>6 Webster Court&#44; Kentville&#44; NS&#44; B4N 1H2</p>
@@ -591,8 +593,52 @@
 								<p>Monday &#45; Friday&#58; 9:00am &#45; 4:30pm</p>
 								<p>Saturday &#45; Sunday&#58; Closed</p>
 							</div>
+							<div class="pb-3">
+								<h5>After Hours:</h5>
+								<p>We can be reached 24/7 by phone</p>
+								<p>Toll Free &#45; 24/7&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a></p>
+							</div>
 						</div>
-						<div class="col-lg-6">
+						<hr style="border-top: 1px solid #CDCDCD;"> <!-- CHECK OUT WHY THIS ISNT DISPLAYING -->
+						<div class="col-lg-4">
+							<h5>Company Contacts</h5>
+							<div class="pb-3">
+								<p class="font-weight-bold">Director of Care</p>
+								<p>Kathie Swindell</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:kathie@careforce.ca">kathie@careforce.ca</a></p>
+							</div>
+							<div class="pb-3">
+								<p class="font-weight-bold">Manager</p>
+								<p>Debbie Raine</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:debbie@careforce.ca">debbie@careforce.ca</a></p>
+							</div>
+							<div class="pb-3">
+								<p class="font-weight-bold">Nurse Supervisor</p>
+								<p>Nicki Ansems&#44; LPN</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:nurse@careforce.ca">nurse@careforce.ca</a></p>
+							</div>
+							<div class="pb-3">
+								<p class="font-weight-bold">Quality Service Coordinator</p>
+								<p>Jane Jones</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:service@careforce.ca">service@careforce.ca</a></p>
+							</div>
+							<div class="pb-3">
+								<p class="font-weight-bold">Scheduler</p>
+								<p>Julie MacRae</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:scheduler@careforce.ca">scheduler@careforce.ca</a></p>
+							</div>
+							<div class="pb-3">
+								<p class="font-weight-bold">Payroll and Accounting</p>
+								<p>Kim Kelly</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:accounting@careforce.ca">accounting@careforce.ca</a></p>
+							</div>
+							<div class="pb-3">
+								<p class="font-weight-bold">Administrative Assistant</p>
+								<p>Alisha Egan</p>
+								<p><span class="font-italic">Email&#58;</span> <a href="mailto:alisha@careforce.ca">alisha@careforce.ca</a></p>
+							</div>
+						</div>
+						<div class="col-lg-4">
 							<form>
 								<fieldset>
 									<legend><h5>Leave us a message</h5></legend>
@@ -610,7 +656,7 @@
 										<label for="formComment">Enter your message here</label>
 										<textarea class="form-control" id="formComment" rows="3"></textarea>
 									</div>
-									<button type="submit" class="btn btn-info btn-block">Submit</button>
+									<button type="submit" class="btn btn-info btn-block disabled">Submit</button>
 								</fieldset>
 							</form>
 						</div>
@@ -644,9 +690,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 <!-- SLICK CAROUSEL //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	<script src="../node_modules/slick-carousel/slick/slick.js"></script>
+	<script src="js/slick.js"></script>
 <!-- MFB JS //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	<script src="../node_modules/mfb/src/mfb.min.js"></script>
+	<script src="js/mfb.min.js"></script>
 <!-- GSAP JS /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js" integrity="sha256-urKHuZ772q9CZZjbN5geWh0ObNvIL4INeQTSQkZC2/M=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineLite.min.js" integrity="sha256-C4E1OAB7XxX0S7evnj9fNvU/+C2L2hzXwq861HQTVAA=" crossorigin="anonymous"></script>

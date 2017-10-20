@@ -1,0 +1,13 @@
+.header-img-1{
+	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.7)), url(../assets/img/carousel-1.jpg);
+	@include heroImg();
+	height: 45vh;
+}
+
+.header-text{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}

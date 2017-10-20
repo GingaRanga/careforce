@@ -21,8 +21,10 @@
 	@include heroImg();
 	.card{
 		position: absolute;
-		top: 200px;
-		right: 50%;
+		top: 60%;
+		left: 10%;
+		width: 200px;
+		background-color: rgba(0,178,183,0.7);
 	}
 }
 

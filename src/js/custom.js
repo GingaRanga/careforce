@@ -37,7 +37,9 @@ $(document).ready(function(){
 	tl
 		.from(navBar, 2, {autoAlpha: 0})
 		.from(applyBar, 1, {autoAlpha: 0, y: 50}, '-=0.30') /* use scrollmagic for this eventually. The -=15 is starting the tween 0.15 seconds earlier than the original start of tween so it overlaps by that amount. */
-		.from(socialCard, 1, {ease: Power3.easeOut, y: -500, delay: 1}); /* added delay in timeline bc on another slide */
+		.from(socialCard, 1, {ease: Power3.easeOut, y: -700, delay: 1}); /* added delay in timeline bc on another slide */
+		// You can make a delay in timeline by adding '+=' instead of '-=' and are both relative positioning
+		// absolute positioning can be added simply by adding , then timeframe in seconds instead of quotes and a +=
 	
 	//SLICK CAROUSEL 2
 
