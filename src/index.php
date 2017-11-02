@@ -13,40 +13,29 @@
 
 	<!-- SEO & AUTHOR META -->
 	<meta name="author" content="Evan Marshall">
-	<meta name="description" content="Sample Description">
-	<meta name="keywords" content="keyword 1, keyword 2">
+	<meta name="description" content="Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia. We are an approved provider for Veterans Affairs Canada, the Workers' Compensation Board, and most insurance companies.">
+	<meta name="keywords" content="homecare, healthcare, seniors, health, careforce, care, veterans, nova scotia, annapolis valley, caregiver, dementia, co-op">
 	<title>Careforce</title>
 
 	<!-- FAVICON LINKS -->
-	<link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="17x16" href="assets/img/favicon-17x16.png">
+	<link rel="icon" type="image/png" sizes="34x32" href="assets/img/favicon-34x32.png">
+	<link rel="icon" type="image/png" sizes="102x96" href="assets/img/favicon-102x96.png">
 
 	<!-- FACEBOOK OPEN GRAPH META -->
 	<meta property="fb:app_id" content="123456789">
-	<meta property="og:url" content="https://example.com/page.html">
+	<meta property="og:url" content="https://careforce.ca/">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Content Title">
-	<meta property="og:image" content="https://example.com/image.jpg">
-	<meta property="og:description" content="Description Here">
-	<meta property="og:site_name" content="Site Name">
+	<meta property="og:title" content="Careforce">
+	<meta property="og:image" content="https://careforce.ca/assets/img/carousel-1.jpg">
+	<meta property="og:description" content="Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia.">
+	<meta property="og:site_name" content="Careforce">
 	<meta property="og:locale" content="en_US">
-	<meta property="article:author" content="">
-
-	<!-- TWITTER CARD META -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@site_account">
-	<meta name="twitter:creator" content="@individual_account">
-	<meta name="twitter:url" content="https://example.com/page.html">
-	<meta name="twitter:title" content="Content Title">
-	<meta name="twitter:description" content="Content description less than 200 characters">
-	<meta name="twitter:image" content="https://example.com/image.jpg">
 
 	<!-- GOOGLE+ & SCHEMA.ORG META -->
-	<link href="https://plus.google.com/+YourPage" rel="publisher">
-	<meta itemprop="name" content="Content Title">
-	<meta itemprop="description" content="Content description less than 200 characters">
-	<meta itemprop="image" content="https://example.com/image.jpg">
+	<meta itemprop="name" content="Careforce">
+	<meta itemprop="description" content="Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia.">
+	<meta itemprop="image" content="https://careforce.ca/assets/img/carousel-1.jpg">
 
 	<!-- BOOTSTRAP 4 STYLESHEETS & CUSTOM - before all other stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -72,7 +61,7 @@
 
 </head>
 
-<body id="page-top">	
+<body id="page-top">
 
 <!-- NAVIGATION //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -97,13 +86,13 @@
 			</div>
 		</div>
 	</nav>
-			
+
 <!-- CONTACT FLOAT ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
-				
+
 	<ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
   		<li class="mfb-component__wrap">
     		<!-- the main menu button -->
-    		<a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
+    		<a data-mfb-label="Hover or Click this button" class="mfb-component__button--main">
       			<!-- the main button icon visibile by default -->
       			<i class="mfb-component__main-icon--resting material-icons">add</i>
       			<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
@@ -133,7 +122,7 @@
     		</ul>
   		</li>
 	</ul>
-		
+
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<div class="slider hero text-light">
 		<div class="hero-img-1">
@@ -157,7 +146,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 <!-- QUICK LOOK BANNER ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<section class="bg-light text-center title" id="services">
 		<div class="container">
@@ -361,12 +350,15 @@
 					</blockquote>
 				</div>
 			</div>
-			<a href="assets/docs/Testimonial Letter (Gerald and Linda Gallant) June 2014.pdf" class="btn btn-outline-light" role="button">A Written Letter to Careforce</a>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#testimonialModal">A Written Letter to Careforce</button>
+
 		</div>
 	</section>
-	
+
 <!-- CAREER //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	
+
 	<!-- <section id="career">
 		<div class="container text-center title">
 			<h1>Join Our Team</h1>
@@ -374,9 +366,9 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
 		</div>
 	</section> -->
-	
+
 <!-- TEAM //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	
+
 	<section id="veterans">
 		<div class="container text-center title">
 			<h1>A top choice for veterans</h1>
@@ -387,7 +379,7 @@
 			<div class="row">
 				<div class="col-lg-4 pb-4">
 					<div class="card bg-light" style="width: 20rem;">
-  						<img class="card-img-top" src="assets/img/carousel-2.jpg" alt="veterans">
+  						<img class="card-img-top img-fluid" src="assets/img/carousel-2.jpg" alt="veterans">
   						<div class="card-body">
     						<div class="card-text">
     							<blockquote class="blockquote">
@@ -398,7 +390,7 @@
   						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-4 pb-4">
 					<div id="accordion" role="tablist">
 						<div class="card">
@@ -499,10 +491,10 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-4 pb-4">
 					<div class="card bg-light" style="width: 20rem;">
-  						<img class="card-img-top" src="assets/img/Veteran+in+London+Ont.jpg" alt="veteran and child">
+  						<img class="card-img-top img-fluid" src="assets/img/Veteran+in+London+Ont.jpg" alt="veteran and child">
   						<div class="card-body">
     						<div class="card-text">
     							<blockquote class="text-secondary">
@@ -515,9 +507,9 @@
 			</div>
 		</div>
 	</section>
-	
+
 <!-- SERVICES ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	
+
 	<section id="team">
 		<div class="container text-center title">
 			<h1>Service with a Smile</h1>
@@ -561,9 +553,9 @@
 			</div>
 		</div>
 	</section>
-	
+
 <!-- FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	
+
 	<section id="contact" class="footer">
 		<footer>
 			<div>
@@ -684,6 +676,36 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- TESTIMONIAL MODAL //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="testimonialModal">The following is a letter Careforce received from one of our many satisfied clients</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<p>Dear Careforce Staff,</p>
+				<p>You definitely chose the correct company name. The entire staff truly cares very deeply about the client’s overall health and happiness. The team goes to great lengths to provide stress-free, thoughtful and compassionate care. Your team (and you truly do work as such), is a real force for other care providers to use as a role model.</p>
+				<p>As of July 2014 we’ll be clients of Careforce for one year. All has been perfect in every way in dealing with the staff of Careforce. The gals who come to our home to help out are truly fantastic. We’ve grown very accustomed to “our gals” and they are very much like old friends. It’s a complete pleasure to talk to and spend time with all the Careforce Team.</p>
+				<p>Everyone from Careforce arrives at least 10 minutes prior to a scheduled shift without a hitch. They all come through the door with a sincerely cheery greeting and a happy face. They are ready to do whatever we need done, including taking us out in our car for a drive or shopping etc. Careforce staff are fantastic at keeping the number of gals who come to a clients home to a minimum. That is great as it creates a more personal feeling for the client and promotes continuity of care. </p>
+				<p>The detailed charting and oral communication among Careforce staff is excellent. It reminds me of nursing of years ago, in a very good way. The staff always has current information on a client’s health, medication and results of doctors appointments, etc. That enables the staff to give the correct care always. </p>
+				<p>“Our gal” Theresa has been with us twice a week for nearly one year. What a great all around caregiver, she’s always observant, anticipates when assistance is required, is so pleasant and knowledgeable of health care etc. Theresa quickly made us feel like she is family. Last summer she even brought us treats from her garden! We are totally pleased Theresa is in our life.</p>
+				<p>To relate all the wonderful things the gals from Careforce do for us would cause writer’s cramp. It’s always a pleasure to talk with Tracey in scheduling about any request we’ve had. Tracey’s reply is always, “no problem, give me a little while and I’ll get right back to you with a solution.” That’s exactly what she does, usually in a few minutes she phones with a perfect solution. I feel Tracey’s not happy until the clients are totally happy! To do a challenging scheduling job with such grace, and so very pleasantly takes a very special lady. Bravo Tracey</p>
+				<p>Gerry and I consider Careforce a huge blessing and a fantastic support system in our life. Keep up the fantastic work Careforce team. In the years ahead continue to bring peace of mind and excellent care to your clients.</p>
+				<p>Our very best wishes and sincere thanks to all the Careforce team.</p>
+				<p>Sincerely,</p>
+				<p>G. and L. Gallant</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- BOOTSTRAP 4 JS & JQUERY - jquery and popper first ///////////////////////////////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

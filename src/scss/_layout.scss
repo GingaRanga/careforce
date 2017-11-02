@@ -44,24 +44,24 @@ hr.style15:after {
 	font-size: 24px;
 }
 
-hr.style18 { 
-	height: 30px; 
-	border-style: solid; 
-	border-width: 1px 0 0 0; 
+hr.style18 {
+	height: 30px;
+	border-style: solid;
+	border-width: 1px 0 0 0;
 	border-color:#CDCDCD;
-	border-radius: 20px; 
+	border-radius: 20px;
 	width: 40%;
 
-} 
-hr.style18:before { 
-	display: block; 
-	content: ""; 
-	height: 30px; 
-	margin-top: -31px; 
-	border-style: solid; 
+}
+hr.style18:before {
+	display: block;
+	content: "";
+	height: 30px;
+	margin-top: -31px;
+	border-style: solid;
 	border-color:#CDCDCD;
-	border-width: 0 0 1px 0; 
-	border-radius: 20px; 
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
 }
 
 @media (max-width: 768px) {
