@@ -76,8 +76,8 @@
 
 </head>
 
-<body id="page-top" class="bg-light">	
-	
+<body id="page-top" class="bg-light">
+
 <!-- NAVIGATION //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 		<nav class="navbar navbar-expand-md resources-nav navbar-light bg-light fixed-top">
@@ -100,49 +100,49 @@
 				</div>
 			</div>
 		</nav>
-			
+
 <!-- CONTACT FLOAT ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
-				
-		<ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
+
+	<ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
 			<li class="mfb-component__wrap">
 				<!-- the main menu button -->
-				<a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
-					<!-- the main button icon visibile by default -->
-					<i class="mfb-component__main-icon--resting material-icons">add</i>
-					<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-					<i class="mfb-component__main-icon--active material-icons">clear</i>
+				<a data-mfb-label="Hover or Click this button" class="mfb-component__button--main">
+						<!-- the main button icon visibile by default -->
+						<i class="mfb-component__main-icon--resting material-icons">add</i>
+						<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
+						<i class="mfb-component__main-icon--active material-icons">clear</i>
 				</a>
 				<ul class="mfb-component__list">
 					<li>
-						<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
-						</a>
-					</li>
-					<li>
-						<a href="link.html" data-mfb-label="Give us a call" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons">phone</i>
-						</a>
-					</li>
-					<li>
-						<a href="link.html" data-mfb-label="Send us an email" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons">mail</i>
-						</a>
-					</li>
-					<li>
-						<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
-						</a>
-					</li>
+							<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child" target="_blank">
+									<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
+									<i class="mfb-component__child-icon material-icons">phone</i>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
+									<i class="mfb-component__child-icon material-icons">mail</i>
+							</a>
+						</li>
+						<li>
+							<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
+									<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
+							</a>
+						</li>
 				</ul>
 			</li>
-		</ul>
-		
+	</ul>
+
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
 		<div class="slider header text-light">
 			<div class="header-img-1">
 				<div class="header-text d-flex flex-column justify-content-center align-items-center">
 					<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-					<p class="text-dark">Helping you live comfortably &amp; safely at home for over 25 years</p>
+					<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
 				</div>
 			</div>
 		</div>
@@ -159,7 +159,7 @@
 							<div class="box-wrap team-text-box bg-white p-3 pb-5">
 								<img src="../assets/img/13094357_965683940211742_3756470729012285577_n.jpg" alt="" class="img-fluid pb-3">
 								<h5 class="pt-5">What area do you cover&#63;</h5>
-								<p>Careforce currently provides service in Nova Scotia's Annapolis Valley, from Windsor to Annapolis Royal. Our office is at 946 Park Street in Kentville.</p>
+								<p>Careforce currently provides service in Nova Scotia's Annapolis Valley, from Windsor to Bridgetown. Our office is at 6 Webster Court&#44; Kentville&#44; NS&#44; B4N 1H2.</p>
 								<hr>
 								<h5>Who pays for my care&#63;</h5>
 								<p>Many personal Insurance companies cover personal care. We are a registered provider with Blue Cross, Veterans' Affairs Canada, and the Workers' Compensation Board, and can direct bill for eligible individuals. Many other clients simply pay Careforce directly.</p>
@@ -236,11 +236,11 @@
 				</div>
 			</div>
 		</section>
-	
 
-	
+
+
 <!-- FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	
+
 		<section id="contact" class="footer">
 			<footer>
 				<div>
@@ -345,11 +345,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<small class="p-2">Terms of use</small>
-							<small class="p-2">Privacy policy</small>
+							<!-- <small class="p-2">Terms of use</small> -->
+							<!-- <small class="p-2">Privacy policy</small> -->
 							<small class="p-2">&copy; Careforce Home Healthcare&#44; 2017</small>
-							<small class="p-2">Website carefully crafted by &#45; <a href="https://www.elysianwebdesign.com">Elysian Web Design</a></small>
-							<a href="https://www.elysianwebdesign.com"><img class="align-self-center" src="../assets/img/logo-wh.svg" alt="Elysian Web Design Logo" width="25"></a>
+							<small class="p-2">Website carefully crafted by &#45; <a href="https://www.elysianwebdesign.com" target="_blank">Elysian Web Design</a></small>
+							<a href="https://www.elysianwebdesign.com" target="_blank"><img class="align-self-center" src="../assets/img/logo-wh.svg" alt="Elysian Web Design Logo" width="25"></a>
 						</div>
 						<div class="col-lg-12 d-flex align-items-center justify-content-center">
 							<img src="../assets/img/BROCHURE - BBB logo.png" alt="" class="img-fluid p-2" width="10%">

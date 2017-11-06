@@ -100,17 +100,17 @@
     		</a>
     		<ul class="mfb-component__list">
      			<li>
-        			<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child">
+        			<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child" target="_blank">
           				<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
         			</a>
       			</li>
       			<li>
-        			<a href="link.html" data-mfb-label="Give us a call" class="mfb-component__button--child">
+        			<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
           				<i class="mfb-component__child-icon material-icons">phone</i>
         			</a>
       			</li>
       			<li>
-        			<a href="link.html" data-mfb-label="Send us an email" class="mfb-component__button--child">
+        			<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
           				<i class="mfb-component__child-icon material-icons">mail</i>
         			</a>
       			</li>
@@ -128,11 +128,11 @@
 		<div class="hero-img-1">
 			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
 				<img src="assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-				<p class="text-dark">Helping you live comfortably &amp; safely at home for over 25 years</p>
+				<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
 			</div>
 			<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
-				<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion or fill out application</p>
-				<a href="" class="btn btn-info disabled">Apply Here</a>
+				<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion</p>
+				<!-- <a href="" class="btn btn-info disabled">Apply Here</a> -->
 			</div>
 		</div>
 		<div class="hero-img-2">
@@ -141,7 +141,7 @@
   				<div class="card-body text-center">
 					<!--<h4 class="card-title">Special title treatment</h4>
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-					<a href="https://www.facebook.com/careforcehomecare"><i class="material-icons fa fa-facebook-official fa-3x"></i></a>
+					<a href="https://www.facebook.com/careforcehomecare" target="_blank"><i class="material-icons fa fa-facebook-official fa-3x"></i></a>
   				</div>
 			</div>
 		</div>
@@ -267,8 +267,8 @@
 			<div class="tab-content" id="pills-tabContent">
   				<div class="tab-pane fade show active" id="pills-story" role="tabpanel" aria-labelledby="pills-story-tab">
   					<p>Careforce has been operating in the Annapolis Valley since 1990, and has grown from a small private company into the thriving worker cooperative our clients know today. In 2006, Careforce's owner/operator decided it was time to move on from the business. Although there were many possibilities, a group of motivated employees (including caregivers, administrative, and nursing staff) banded together, pooled their resources and decided to try and buy the business. Nearly two years later, with assistance from the Canadian Worker Cooperative Federation and iNova Credit Union, the Careforce Home Care Worker Cooperative was born.</p>
-					<p>What does that mean? It means that Careforce isn't owned by a single person, or even a small partnership of people. Instead, it is owned and operated by a large (and growing) group of employees. In fact, many of the caregivers our clients see in their homes every day are not just employees, but also owners of the business. They help make key management decisions, share in the profit of the business, and ensure we enjoy success together. The quality of service our clients have come to appreciate happens - in large part - because our employees have a direct stake in our success. Pretty cool story, huh?</p>
-					<p>Since becoming a worker cooperative, Careforce has continued to be recognized and has played a growing role in the community. We are proud to have received the Eastern Kings Chamber of Commerce Outstanding New Business Award in 2010, and the Annapolis Valley Chamber of Commerce's 'Best in Kings' award in 2014. We are proud to be members in good standing with the Better Business Bureau, and we now have offices in Kentville and Kingston.</p>
+						<p>What does that mean? It means that Careforce isn't owned by a single person, or even a small partnership of people. Instead, it is owned and operated by a large (and growing) group of employees. In fact, many of the caregivers our clients see in their homes every day are not just employees, but also owners of the business. They help make key management decisions, share in the profit of the business, and ensure we enjoy success together. The quality of service our clients have come to appreciate happens - in large part - because our employees have a direct stake in our success. Pretty cool story, huh?</p>
+						<p>Since becoming a worker cooperative, Careforce has continued to be recognized and has played a growing role in the community. We are proud to have received the Eastern Kings Chamber of Commerce Outstanding New Business Award in 2010, and the Annapolis Valley Chamber of Commerce's 'Best in Kings' award in 2014. We are proud to be members in good standing with the Better Business Bureau, and we now have an office in Kentville.</p>
   				</div>
   				<div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
 					<h5>Our Vision&#58;</h5>
@@ -304,17 +304,17 @@
   				<div class="tab-pane fade show" id="pills-why" role="tabpanel" aria-labelledby="pills-why-tab">
   					<h5>At Careforce, we work hard to earn your business. Here are just a few of the many reasons to choose Careforce.</h5>
   					<ol>
-						<li><span class="text-muted">We are person focused&#44; not task focused.</span> Our caregivers aren&#39;t just concerned about getting tasks done &#40;although they're great at that too&#41;&#59; they care about making you feel special.</li>
-						<li><span class="text-muted">All of our caregivers are supervised by a Nurse.</span> You can be sure you are in good hands with Careforce's caregivers, who are also carefully screened and well trained. Having a Nurse on your side gives you extra confidence and peace of mind.</li>
-						<li><span class="text-muted">A small, consistent team of caregivers focused on your needs.</span> while some home care agencies send a different caregiver to their clients each day, Careforce understands that you want consistency. You can expect to work with a small, devoted team of caregivers that will get to know your needs and deliver consistent results.</li>
-						<li><span class="text-muted">We are responsive.</span> If you choose Careforce, you will have a caregiver who is right for you in your home quickly (usually within 48 hours or sooner).</li>
-						<li><span class="text-muted">No long-term contracts, ever.</span> Careforce believes you should never have to pay for care you don't need. If you ever wish to cancel or postpone service, all you have to do is say so.</li>
-						<li><span class="text-muted">We are local.</span> We care about our community because we all live here, too. You can always speak with somebody local - 24 hours a day, 7 days a week - when you call Careforce. No automated phone commands! We have offices in Kentville and Kingston to serve you.</li>
-						<li><span class="text-muted">Our workers are also owners.</span> Because many of our caregivers also own the company, they are more heavily invested in providing you with a perfect experience.</li>
-						<li><span class="text-muted">We offer the most flexible shifts in the Annapolis Valley.</span> You need care when YOU need it, not when it's convenient for your caregiver.</li>
+						<li><span class="font-weight-bold">We are person focused&#44; not task focused.</span> Our caregivers aren&#39;t just concerned about getting tasks done &#40;although they're great at that too&#41;&#59; they care about making you feel special.</li>
+						<li><span class="font-weight-bold">All of our caregivers are supervised by a Nurse.</span> You can be sure you are in good hands with Careforce's caregivers, who are also carefully screened and well trained. Having a Nurse on your side gives you extra confidence and peace of mind.</li>
+						<li><span class="font-weight-bold">A small, consistent team of caregivers focused on your needs.</span> while some home care agencies send a different caregiver to their clients each day, Careforce understands that you want consistency. You can expect to work with a small, devoted team of caregivers that will get to know your needs and deliver consistent results.</li>
+						<li><span class="font-weight-bold">We are responsive.</span> If you choose Careforce, you will have a caregiver who is right for you in your home quickly (usually within 48 hours or sooner).</li>
+						<li><span class="font-weight-bold">No long-term contracts, ever.</span> Careforce believes you should never have to pay for care you don't need. If you ever wish to cancel or postpone service, all you have to do is say so.</li>
+						<li><span class="font-weight-bold">We are local.</span> We care about our community because we all live here. You can always speak with somebody local - 24 hours a day, 7 days a week - when you call Careforce. No automated phone commands! We have an office in Kentville to serve you.</li>
+						<li><span class="font-weight-bold">Our workers are also owners.</span> Because many of our caregivers also own the company, they are more heavily invested in providing you with a perfect experience.</li>
+						<li><span class="font-weight-bold">We offer the most flexible shifts in the Annapolis Valley.</span> You need care when YOU need it, not when it's convenient for your caregiver.</li>
   					</ol>
   					<p>We've helped hundreds of Valley residents with our expertise, compassion and personalized care and we'd be pleased to help you.</p>
-  					<a href="assets/docs/Resource-Careforce-How to Choose a Homecare Agency.pdf" role="button" class="btn btn-info btn-block">Click here to learn how to choose the right care provider</a>
+  					<a href="assets/docs/Resource-Careforce-How to Choose a Homecare Agency.pdf" role="button" class="btn btn-info btn-block" target="_blank">Click here to learn how to choose the right care provider</a>
   				</div>
 			</div>
 		</div>
@@ -394,6 +394,7 @@
 				<div class="col-lg-4 pb-4">
 					<div id="accordion" role="tablist">
 						<div class="card">
+							<small class="text-secondary p-2 text-center">Click Below Titles to Expand</small>
 							<div class="card-header" role="tab" id="headingOne">
 								<h5 class="mb-0">
 									<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Veterans Affairs Canada</a>
@@ -401,7 +402,7 @@
 							</div>
 							<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
 								<div class="card-body text-muted">
-									Veterans Affairs Canada: Veterans Affairs Canada is the federal government's hub for all things veteran-related. You can find VAC by clicking here.
+									Veterans Affairs Canada: Veterans Affairs Canada is the federal government's hub for all things veteran-related. You can find VAC by clicking <a href="http://www.veterans.gc.ca/eng" target="_blank">here</a>.
 								</div>
 							</div>
 						</div>
@@ -413,7 +414,7 @@
 							</div>
 							<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
 								<div class="card-body text-muted">
-									 Veterans Independence Program: the Veterans Independence Program (VIP, for short), helps veterans remain independent and self-sufficient in their homes and communities. To find out if you might qualify for benefits, contact VIP by clicking here.
+									 Veterans Independence Program: the Veterans Independence Program (VIP, for short), helps veterans remain independent and self-sufficient in their homes and communities. To find out if you might qualify for benefits, contact VIP by clicking <a href="tel:+18665222122">here</a>.
 								</div>
 							</div>
 						</div>
@@ -425,7 +426,7 @@
 							</div>
 							<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
 								<div class="card-body text-muted">
-									Guy Parent, Veterans Ombudsman: have you ever wanted talk with someone objectively about your questions, concerns, or suggestions about veterans care in Canada? Be sure to contact Guy Parent, Veterans Ombudsman, by clicking here.
+									Guy Parent, Veterans Ombudsman: have you ever wanted talk with someone objectively about your questions, concerns, or suggestions about veterans care in Canada? Be sure to contact the Veterans Ombudsman, by clicking <a href="tel:+18773304343">here</a>.
 								</div>
 							</div>
 						</div>
@@ -437,7 +438,7 @@
 							</div>
 							<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
 								<div class="card-body text-muted">
-									Royal Canadian Legion, Nova Scotia/Nunavut Command: with a misson to 'provide service to our veterans and community while keeping Remembrance and our serving military in the forefront', the Nova Scotia/Nunavut Command of the Royal Canadian Legion has a number of programs and resources to help you. Find them by clicking here.
+									Royal Canadian Legion, Nova Scotia/Nunavut Command: with a misson to 'provide service to our veterans and community while keeping Remembrance and our serving military in the forefront', the Nova Scotia/Nunavut Command of the Royal Canadian Legion has a number of programs and resources to help you. Find them by clicking <a href="http://www.ns.legion.ca/" target="_blank">here</a>.
 								</div>
 							</div>
 						</div>
@@ -449,7 +450,7 @@
 							</div>
 							<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
 								<div class="card-body text-muted">
-									YouTube &#45; Veterans Affairs Canada: VAC has gone viral. Discover a number of videos supporting our veterans by clicking here.
+									YouTube &#45; Veterans Affairs Canada: VAC has gone viral. Discover a number of videos supporting our veterans by clicking <a href="https://www.youtube.com/user/VeteransAffairsCa" target="_blank">here</a>.
 								</div>
 							</div>
 						</div>
@@ -461,7 +462,7 @@
 							</div>
 							<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
 								<div class="card-body text-muted">
-									Veterans Bill of Rights: did you know there is a special bill of rights specifically for veterans? Now you do. Click here to read it.
+									Veterans Bill of Rights: did you know there is a special bill of rights specifically for veterans? Now you do. Click <a href="http://www.veterans.gc.ca/eng/about-us/veterans-bill-of-rights/vbor" target="_blank">here</a> to read it.
 								</div>
 							</div>
 						</div>
@@ -473,7 +474,7 @@
 							</div>
 							<div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
 								<div class="card-body text-muted">
-									Veterans Affairs Minister Kent Hehr: if you would like to contact Veterans Affairs Minister Kent Hehr to discuss your questions or concerns, click here.
+									Veterans Affairs Minister Kent Hehr: if you would like to contact Veterans Affairs Minister Kent Hehr to discuss your questions or concerns, click <a href="http://www.veterans.gc.ca/eng/about-us/department-officials/minister" target="_blank">here</a>.
 								</div>
 							</div>
 						</div>
@@ -485,7 +486,7 @@
 							</div>
 							<div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
 								<div class="card-body text-muted">
-									Nova Scotia Ombudsman for Seniors' Services: if you would like to talk with someone objectively about your questions, concerns, or suggestions about senior care in Nova Scotia, email ombudsman@gov.ns.ca or dial toll free 1-800-670-1111
+									Nova Scotia Ombudsman for Seniors' Services: if you would like to talk with someone objectively about your questions, concerns, or suggestions about senior care in Nova Scotia, email <a href="mailto:ombudsman@gov.ns.ca">ombudsman@gov.ns.ca</a> or dial toll free <a href="tel:+18006701111">1-800-670-1111</a>
 								</div>
 							</div>
 						</div>
@@ -588,7 +589,7 @@
 							<div class="pb-3">
 								<h5>After Hours:</h5>
 								<p>We can be reached 24/7 by phone</p>
-								<p>Toll Free &#45; 24/7&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a></p>
+								<p>Toll Free&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a></p>
 							</div>
 						</div>
 						<hr style="border-top: 1px solid #CDCDCD;"> <!-- CHECK OUT WHY THIS ISNT DISPLAYING -->
@@ -660,11 +661,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<small class="p-2">Terms of use</small>
-						<small class="p-2">Privacy policy</small>
+						<!-- <small class="p-2">Terms of use</small> -->
+						<!-- <small class="p-2">Privacy policy</small> -->
 						<small class="p-2">&copy; Careforce Home Healthcare&#44; 2017</small>
-						<small class="p-2">Website carefully crafted by &#45; <a href="https://www.elysianwebdesign.com">Elysian Web Design</a></small>
-						<a href="https://www.elysianwebdesign.com"><img class="align-self-center" src="assets/img/logo-wh.svg" alt="Elysian Web Design Logo" width="25"></a>
+						<small class="p-2">Website carefully crafted by &#45; <a href="https://www.elysianwebdesign.com" target="_blank">Elysian Web Design</a></small>
+						<a href="https://www.elysianwebdesign.com" target="_blank"><img class="align-self-center" src="assets/img/logo-wh.svg" alt="Elysian Web Design Logo" width="25"></a>
 					</div>
 					<div class="col-lg-12 d-flex align-items-center justify-content-center">
 						<img src="assets/img/BROCHURE - BBB logo.png" alt="" class="img-fluid p-2" width="10%">

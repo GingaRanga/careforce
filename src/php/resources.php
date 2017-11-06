@@ -76,8 +76,8 @@
 
 </head>
 
-<body id="page-top">	
-	
+<body id="page-top">
+
 <!-- NAVIGATION //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 		<nav class="navbar navbar-expand-md resources-nav navbar-light bg-light fixed-top">
@@ -100,49 +100,49 @@
 				</div>
 			</div>
 		</nav>
-			
+
 <!-- CONTACT FLOAT ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
-				
-		<ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
+
+	<ul class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
 			<li class="mfb-component__wrap">
 				<!-- the main menu button -->
-				<a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
-					<!-- the main button icon visibile by default -->
-					<i class="mfb-component__main-icon--resting material-icons">add</i>
-					<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-					<i class="mfb-component__main-icon--active material-icons">clear</i>
+				<a data-mfb-label="Hover or Click this button" class="mfb-component__button--main">
+						<!-- the main button icon visibile by default -->
+						<i class="mfb-component__main-icon--resting material-icons">add</i>
+						<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
+						<i class="mfb-component__main-icon--active material-icons">clear</i>
 				</a>
 				<ul class="mfb-component__list">
 					<li>
-						<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
-						</a>
-					</li>
-					<li>
-						<a href="link.html" data-mfb-label="Give us a call" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons">phone</i>
-						</a>
-					</li>
-					<li>
-						<a href="link.html" data-mfb-label="Send us an email" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons">mail</i>
-						</a>
-					</li>
-					<li>
-						<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
-							<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
-						</a>
-					</li>
+							<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child" target="_blank">
+									<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
+									<i class="mfb-component__child-icon material-icons">phone</i>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
+									<i class="mfb-component__child-icon material-icons">mail</i>
+							</a>
+						</li>
+						<li>
+							<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
+									<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
+							</a>
+						</li>
 				</ul>
 			</li>
-		</ul>
-		
+	</ul>
+
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
 		<div class="slider header text-light">
 			<div class="header-img-1">
 				<div class="header-text d-flex flex-column justify-content-center align-items-center">
 					<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-					<p class="text-dark">Helping you live comfortably &amp; safely at home for over 25 years</p>
+					<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
 				</div>
 			</div>
 		</div>
@@ -161,92 +161,92 @@
 						<p class="font-italic">Give us a call. We'd like to help.</p>
 						<h4>Our Health Partners</h4>
 						<p>Careforce is proud to work with a number of local organizations that have demonstrated leadership and quality in health care. We encourage you to click the links below and find out how they may be able to meet your needs.</p>
-						<p><a href="http://www.family1st.ca/">Family First Medical</a></p>
-						<p><a href="https://www.cbi.ca/web/physiotherapy-new-minas-kentucky">Kings Physiotherapy</a></p>
-						<p><a href="http://northwoodintouch.com/">Northwood InTouch</a></p>
-						<p><a href="http://www.kingsriversidecourt.com/">Kings Riverside Court</a></p>
+						<p><a href="http://www.family1st.ca/" target="_blank">Family First Medical</a></p>
+						<p><a href="https://www.cbi.ca/web/physiotherapy-new-minas-kentucky" target="_blank">CBI Kings</a></p>
+						<p><a href="http://northwoodintouch.com/" target="_blank">Northwood InTouch</a></p>
+						<p><a href="http://www.kingsriversidecourt.com/" target="_blank">Kings Riverside Court</a></p>
 					</div>
 					<div class="col-lg-6 bg-info team-text-box p-3 text-light">
 						<div class="row">
 							<div class="col-lg-6">
 								<h4>Publications&#58;</h4>
-								<a href="../assets/docs/resources/2005_StrategyPositiveAging.pdf" class="btn btn-dark btn-block text-truncate">Strategy for Positive Aging in NS</a>
-								<a href="../assets/docs/resources/Aboriginal-Home-Care-Framework-summary.pdf" class="btn btn-dark btn-block text-truncate">Aboriginal Home Care Framework</a>
-								<a href="../assets/docs/resources/AgingFinalReport-e.pdf" class="btn btn-dark btn-block text-truncate">Canada's Aging Population Report</a>
-								<a href="http://www.statcan.gc.ca/pub/82-003-x/2009001/article/10801-eng.pdf" class="btn btn-dark btn-block text-truncate">Medication use Among Seniors</a>
-								<a href="../assets/docs/resources/Caregivers_Handbook_FINAL_March_2014_(1_pps).pdf" class="btn btn-dark btn-block text-truncate">The Caregiver's Handbook</a>
-								<a href="../assets/docs/resources/Final Report English 2 w.hyperlinks.pdf" class="btn btn-dark btn-block text-truncate">Seniors Housing Research</a>
-								<a href="../assets/docs/resources/hcc_report.pdf" class="btn btn-dark btn-block text-truncate">Bringing Care Home</a>
-								<a href="../assets/docs/resources/Home-Care-Fee-Structure.pdf" class="btn btn-dark btn-block text-truncate">Home Care Fee Structure</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-01_final.pdf" class="btn btn-dark btn-block text-truncate">Financial Planning</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-02_final.pdf" class="btn btn-dark btn-block text-truncate">Government Income &amp; Benefits</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-03_final.pdf" class="btn btn-dark btn-block text-truncate">Managing &amp; Protecting Assets</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-04_final.pdf" class="btn btn-dark btn-block text-truncate">Planning for Potential Loss of Independence</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-05_final.pdf" class="btn btn-dark btn-block text-truncate">Planning for Housing Needs</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-06_final.pdf" class="btn btn-dark btn-block text-truncate">Having a Will &amp; Funeral Plans</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-07_final.pdf" class="btn btn-dark btn-block text-truncate">Financial Abuse</a>
-								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-08_final.pdf" class="btn btn-dark btn-block text-truncate">Frauds &amp; Scams</a>
-								<a href="../assets/docs/resources/InTheirOwnVoices-LiteratureReview.pdf" class="btn btn-dark btn-block text-truncate">Caregivers of Persons w/ Dementia</a>
-								<a href="../assets/docs/resources/Little-Black-Book-Scams-e.pdf" class="btn btn-dark btn-block text-truncate">Black Book of Scams</a>
-								<a href="../assets/docs/resources/Making the most of your medical appointmen..pdf" class="btn btn-dark btn-block text-truncate">Preparing for Medical Appointment</a>
-								<a href="../assets/docs/resources/positive-aging-directory-2015.pdf" class="btn btn-dark btn-block text-truncate">Positive Aging Directory</a>
-								<a href="../assets/docs/resources/Responding_to_the_Challenge_Report_-_FINAL_July_7_2014.pdf" class="btn btn-dark btn-block text-truncate">Increasing Demands in Homecare</a>
-								<a href="../assets/docs/resources/Rising Tide_Full Report_Eng_FINAL_Secured version.pdf" class="btn btn-dark btn-block text-truncate">Impact of Dementia</a>
-								<a href="../assets/docs/resources/SeniorsandGambling.pdf" class="btn btn-dark btn-block text-truncate">Seniors Gambling</a>
-								<a href="../assets/docs/resources/time-for-hc-investment-is-now---may-201305df79fdc99c68708e32ff0000f8dac8.pdf" class="btn btn-dark btn-block text-truncate">Homecare Investment</a>
+								<a href="../assets/docs/resources/2005_StrategyPositiveAging.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Strategy for Positive Aging in NS</a>
+								<a href="../assets/docs/resources/Aboriginal-Home-Care-Framework-summary.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Aboriginal Home Care Framework</a>
+								<a href="../assets/docs/resources/AgingFinalReport-e.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Canada's Aging Population Report</a>
+								<a href="http://www.statcan.gc.ca/pub/82-003-x/2009001/article/10801-eng.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Medication use Among Seniors</a>
+								<a href="../assets/docs/resources/Caregivers_Handbook_FINAL_March_2014_(1_pps).pdf" class="btn btn-dark btn-block text-truncate" target="_blank">The Caregiver's Handbook</a>
+								<a href="../assets/docs/resources/Final Report English 2 w.hyperlinks.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Seniors Housing Research</a>
+								<a href="../assets/docs/resources/hcc_report.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Bringing Care Home</a>
+								<a href="../assets/docs/resources/Home-Care-Fee-Structure.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Home Care Fee Structure</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-01_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Financial Planning</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-02_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Government Income &amp; Benefits</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-03_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Managing &amp; Protecting Assets</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-04_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Planning for Potential Loss of Independence</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-05_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Planning for Housing Needs</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-06_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Having a Will &amp; Funeral Plans</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-07_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Financial Abuse</a>
+								<a href="../assets/docs/resources/HRSDC_SeniorsBrochure_EN-08_final.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Frauds &amp; Scams</a>
+								<a href="../assets/docs/resources/InTheirOwnVoices-LiteratureReview.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Caregivers of Persons w/ Dementia</a>
+								<a href="../assets/docs/resources/Little-Black-Book-Scams-e.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Black Book of Scams</a>
+								<a href="../assets/docs/resources/Making the most of your medical appointmen..pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Preparing for Medical Appointment</a>
+								<a href="../assets/docs/resources/positive-aging-directory-2015.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Positive Aging Directory</a>
+								<a href="../assets/docs/resources/Responding_to_the_Challenge_Report_-_FINAL_July_7_2014.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Increasing Demands in Homecare</a>
+								<a href="../assets/docs/resources/Rising Tide_Full Report_Eng_FINAL_Secured version.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Impact of Dementia</a>
+								<a href="../assets/docs/resources/SeniorsandGambling.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Seniors Gambling</a>
+								<a href="../assets/docs/resources/time-for-hc-investment-is-now---may-201305df79fdc99c68708e32ff0000f8dac8.pdf" class="btn btn-dark btn-block text-truncate" target="_blank">Homecare Investment</a>
 							</div>
 							<div class="col-lg-6">
 								<h4>Quick Links&#58;</h4>
-								<a href="http://ns.211.ca/service/24269954_9761559/access_a_home_program" class="btn btn-light btn-block text-truncate">Access&#45;A&#45;Home Program</a>
-								<a href="https://www.als.ca/" class="btn btn-light btn-block text-truncate">ALS Society of Canada</a>
-								<a href="http://www.alzheimer.ca/ns" class="btn btn-light btn-block text-truncate">Alzheimer Society of Nova Scotia</a>
-								<a href="https://novascotia.ca/dhw/mental-health/seniors.asp" class="btn btn-light btn-block text-truncate">NS Health Seniors Mental Health Program</a>
-								<a href="https://novascotia.ca/dhw/mental-health/seniors.asp" class="btn btn-light btn-block text-truncate">Friends in Bereavement Support Group</a>
-								<a href="https://www.bbb.org/atlantic-provinces" class="btn btn-light btn-block text-truncate">Better Business Bureau of the Maritimes</a>
-								<a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html" class="btn btn-light btn-block text-truncate">Canada Pension Plan</a>
-								<a href="http://www.cacc-acssc.com/" class="btn btn-light btn-block text-truncate">Canadian Association for Community Care</a>
-								<a href="http://www.ccc-ccan.ca/" class="btn btn-light btn-block text-truncate">Canadian Caregiver Coalition</a>
-								<a href="https://www.liver.ca/clf-chapters/locations/nova-scotia/atlantic-canada/" class="btn btn-light btn-block text-truncate">Canadian Liver Foundation Atlantic</a>
-								<a href="https://cmha.ca/" class="btn btn-light btn-block text-truncate">Canadian Mental Health Association</a>
-								<a href="http://www.cancercare.ns.ca/en/home/default.aspx" class="btn btn-light btn-block text-truncate">Cancer Care Nova Scotia</a>
-								<a href="http://caregiversns.org/" class="btn btn-light btn-block text-truncate">Caregivers Nova Scotia</a>
-								<a href="https://novascotia.ca/dhw/ccs/" class="btn btn-light btn-block text-truncate">Continuing Care NS</a>
-								<a href="http://www.ccans.info/" class="btn btn-light btn-block text-truncate">Continuing Care Association of NS</a>
-								<a href="http://www.canadabenefits.gc.ca/f.1.2c.6.3z.1rdq.5.2st.3.4ns@.jsp?lang=en" class="btn btn-light btn-block text-truncate">Government of Canada Benefits Finder</a>
-								<a href="http://www.healthassociation.ns.ca/" class="btn btn-light btn-block text-truncate">Health Association Nova Scotia</a>
-								<a href="https://www.canada.ca/en/health-canada.html" class="btn btn-light btn-block text-truncate">Health Canada</a>
-								<a href="https://www.canada.ca/en/health-canada/services/home-continuing-care.html" class="btn btn-light btn-block text-truncate">Health Canada&#58; Home &amp; Continuing Care</a>
-								<a href="https://www.canada.ca/en/health-canada/services/healthy-living/seniors.html" class="btn btn-light btn-block text-truncate">Health Canada: Seniors</a>
-								<a href="http://www.heartandstroke.ca/" class="btn btn-light btn-block text-truncate">Heart and Stroke Foundation of NS</a>
-								<a href="http://kppt.ca/" class="btn btn-light btn-block text-truncate">Kings Point to Point</a>
-								<a href="https://www.medaviebc.ca/" class="btn btn-light btn-block text-truncate">Medavie Blue Cross</a>
-								<a href="https://www.cihi.ca/en/mental-health-and-addictions" class="btn btn-light btn-block text-truncate">Mental Health Database</a>
-								<a href="https://www.nahc.org/" class="btn btn-light btn-block text-truncate">National Association for Home Care &amp; Hospice &#40;U.S.&#41;</a>
-								<a href="https://novascotia.ca/seniors/" class="btn btn-light btn-block text-truncate">Nova Scotia Department of Seniors</a>
-								<a href="http://nshpca.ca/" class="btn btn-light btn-block text-truncate">Nova Scotia Hospice Palliative Care Association</a>
-								<a href="http://www.onmemory.ca/en/signs-symptoms/memory-test?gclid=CNC49Lf6na4CFSwD" class="btn btn-light btn-block text-truncate">On Memory &#45; Caregiver's Guide to Alzheimer's</a>
-								<a href="http://www.parkinson.ca/" class="btn btn-light btn-block text-truncate">Parkinson Society Canada</a>
-								<a href="https://www.retirementhomes.com/" class="btn btn-light btn-block text-truncate">RetirementHomes.com</a>
-								<a href="https://novascotia.ca/just/prevention/tips_consumer_telemarket.asp" class="btn btn-light btn-block text-truncate">Phone Scams &amp; Fraud Alerts</a>
-								<a href="http://www.ssns.ca/" class="btn btn-light btn-block text-truncate">Schizophrenia Society of NS</a>
-								<a href="http://wellnessproposals.com/wellness-library/nutrition/handouts/senior-friendly-ideas-for-healthy-eating/" class="btn btn-light btn-block text-truncate">Senior Friendly Ideas for Healthy Eating</a>
-								<a href="https://www.servingseniors.info/" class="btn btn-light btn-block text-truncate">Serving Seniors Alliance of Professionals</a>
-								<a href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-1-individuals/folio-1-health-medical/income-tax-folio-s1-f1-c1-medical-expense-tax-credit.html" class="btn btn-light btn-block text-truncate">Tax Information&#58; Claiming Home Care Expenses</a>
-								<a href="http://www.carp.ca/" class="btn btn-light btn-block text-truncate">The Canadian Association of Retired Persons</a>
-								<a href="http://www.veterans.gc.ca/eng/" class="btn btn-light btn-block text-truncate">Veterans Affairs Canada</a>
-								<a href="http://www.veterans.gc.ca/eng/services/health/veterans-independence-program" class="btn btn-light btn-block text-truncate">Veterans Independence Program</a>
-								<a href="https://www.wcb.ns.ca/" class="btn btn-light btn-block text-truncate">Workers Compensation Board</a>
+								<a href="http://ns.211.ca/service/24269954_9761559/access_a_home_program" class="btn btn-light btn-block text-truncate" target="_blank">Access&#45;A&#45;Home Program</a>
+								<a href="https://www.als.ca/" class="btn btn-light btn-block text-truncate" target="_blank">ALS Society of Canada</a>
+								<a href="http://www.alzheimer.ca/ns" class="btn btn-light btn-block text-truncate" target="_blank">Alzheimer Society of Nova Scotia</a>
+								<a href="https://novascotia.ca/dhw/mental-health/seniors.asp" class="btn btn-light btn-block text-truncate" target="_blank">NS Health Seniors Mental Health Program</a>
+								<a href="https://novascotia.ca/dhw/mental-health/seniors.asp" class="btn btn-light btn-block text-truncate" target="_blank">Friends in Bereavement Support Group</a>
+								<a href="https://www.bbb.org/atlantic-provinces" class="btn btn-light btn-block text-truncate" target="_blank">Better Business Bureau of the Maritimes</a>
+								<a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html" class="btn btn-light btn-block text-truncate" target="_blank">Canada Pension Plan</a>
+								<a href="http://www.cacc-acssc.com/" class="btn btn-light btn-block text-truncate" target="_blank">Canadian Association for Community Care</a>
+								<a href="http://www.ccc-ccan.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Canadian Caregiver Coalition</a>
+								<a href="https://www.liver.ca/clf-chapters/locations/nova-scotia/atlantic-canada/" class="btn btn-light btn-block text-truncate" target="_blank">Canadian Liver Foundation Atlantic</a>
+								<a href="https://cmha.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Canadian Mental Health Association</a>
+								<a href="http://www.cancercare.ns.ca/en/home/default.aspx" class="btn btn-light btn-block text-truncate" target="_blank">Cancer Care Nova Scotia</a>
+								<a href="http://caregiversns.org/" class="btn btn-light btn-block text-truncate" target="_blank">Caregivers Nova Scotia</a>
+								<a href="https://novascotia.ca/dhw/ccs/" class="btn btn-light btn-block text-truncate" target="_blank">Continuing Care NS</a>
+								<a href="http://www.ccans.info/" class="btn btn-light btn-block text-truncate" target="_blank">Continuing Care Association of NS</a>
+								<a href="http://www.canadabenefits.gc.ca/f.1.2c.6.3z.1rdq.5.2st.3.4ns@.jsp?lang=en" class="btn btn-light btn-block text-truncate" target="_blank">Government of Canada Benefits Finder</a>
+								<a href="http://www.healthassociation.ns.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Health Association Nova Scotia</a>
+								<a href="https://www.canada.ca/en/health-canada.html" class="btn btn-light btn-block text-truncate" target="_blank">Health Canada</a>
+								<a href="https://www.canada.ca/en/health-canada/services/home-continuing-care.html" class="btn btn-light btn-block text-truncate" target="_blank">Health Canada&#58; Home &amp; Continuing Care</a>
+								<a href="https://www.canada.ca/en/health-canada/services/healthy-living/seniors.html" class="btn btn-light btn-block text-truncate" target="_blank">Health Canada: Seniors</a>
+								<a href="http://www.heartandstroke.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Heart and Stroke Foundation of NS</a>
+								<a href="http://kppt.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Kings Point to Point</a>
+								<a href="https://www.medaviebc.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Medavie Blue Cross</a>
+								<a href="https://www.cihi.ca/en/mental-health-and-addictions" class="btn btn-light btn-block text-truncate" target="_blank">Mental Health Database</a>
+								<a href="https://www.nahc.org/" class="btn btn-light btn-block text-truncate" target="_blank">National Association for Home Care &amp; Hospice &#40;U.S.&#41;</a>
+								<a href="https://novascotia.ca/seniors/" class="btn btn-light btn-block text-truncate" target="_blank">Nova Scotia Department of Seniors</a>
+								<a href="http://nshpca.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Nova Scotia Hospice Palliative Care Association</a>
+								<a href="http://www.onmemory.ca/en/signs-symptoms/memory-test?gclid=CNC49Lf6na4CFSwD" class="btn btn-light btn-block text-truncate" target="_blank">On Memory &#45; Caregiver's Guide to Alzheimer's</a>
+								<a href="http://www.parkinson.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Parkinson Society Canada</a>
+								<a href="https://www.retirementhomes.com/" class="btn btn-light btn-block text-truncate" target="_blank">RetirementHomes.com</a>
+								<a href="https://novascotia.ca/just/prevention/tips_consumer_telemarket.asp" class="btn btn-light btn-block text-truncate" target="_blank">Phone Scams &amp; Fraud Alerts</a>
+								<a href="http://www.ssns.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Schizophrenia Society of NS</a>
+								<a href="http://wellnessproposals.com/wellness-library/nutrition/handouts/senior-friendly-ideas-for-healthy-eating/" class="btn btn-light btn-block text-truncate" target="_blank">Senior Friendly Ideas for Healthy Eating</a>
+								<a href="https://www.servingseniors.info/" class="btn btn-light btn-block text-truncate" target="_blank">Serving Seniors Alliance of Professionals</a>
+								<a href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-1-individuals/folio-1-health-medical/income-tax-folio-s1-f1-c1-medical-expense-tax-credit.html" class="btn btn-light btn-block text-truncate" target="_blank">Tax Information&#58; Claiming Home Care Expenses</a>
+								<a href="http://www.carp.ca/" class="btn btn-light btn-block text-truncate" target="_blank">The Canadian Association of Retired Persons</a>
+								<a href="http://www.veterans.gc.ca/eng/" class="btn btn-light btn-block text-truncate" target="_blank">Veterans Affairs Canada</a>
+								<a href="http://www.veterans.gc.ca/eng/services/health/veterans-independence-program" class="btn btn-light btn-block text-truncate" target="_blank">Veterans Independence Program</a>
+								<a href="https://www.wcb.ns.ca/" class="btn btn-light btn-block text-truncate" target="_blank">Workers Compensation Board</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	
 
-	
+
+
 <!-- FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	
+
 		<section id="contact" class="footer">
 			<footer>
 				<div>
@@ -351,11 +351,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<small class="p-2">Terms of use</small>
-							<small class="p-2">Privacy policy</small>
+							<!-- <small class="p-2">Terms of use</small> -->
+							<!-- <small class="p-2">Privacy policy</small> -->
 							<small class="p-2">&copy; Careforce Home Healthcare&#44; 2017</small>
-							<small class="p-2">Website carefully crafted by &#45; <a href="https://www.elysianwebdesign.com">Elysian Web Design</a></small>
-							<a href="https://www.elysianwebdesign.com"><img class="align-self-center" src="../assets/img/logo-wh.svg" alt="Elysian Web Design Logo" width="25"></a>
+							<small class="p-2">Website carefully crafted by &#45; <a href="https://www.elysianwebdesign.com" target="_blank">Elysian Web Design</a></small>
+							<a href="https://www.elysianwebdesign.com" target="_blank"><img class="align-self-center" src="../assets/img/logo-wh.svg" alt="Elysian Web Design Logo" width="25"></a>
 						</div>
 						<div class="col-lg-12 d-flex align-items-center justify-content-center">
 							<img src="../assets/img/BROCHURE - BBB logo.png" alt="" class="img-fluid p-2" width="10%">
