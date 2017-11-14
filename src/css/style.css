@@ -22,6 +22,9 @@ section {
 h1 {
   text-transform: uppercase; }
 
+img {
+  overflow: hidden; }
+
 .material-icons {
   color: #fff; }
 
@@ -132,9 +135,6 @@ nav {
   background: rgba(0, 0, 0, 0.61);
   color: #fff; }
 
-#quicklook {
-  margin-top: -10px; }
-
 .icon {
   background: #756458;
   width: 100px;
@@ -160,6 +160,10 @@ i.icon {
   #testimonials .blockquote-footer {
     color: rgba(255, 255, 255, 0.6); }
 
+@media (max-width: 768px) {
+  #testimonials {
+    background-attachment: scroll; } }
+
 #career {
   background: #756458; }
   #career hr.style15:after {
@@ -167,7 +171,6 @@ i.icon {
 
 #services {
   margin-top: -10px;
-  padding: 55px 0 10px;
   background: #f8f9fa; }
   #services hr.style15:after {
     background: #f8f9fa; }

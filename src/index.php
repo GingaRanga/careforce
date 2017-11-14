@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26894530-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-26894530-1');
+	</script>
+
 	<!-- FIRST THREE REQUIRED META -->
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -61,11 +71,11 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target="#scroller">
 
 <!-- NAVIGATION //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-	<nav class="navbar navbar-expand-md main-nav navbar-light bg-light fixed-top">
+	<nav class="navbar navbar-expand-md main-nav navbar-light bg-light fixed-top" id="scroller">
 		<a href="#page-top" class="navbar-brand">
 			<img src="assets/img/brand-logo-trans-2.svg" alt="company logo" width="150" height="50">
 		</a>
@@ -124,7 +134,7 @@
 	</ul>
 
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
-	<div class="slider hero text-light">
+	<div class="hero text-light">
 		<div class="hero-img-1">
 			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
 				<img src="assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
@@ -135,105 +145,16 @@
 				<!-- <a href="" class="btn btn-info disabled">Apply Here</a> -->
 			</div>
 		</div>
-		<div class="hero-img-2">
-			<div class="card hero-card hero-social">
-  				<h4 class="card-header">Check us out on Facebook</h4>
-  				<div class="card-body text-center">
-					<!--<h4 class="card-title">Special title treatment</h4>
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-					<a href="https://www.facebook.com/careforcehomecare" target="_blank"><i class="material-icons fa fa-facebook-official fa-3x"></i></a>
-  				</div>
-			</div>
-		</div>
 	</div>
 
 <!-- QUICK LOOK BANNER ///////////////////////////////////////////////////////////////////////////////////////////////// -->
-	<section class="bg-light text-center title" id="services">
+	<section class="bg-light" id="services">
 		<div class="container">
-			<h1>Our Services</h1>
-			<hr class="style15">
-			<p>We provide flexibility in all that we do. Our hours and services are designed around your lifestyle. We will adapt our home care services to meet your requirements whether for a change in your health or your schedule. From assistance in caring for someone with Alzheimers to providing a helping hand while recovering from a hospital stay, a visit from Careforce is always a visit you can look forward to.</p>
-		</div>
-		<div class="quick">
-			<div class="p-4">
-				<i class="fa fa-fast-forward fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Immediate Response</h5>
-				<p class="text-secondary">Peace of mind - days, evenings and weekends with staffed phone service and short notice availability.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-handshake-o fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Joyful Companionship</h5>
-				<p class="text-secondary">A bright spot in your day - conversation, walks, social outings and more.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-shopping-cart fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Outings, Errands and Appointments</h5>
-				<p class="text-secondary">Getting where you want with ease - groceries, pharmacy, visiting friends, classes and more.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-user-md fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Alzheimer &amp; Dementia Care</h5>
-				<p class="text-secondary">Expect patience and compassion - creative and knowledgeable support when you need it.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-suitcase fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Workers Compensation care provider</h5>
-				<p class="text-secondary">Careforce is an approved provider for the Workers Compensation Board of Nova Scotia, providing care for you when you're unable to return to work.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-bath fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Personal Care</h5>
-				<p class="text-secondary">Nurture your health and personal style - dignified and respectful care to suit your needs.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-bed fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Drop-ins and Check-ins</h5>
-				<p class="text-secondary">Comfort and well-being when a short visit is all you need.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-cutlery fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Housekeeping, Laundry, Meal Planning and Preparation</h5>
-				<p class="text-secondary">Your home kept the way you like it and your favourite meals prepared the way you expect they should be.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-refresh fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Respite Care</h5>
-				<p class="text-secondary">Take some time to rejuvenate, relax or regroup - support for those taking care of others.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-heart fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Palliative Care</h5>
-				<p class="text-secondary">Tenderness and dignity - gracious, end-of-life support for you and your family.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-anchor fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Veterans Affairs and Insurance Provider</h5>
-				<p class="text-secondary">Easily access the benefits you need - we are an approved provider for V.A.C. or insurance coverage.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-pie-chart fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Liaison Services</h5>
-				<p class="text-secondary">Help with the paperwork and navigating the health system.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-car fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Transportation</h5>
-				<p class="text-secondary">Getting you to appointments, social outings, and other important events.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-medkit fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Hospital and Nursing Home Visits</h5>
-				<p class="text-secondary">A friend by your side when you need extra support.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-moon-o fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Overnight, Weekend, and Holiday Care</h5>
-				<p class="text-secondary">Whenever you need us, we will be there; 24 hours a day, 365 days a year.</p>
-			</div>
-			<div class="p-4">
-				<i class="fa fa-phone fa-3x icon rounded-circle" aria-hidden="true"></i>
-				<h5 class="title pt-2">Nurse On Call</h5>
-				<p class="text-secondary">A knowledgeable resource - personal and professional advice when you need it 24 hours a day, seven days a week.</p>
+			<div class="text-center title">
+				<h1>Our Services</h1>
+				<hr class="style15">
+				<p>We provide flexibility in all that we do. Our hours and services are designed around your lifestyle. We will adapt our home care services to meet your requirements whether for a change in your health or your schedule. From assistance in caring for someone with Alzheimers to providing a helping hand while recovering from a hospital stay, a visit from Careforce is always a visit you can look forward to.</p>
+				<a href="php/services.php"><button type="submit" class="btn btn-info">View all Services Here</button></a>
 			</div>
 		</div>
 	</section>
@@ -241,10 +162,12 @@
 <!-- ABOUT SECTION ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 	<section id="about">
-		<div class="container text-center title">
-			<h1>About Us</h1>
-			<hr class="style15">
-			<p>Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia. We are an approved provider for Veterans Affairs Canada, the Workers' Compensation Board, and most insurance companies.</p>
+		<div class="container">
+			<div class="text-center title">
+				<h1>About Us</h1>
+				<hr class="style15">
+				<p>Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia. We are an approved provider for Veterans Affairs Canada, the Workers' Compensation Board, and most insurance companies.</p>
+			</div>
 		</div>
 		<div class="container">
 			<ul class="nav nav-pills mb-3 text nav-justified" id="pills-tab" role="tablist">
@@ -357,23 +280,15 @@
 		</div>
 	</section>
 
-<!-- CAREER //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-	<!-- <section id="career">
-		<div class="container text-center title">
-			<h1>Join Our Team</h1>
-			<hr class="style15">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non delectus quasi totam earum mollitia.</p>
-		</div>
-	</section> -->
-
 <!-- TEAM //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 	<section id="veterans">
-		<div class="container text-center title">
-			<h1>A top choice for veterans</h1>
-			<hr class="style15">
-			<p>Careforce has always been proud to provide professional home care for veterans across the Annapolis Valley. Serving veterans and their families constantly reminds us of the tremendous contributions they have made - and continue to make - to our communities. It is our privelige to serve you.</p>
+		<div class="container">
+			<div class="text-center title">
+				<h1>A top choice for veterans</h1>
+				<hr class="style15">
+				<p>Careforce has always been proud to provide professional home care for veterans across the Annapolis Valley. Serving veterans and their families constantly reminds us of the tremendous contributions they have made - and continue to make - to our communities. It is our privelige to serve you.</p>
+			</div>
 		</div>
 		<div class="container">
 			<div class="row">
@@ -512,10 +427,12 @@
 <!-- SERVICES ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 	<section id="team">
-		<div class="container text-center title">
-			<h1>Service with a Smile</h1>
-			<hr class="style15">
-			<p>Choosing to receive assistance in your home can be a new and stressful experience; that's why the caregiver has to be someone you can trust.</p>
+		<div class="container">
+			<div class="text-center title">
+				<h1>Service with a Smile</h1>
+				<hr class="style15">
+				<p>Choosing to receive assistance in your home can be a new and stressful experience; that's why the caregiver has to be someone you can trust.</p>
+			</div>
 		</div>
 		<div class="container">
 			<div class="row">

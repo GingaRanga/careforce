@@ -90,6 +90,7 @@
 
 			<div class="collapse navbar-collapse justify-content-end" id="resourcesNav">
 				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="../index.php">Home</a>
 					<a class="nav-item nav-link" href="../index.php#services">Our Services</a>
 					<a class="nav-item nav-link" href="../index.php#about">About Careforce</a>
 					<a class="nav-item nav-link" href="../index.php#veterans">Veterans</a>
@@ -138,7 +139,7 @@
 	</ul>
 
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
-		<div class="slider header text-light">
+		<div class="header text-light">
 			<div class="header-img-1">
 				<div class="header-text d-flex flex-column justify-content-center align-items-center">
 					<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">

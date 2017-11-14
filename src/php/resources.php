@@ -90,6 +90,7 @@
 
 			<div class="collapse navbar-collapse justify-content-end" id="resourcesNav">
 				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="../index.php">Home</a>
 					<a class="nav-item nav-link" href="../index.php#services">Our Services</a>
 					<a class="nav-item nav-link" href="../index.php#about">About Careforce</a>
 					<a class="nav-item nav-link" href="../index.php#veterans">Veterans</a>
