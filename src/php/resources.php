@@ -119,16 +119,18 @@
 									<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
 							</a>
 						</li>
+						<!--
 						<li>
-							<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
-									<i class="mfb-component__child-icon material-icons">phone</i>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
-									<i class="mfb-component__child-icon material-icons">mail</i>
-							</a>
-						</li>
+        			<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
+          				<i class="mfb-component__child-icon material-icons">phone</i>
+        			</a>
+      			</li>
+      			<li>
+        			<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
+          				<i class="mfb-component__child-icon material-icons">mail</i>
+        			</a>
+      			</li>
+						-->
 						<li>
 							<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
 									<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
@@ -139,14 +141,18 @@
 	</ul>
 
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
-		<div class="slider header text-light">
-			<div class="header-img-1">
-				<div class="header-text d-flex flex-column justify-content-center align-items-center">
-					<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-					<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
-				</div>
-			</div>
+<div class="header text-light">
+	<div class="header-img-1">
+		<div class="hero-text d-flex flex-column justify-content-center align-items-center">
+			<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
+			<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
 		</div>
+		<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
+			<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion</p>
+			<!-- <a href="" class="btn btn-info disabled">Apply Here</a> -->
+		</div>
+	</div>
+</div>
 
 	<section id="team">
 			<div class="container text-center title">

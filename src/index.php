@@ -93,6 +93,11 @@
 				<a class="nav-item nav-link" href="php/resources.php">Resources</a>
 				<a class="nav-item nav-link disabled" href="#">Events</a>
 				<a class="nav-item nav-link" href="php/faqs.php">FAQs</a>
+
+				<!--- Secure Site Seal - DO NOT EDIT --->
+				<span id="ss_img_wrapper_115-55_image_en"><a href="http://www.alphassl.com/ssl-certificates/wildcard-ssl.html" target="_blank" title="SSL Certificates"><img alt="Wildcard SSL Certificates" border=0 id="ss_img" src="//seal.alphassl.com/SiteSeal/images/alpha_noscript_115-55_en.gif" title="SSL Certificate"></a></span><script type="text/javascript" src="//seal.alphassl.com/SiteSeal/alpha_image_115-55_en.js"></script>
+				<!--- Secure Site Seal - DO NOT EDIT --->
+
 			</div>
 		</div>
 	</nav>
@@ -114,7 +119,8 @@
           				<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
         			</a>
       			</li>
-      			<li>
+      			<!--
+						<li>
         			<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
           				<i class="mfb-component__child-icon material-icons">phone</i>
         			</a>
@@ -124,6 +130,7 @@
           				<i class="mfb-component__child-icon material-icons">mail</i>
         			</a>
       			</li>
+						-->
       			<li>
         			<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
           				<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
@@ -280,29 +287,29 @@
 		</div>
 	</section>
 
-<!-- TEAM //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- VETERANS //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-	<section id="veterans">
+	<section id="veterans" class="text-center">
 		<div class="container">
-			<div class="text-center title">
-				<h1>A top choice for veterans</h1>
-				<hr class="style15">
-				<p>Careforce has always been proud to provide professional home care for veterans across the Annapolis Valley. Serving veterans and their families constantly reminds us of the tremendous contributions they have made - and continue to make - to our communities. It is our privelige to serve you.</p>
-			</div>
-		</div>
-		<div class="container">
+			<div class="row pb-5">
+				<div class="col-lg-2">
+				</div>
+				<div class="col-lg-8">
+					<h1>A top choice for veterans</h1>
+					<hr class="style15">
+					<p>Careforce has always been proud to provide professional home care for veterans across the Annapolis Valley. Serving veterans and their families constantly reminds us of the tremendous contributions they have made - and continue to make - to our communities. It is our privelige to serve you.</p>
+				</div>
+				<div class="col-lg-2">
+				</div>
+			</div><!-- ./row -->
 			<div class="row">
 				<div class="col-lg-4 pb-4">
-					<div class="card bg-light" style="width: 20rem;">
-  						<img class="card-img-top img-fluid" src="assets/img/carousel-2.jpg" alt="veterans">
-  						<div class="card-body">
-    						<div class="card-text">
-    							<blockquote class="blockquote">
-									<p class="text-primary">As we express our gratitude&#44; we must never forget that the highest appreciation is not to utter words&#44; but to live by them.</p>
-									<footer class="blockquote-footer"><cite title="Source Title">JFK</cite></footer>
-								</blockquote>
-    						</div>
-  						</div>
+					<div class="bg-light">
+  					<img class="img-fluid" src="assets/img/carousel-2.jpg" alt="veterans">
+						<blockquote class="blockquote p-3">
+							<p class="text-primary">As we express our gratitude&#44; we must never forget that the highest appreciation is not to utter words&#44; but to live by them.</p>
+							<footer class="blockquote-footer"><cite title="Source Title">JFK</cite></footer>
+						</blockquote>
 					</div>
 				</div>
 
@@ -409,19 +416,15 @@
 				</div>
 
 				<div class="col-lg-4 pb-4">
-					<div class="card bg-light" style="width: 20rem;">
-  						<img class="card-img-top img-fluid" src="assets/img/Veteran+in+London+Ont.jpg" alt="veteran and child">
-  						<div class="card-body">
-    						<div class="card-text">
-    							<blockquote class="text-secondary">
-									<p class="text-primary">Careforce is an approved service provider for Veterans Affairs Canada. And after serving veterans for 25 years, we have learned a great deal about different programs, services, and contacts that are important to our veterans. Following are a few of the important ones</p>
-								</blockquote>
-    						</div>
-  						</div>
+					<div class="bg-light">
+						<img class="img-fluid" src="assets/img/Veteran+in+London+Ont.jpg" alt="veteran and child">
+						<blockquote class="text-secondary p-3">
+							<p class="text-primary">Careforce is an approved service provider for Veterans Affairs Canada. And after serving veterans for 25 years, we have learned a great deal about different programs, services, and contacts that are important to our veterans. Following are a few of the important ones</p>
+						</blockquote>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div><!-- ./row -->
+		</div><!-- ./container -->
 	</section>
 
 <!-- SERVICES ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->

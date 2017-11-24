@@ -119,16 +119,18 @@
 									<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
 							</a>
 						</li>
+						<!--
 						<li>
-							<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
-									<i class="mfb-component__child-icon material-icons">phone</i>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
-									<i class="mfb-component__child-icon material-icons">mail</i>
-							</a>
-						</li>
+        			<a href="tel:+18669661466" data-mfb-label="Give us a call" class="mfb-component__button--child">
+          				<i class="mfb-component__child-icon material-icons">phone</i>
+        			</a>
+      			</li>
+      			<li>
+        			<a href="mailto:careforce@careforce.ca" data-mfb-label="Send us an email" class="mfb-component__button--child">
+          				<i class="mfb-component__child-icon material-icons">mail</i>
+        			</a>
+      			</li>
+						-->
 						<li>
 							<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
 									<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
@@ -139,104 +141,117 @@
 	</ul>
 
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////////////// -->
-		<div class="header text-light">
-			<div class="header-img-1">
-				<div class="header-text d-flex flex-column justify-content-center align-items-center">
-					<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-					<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
-				</div>
+
+	<div class="header text-light">
+		<div class="header-img-1">
+			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
+				<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
+				<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
+			</div>
+			<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
+				<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion</p>
+				<!-- <a href="" class="btn btn-info disabled">Apply Here</a> -->
 			</div>
 		</div>
+	</div>
 
-	<section id="team" class="faqs">
-			<div class="container text-center title">
-				<h1>FAQs</h1>
-				<hr class="style15 pb-5">
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="bg-info p-3 team-text-box d-lg-flex">
-						<div class="col-lg-6">
-							<div class="box-wrap team-text-box bg-white p-3 pb-5">
-								<img src="../assets/img/13094357_965683940211742_3756470729012285577_n.jpg" alt="" class="img-fluid pb-3">
-								<h5 class="pt-5">What area do you cover&#63;</h5>
-								<p>Careforce currently provides service in Nova Scotia's Annapolis Valley, from Windsor to Bridgetown. Our office is at 6 Webster Court&#44; Kentville&#44; NS&#44; B4N 1H2.</p>
-								<hr>
-								<h5>Who pays for my care&#63;</h5>
-								<p>Many personal Insurance companies cover personal care. We are a registered provider with Blue Cross, Veterans' Affairs Canada, and the Workers' Compensation Board, and can direct bill for eligible individuals. Many other clients simply pay Careforce directly.</p>
-								<hr>
-								<h5>What are Careforce's rates/fees&#63;</h5>
-								<p>Initial in-home consultations with a Nurse are always offered at no charge. Careforce's rates depend on a number of factors - to see all of our rates or to arrange your free consultation, please call or email us at&#58;<br>
-									Regular Phone&#58; <a href="tel:+19023653155">&#40;902&#41; 365&#45;3155</a><br>
-									Toll Free &#45; 24/7&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a><br>Email&#58;<a href="mailto:careforce@careforce.ca"> careforce@careforce.ca</a></p>
-								<hr>
-								<h5>How will I be billed?</h5>
-								<p>You can choose between pre-authorized weekly payments, lump sum payments, or - in some cases - you may be invoiced bi-weekly. Please ask us for details.</p>
-								<hr>
-								<h5>How can I pay&#63;</h5>
-								<p>Careforce currently accepts cash, cheque, and electronic funds transfers. Please contact us to discuss these options.</p>
-								<hr>
-								<h5>How soon can you be here&#63;</h5>
-								<p>Our goal is to meet your care needs whenever they might occur. To ensure your needs are met, an initial nursing assessment is completed by our Nurse. Service can begin shortly thereafter, often the same day that you call.</p>
-								<hr>
-								<h5>I see that Careforce is a local worker cooperative. What does that mean&#63;</h5>
-								<p>Careforce is proud to be a local (Annapolis Valley) business, hiring local caregivers. Being a worker cooperative means that our business is owned by its employees (which means they are more heavily invested in providing first class care for our clients). When you call Careforce, you always get a human on the other end, and you can also count on Careforce to support local events and charities.</p>
-								<hr>
-								<h5>What is the free in-home consultation like&#63;</h5>
-								<p>When you call for a free in-home consultation, we will send our friendly Nurse to your home to meet with you (and any family members you may wish to have attend). To ensure the highest quality of personalized care, she will ask you some questions about your health and care preferences. This process normally takes 1-2 hours. You are under no obligation to choose Careforce during or after your in-home consultation; we will never pressure you.</p>
-								<hr>
-								<h5>How do you decide which caregiver&#40;s&#41; provide care for me&#63;</h5>
-								<p>After meeting you during the in-home consultation, Careforce will review your needs and choose caregivers we believe are best suited to meet your health needs. We will also ensure we choose caregivers who are a good match for your personality and preferred lifestyle.</p>
-								<hr>
-								<h5>I am a concerned family member. Can I be included in the care process&#63;</h5>
-								<p>Absolutely! Our experience has been that the more a client's family is involved in their care, the better. Our care team is always happy to sit down with a client's family members to discuss our approach, and how you can help ensure the best outcomes for your loved one.</p>
-								<hr>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="box-wrap team-text-box bg-white p-3">
-								<h5>What are the hours staff are available&#63;</h5>
-								<p>Caregivers are available 24 hours a day, 7 days a week, 365 days a year. Statutory holidays are billed at 1.5 times our regular rate.</p>
-								<hr>
-								<h5>Do you prepare meals&#63;</h5>
-								<p>Yes – we can accommodate specialty diets and personal taste preferences. We can assist with meal planning and advanced meal preparation.</p>
-								<hr>
-								<h5>Can you run errands for/with me&#63;</h5>
-								<p>Yes – We will run errands for you or with you, including but not limited to; doctor, drug store, grocery store, bank, and hair appointments.</p>
-								<hr>
-								<h5>What about vehicles and mileage&#63;</h5>
-								<p>Our staff are able to use your road-worthy vehicle or they may use their own. There is a mileage fee charged for the use of a caregiver's vehicle. There is never, however, any mileage fee charged for our caregivers to come to and from your home.</p>
-								<hr>
-								<h5>What about pets&#63;</h5>
-								<p>We welcome pets that are well behaved.</p>
-								<hr>
-								<h5>What housekeeping do you do&#63;</h5>
-								<p>We manage and maintain general cleanliness of the home.</p>
-								<hr>
-								<h5>How many caregivers will I see&#63;</h5>
-								<p>It is important that you receive service from caregivers that you are familiar and comfortable with. Normally, we encourage a team of 3-7 caregivers depending on the number of care hours you require.</p>
-								<hr>
-								<h5>Do I have to enter into a long-term contract with Careforce&#63;</h5>
-								<p>No. Careforce will never ask you to enter into a long-term contract. You are free to discontinue care whenever you choose without any penalty.</p>
-								<hr>
-								<h5>What kind of training do your caregivers have&#63;</h5>
-								<p>Our caregivers are very carefully screened before they begin work with Careforce. They are fully insured and complete a successful criminal record and vulnerable sector check prior to being hired. All caregivers possess an up-to-date First Aid/CPR certification, and effective January 1, 2015, all caregivers will possess valid WHMIS and Food Handler's certificates. Many of our caregivers possess the CCA designation, and others have comparable experience. Many have completed the Alzheimer's Disease and Other Dementias Care Course and the Palliative Care Frontline Education course. We will always match you with a caregiver who is trained to meet your needs. Our caregivers also receive regular in-service training to continue building their caregiving skills.</p>
-								<hr>
-								<h5>You say that Careforce is &#39;person-focused&#39; and not &#39;task-focused&#39;. What do you mean by that&#63;</h5>
-								<p>When you choose Careforce, you can count on a caregiver who is focused not only on completing tasks (i.e. cleaning, cooking, etc), but who also shows care for you as a person. Our clients love the holistic experience they receive from us.</p>
-								<hr>
-								<h5>Are you government funded&#63;</h5>
-								<p>No. Careforce is a private worker-owned cooperative, and is not funded by any public health agency. However, we do aim to work closely with any other professionals who may be providing care for you, and our ultimate aim is to improve your quality of life. Often Careforce is chosen as a top-up provider for individuals who feel their home care needs are not fully met by publicly funded care services.</p>
-								<hr>
-								<h5>Tell me about your client confidentiality and privacy policy.</h5>
-								<p>We could print our entire policy here, but it would take far too much space. Careforce goes to great lengths to protect the privacy and confidentiality of all our clients. Although we share information between our staff members so that we can provide the best possible care for our clients, we never share any information with people who do not need to know it.</p>
-								<img src="../assets/img/arm-shoulder.png" alt="" class="img-fluid">
-							</div>
-						</div>
-					</div>
+<!-- FAQS SECTION ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<section id="faqs" class="text-center">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2">
+				</div>
+				<div class="col-lg-8">
+					<h1>FAQs</h1>
+					<hr class="style15 pb-5">
+				</div>
+				<div class="col-lg-2">
 				</div>
 			</div>
-		</section>
+			<div class="row no-gutters">
+				<div class="bg-info team-text-box d-flex">
+					<div class="col-lg-6">
+						<div class="box-wrap team-text-box bg-white p-2 m-2 text-left">
+							<img src="../assets/img/13094357_965683940211742_3756470729012285577_n.jpg" alt="" class="img-fluid mb-3">
+							<h5>What area do you cover&#63;</h5>
+							<p>Careforce currently provides service in Nova Scotia's Annapolis Valley, from Windsor to Bridgetown. Our office is at 6 Webster Court&#44; Kentville&#44; NS&#44; B4N 1H2.</p>
+							<hr>
+							<h5>Who pays for my care&#63;</h5>
+							<p>Many personal Insurance companies cover personal care. We are a registered provider with Blue Cross, Veterans' Affairs Canada, and the Workers' Compensation Board, and can direct bill for eligible individuals. Many other clients simply pay Careforce directly.</p>
+							<hr>
+							<h5>What are Careforce's rates/fees&#63;</h5>
+							<p>Initial in-home consultations with a Nurse are always offered at no charge. Careforce's rates depend on a number of factors - to see all of our rates or to arrange your free consultation, please call or email us at&#58;<br>
+								Regular Phone&#58; <a href="tel:+19023653155">&#40;902&#41; 365&#45;3155</a><br>
+								Toll Free &#45; 24/7&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a><br>Email&#58;<a href="mailto:careforce@careforce.ca"> careforce@careforce.ca</a></p>
+							<hr>
+							<h5>How will I be billed?</h5>
+							<p>You can choose between pre-authorized weekly payments, lump sum payments, or - in some cases - you may be invoiced bi-weekly. Please ask us for details.</p>
+							<hr>
+							<h5>How can I pay&#63;</h5>
+							<p>Careforce currently accepts cash, cheque, and electronic funds transfers. Please contact us to discuss these options.</p>
+							<hr>
+							<h5>How soon can you be here&#63;</h5>
+							<p>Our goal is to meet your care needs whenever they might occur. To ensure your needs are met, an initial nursing assessment is completed by our Nurse. Service can begin shortly thereafter, often the same day that you call.</p>
+							<hr>
+							<h5>I see that Careforce is a local worker cooperative. What does that mean&#63;</h5>
+							<p>Careforce is proud to be a local (Annapolis Valley) business, hiring local caregivers. Being a worker cooperative means that our business is owned by its employees (which means they are more heavily invested in providing first class care for our clients). When you call Careforce, you always get a human on the other end, and you can also count on Careforce to support local events and charities.</p>
+							<hr>
+							<h5>What is the free in-home consultation like&#63;</h5>
+							<p>When you call for a free in-home consultation, we will send our friendly Nurse to your home to meet with you (and any family members you may wish to have attend). To ensure the highest quality of personalized care, she will ask you some questions about your health and care preferences. This process normally takes 1-2 hours. You are under no obligation to choose Careforce during or after your in-home consultation; we will never pressure you.</p>
+							<hr>
+							<h5>How do you decide which caregiver&#40;s&#41; provide care for me&#63;</h5>
+							<p>After meeting you during the in-home consultation, Careforce will review your needs and choose caregivers we believe are best suited to meet your health needs. We will also ensure we choose caregivers who are a good match for your personality and preferred lifestyle.</p>
+							<hr>
+							<h5>I am a concerned family member. Can I be included in the care process&#63;</h5>
+							<p>Absolutely! Our experience has been that the more a client's family is involved in their care, the better. Our care team is always happy to sit down with a client's family members to discuss our approach, and how you can help ensure the best outcomes for your loved one.</p>
+							<hr>
+						</div><!-- ./box-wrap -->
+					</div><!-- ./col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="box-wrap team-text-box bg-white p-2 m-2 text-left">
+							<h5 class="pt-4">What are the hours staff are available&#63;</h5>
+							<p>Caregivers are available 24 hours a day, 7 days a week, 365 days a year. Statutory holidays are billed at 1.5 times our regular rate.</p>
+							<hr>
+							<h5>Do you prepare meals&#63;</h5>
+							<p>Yes – we can accommodate specialty diets and personal taste preferences. We can assist with meal planning and advanced meal preparation.</p>
+							<hr>
+							<h5>Can you run errands for/with me&#63;</h5>
+							<p>Yes – We will run errands for you or with you, including but not limited to; doctor, drug store, grocery store, bank, and hair appointments.</p>
+							<hr>
+							<h5>What about vehicles and mileage&#63;</h5>
+							<p>Our staff are able to use your road-worthy vehicle or they may use their own. There is a mileage fee charged for the use of a caregiver's vehicle. There is never, however, any mileage fee charged for our caregivers to come to and from your home.</p>
+							<hr>
+							<h5>What about pets&#63;</h5>
+							<p>We welcome pets that are well behaved.</p>
+							<hr>
+							<h5>What housekeeping do you do&#63;</h5>
+							<p>We manage and maintain general cleanliness of the home.</p>
+							<hr>
+							<h5>How many caregivers will I see&#63;</h5>
+							<p>It is important that you receive service from caregivers that you are familiar and comfortable with. Normally, we encourage a team of 3-7 caregivers depending on the number of care hours you require.</p>
+							<hr>
+							<h5>Do I have to enter into a long-term contract with Careforce&#63;</h5>
+							<p>No. Careforce will never ask you to enter into a long-term contract. You are free to discontinue care whenever you choose without any penalty.</p>
+							<hr>
+							<h5>What kind of training do your caregivers have&#63;</h5>
+							<p>Our caregivers are very carefully screened before they begin work with Careforce. They are fully insured and complete a successful criminal record and vulnerable sector check prior to being hired. All caregivers possess an up-to-date First Aid/CPR certification, and effective January 1, 2015, all caregivers will possess valid WHMIS and Food Handler's certificates. Many of our caregivers possess the CCA designation, and others have comparable experience. Many have completed the Alzheimer's Disease and Other Dementias Care Course and the Palliative Care Frontline Education course. We will always match you with a caregiver who is trained to meet your needs. Our caregivers also receive regular in-service training to continue building their caregiving skills.</p>
+							<hr>
+							<h5>You say that Careforce is &#39;person-focused&#39; and not &#39;task-focused&#39;. What do you mean by that&#63;</h5>
+							<p>When you choose Careforce, you can count on a caregiver who is focused not only on completing tasks (i.e. cleaning, cooking, etc), but who also shows care for you as a person. Our clients love the holistic experience they receive from us.</p>
+							<hr>
+							<h5>Are you government funded&#63;</h5>
+							<p>No. Careforce is a private worker-owned cooperative, and is not funded by any public health agency. However, we do aim to work closely with any other professionals who may be providing care for you, and our ultimate aim is to improve your quality of life. Often Careforce is chosen as a top-up provider for individuals who feel their home care needs are not fully met by publicly funded care services.</p>
+							<hr>
+							<h5>Tell me about your client confidentiality and privacy policy.</h5>
+							<p>We could print our entire policy here, but it would take far too much space. Careforce goes to great lengths to protect the privacy and confidentiality of all our clients. Although we share information between our staff members so that we can provide the best possible care for our clients, we never share any information with people who do not need to know it.</p>
+							<img src="../assets/img/arm-shoulder.png" alt="" class="img-fluid pt-5">
+						</div><!-- ./box-wrap -->
+					</div><!-- ./col-lg-6 -->
+				</div><!-- ./bg-info -->
+			</div><!-- ./row -->
+		</div><!-- ./container -->
+	</section>
 
 
 

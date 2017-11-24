@@ -16,23 +16,6 @@
 	@include heroImg();
 }
 
-.hero-img-2{
-	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/crossed-hands.jpg);
-	@include heroImg();
-	.card{
-		position: absolute;
-		top: 60%;
-		left: 10%;
-		width: 200px;
-		background-color: rgba(0,178,183,0.7);
-	}
-}
-
-.hero-img-3{
-	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(../assets/img/grandparents.jpeg);
-	@include heroImg();
-}
-
 .hero-text{
 	position: absolute;
 	top: 0;
