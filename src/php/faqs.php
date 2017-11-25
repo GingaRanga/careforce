@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "contact@elysianwebdesign.com";
+    $email_to = "careforce@careforce.ca";
     $email_subject = "Message to Careforce";
 
     function died($error) {
@@ -199,6 +199,11 @@ $headers = 'From: '.$email_from."\r\n".
 						<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
 					</a>
 				</li>
+        <li>
+    			<a href="https://careforcens.sharepoint.com/sites/careforce" data-mfb-label="Employee Page" class="mfb-component__button--child" target="_blank">
+      			<i class="mfb-component__child-icon material-icons fa fa-windows fa-2x" style="line-height: 55px;"></i>
+    			</a>
+    		</li>
 				<li>
 					<a href="#page-top" data-mfb-label="Back to top" class="mfb-component__button--child">
 						<i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
