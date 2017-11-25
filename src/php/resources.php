@@ -1,3 +1,90 @@
+<?php
+if(isset($_POST['email'])) {
+
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "contact@elysianwebdesign.com";
+    $email_subject = "Message to Careforce";
+
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+
+
+    // validation expected data exists
+    if(!isset($_POST['formName']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['comments'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
+
+
+    $formName = $_POST['formName']; // required
+    $email_from = $_POST['email']; // required
+    $comments = $_POST['comments']; // required
+
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+  if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+  }
+
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+  if(!preg_match($string_exp,$formName)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
+
+  if(strlen($comments) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+
+    $email_message = "Form details below.\n\n";
+
+
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+
+
+
+    $email_message .= "Full Name: ".clean_string($formName)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Comments: ".clean_string($comments)."\n";
+
+// create email headers
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);
+?>
+
+<!-- include your own success html here -->
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Thank you</strong> for contacting Careforce. We will be in touch with you very soon.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+<?php
+
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -90,6 +177,7 @@
 				<a class="nav-item nav-link" href="#contact">Contact Us</a>
 				<!--<a class="nav-item nav-link" href="#">Events</a>-->
 				<a class="nav-item nav-link" href="faqs.php">FAQs</a>
+				<a class="nav-item nav-link" href="https://careforcens.sharepoint.com/sites/careforce" target="_blank">Employee Login</a>
 			</div>
 		</div>
 	</nav>
@@ -310,24 +398,24 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<form>
+							<form name="contactForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>">
 								<fieldset>
 									<legend><h5>Leave us a message</h5></legend>
 									<div class="form-group">
 										<label for="formName">Full name</label>
-										<input type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Enter email" required>
+										<input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Full Name" required>
 										<small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
 									</div>
 									<div class="form-group">
-										<label for="formEmail">Email address</label>
-										<input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+										<label for="email">Email address</label>
+										<input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
 										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 									</div>
 									<div class="form-group">
-										<label for="formComment">Enter your message here</label>
-										<textarea class="form-control" id="formComment" rows="3"></textarea>
+										<label for="comments">Enter your message here</label>
+										<textarea name="comments" class="form-control" id="comments" rows="3"></textarea>
 									</div>
-									<button type="submit" class="btn btn-info btn-block disabled">Submit</button>
+									<button name="submit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
 								</fieldset>
 							</form>
 						</div>

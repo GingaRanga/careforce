@@ -7,13 +7,13 @@
 			<small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
 		</div>
 		<div class="form-group">
-			<label for="formEmail">Email address</label>
-			<input name="formEmail" type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="Email" required>
+			<label for="email">Email address</label>
+			<input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
 			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 		</div>
 		<div class="form-group">
-			<label for="formComment">Enter your message here</label>
-			<textarea name="formComment" class="form-control" id="formComment" rows="3"></textarea>
+			<label for="comments">Enter your message here</label>
+			<textarea name="comments" class="form-control" id="comments" rows="3"></textarea>
 		</div>
 		<button name="submit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
 	</fieldset>

@@ -16,20 +16,16 @@ if(isset($_POST['email'])) {
 
 
     // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
+    if(!isset($_POST['formName']) ||
         !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
         !isset($_POST['comments'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
 
 
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
+    $formName = $_POST['formName']; // required
     $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
 
     $error_message = "";
@@ -41,12 +37,8 @@ if(isset($_POST['email'])) {
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-  if(!preg_match($string_exp,$first_name)) {
+  if(!preg_match($string_exp,$formName)) {
     $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
-
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
   }
 
   if(strlen($comments) < 2) {
@@ -67,10 +59,8 @@ if(isset($_POST['email'])) {
 
 
 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+    $email_message .= "Full Name: ".clean_string($formName)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
 
 // create email headers
@@ -189,6 +179,7 @@ $headers = 'From: '.$email_from."\r\n".
 				<a class="nav-item nav-link" href="php/resources.php">Resources</a>
 				<!--<a class="nav-item nav-link" href="#">Events</a>-->
 				<a class="nav-item nav-link" href="php/faqs.php">FAQs</a>
+				<a class="nav-item nav-link" href="https://careforcens.sharepoint.com/sites/careforce" target="_blank">Employee Login</a>
 			</div>
 		</div>
 	</nav>
@@ -208,6 +199,11 @@ $headers = 'From: '.$email_from."\r\n".
    			<li>
     			<a href="https://www.facebook.com/careforcehomecare" data-mfb-label="Our Facebook Page" class="mfb-component__button--child" target="_blank">
       			<i class="mfb-component__child-icon material-icons fa fa-facebook-square fa-2x" style="line-height: 55px;"></i>
+    			</a>
+    		</li>
+				<li>
+    			<a href="https://careforcens.sharepoint.com/sites/careforce" data-mfb-label="Employee Page" class="mfb-component__button--child" target="_blank">
+      			<i class="mfb-component__child-icon material-icons fa fa-windows fa-2x" style="line-height: 55px;"></i>
     			</a>
     		</li>
     		<li>
@@ -432,54 +428,25 @@ $headers = 'From: '.$email_from."\r\n".
 						<hr>
 						<div class="col-lg-4">
 
-							<form name="contactform" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>">
-								<table width="450px">
-								<tr>
-								 <td valign="top">
-								  <label for="first_name">First Name *</label>
-								 </td>
-								 <td valign="top">
-								  <input  type="text" name="first_name" maxlength="50" size="30">
-								 </td>
-								</tr>
-								<tr>
-								 <td valign="top">
-								  <label for="last_name">Last Name *</label>
-								 </td>
-								 <td valign="top">
-								  <input  type="text" name="last_name" maxlength="50" size="30">
-								 </td>
-								</tr>
-								<tr>
-								 <td valign="top">
-								  <label for="email">Email Address *</label>
-								 </td>
-								 <td valign="top">
-								  <input  type="text" name="email" maxlength="80" size="30">
-								 </td>
-								</tr>
-								<tr>
-								 <td valign="top">
-								  <label for="telephone">Telephone Number</label>
-								 </td>
-								 <td valign="top">
-								  <input  type="text" name="telephone" maxlength="30" size="30">
-								 </td>
-								</tr>
-								<tr>
-								 <td valign="top">
-								  <label for="comments">Comments *</label>
-								 </td>
-								 <td valign="top">
-								  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-								 </td>
-								</tr>
-								<tr>
-								 <td colspan="2" style="text-align:center">
-								  <input type="submit" value="Submit">
-								 </td>
-								</tr>
-								</table>
+							<form name="contactForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>">
+								<fieldset>
+									<legend><h5>Leave us a message</h5></legend>
+									<div class="form-group">
+										<label for="formName">Full name</label>
+										<input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Full Name" required>
+										<small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+									</div>
+									<div class="form-group">
+										<label for="email">Email address</label>
+										<input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="comments">Enter your message here</label>
+										<textarea name="comments" class="form-control" id="comments" rows="3"></textarea>
+									</div>
+									<button name="submit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
+								</fieldset>
 							</form>
 
 						</div>
