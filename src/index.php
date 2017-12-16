@@ -223,8 +223,9 @@ $headers = 'From: '.$email_from."\r\n".
       </div>
     </div>
 		<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
-			<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion </p>
-			<!-- <a href="" class="btn btn-info">Request an Assessment</a> -->
+			<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion OR </p>
+      <!-- Button trigger modal -->
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#assessmentModal">Request an Assessment</button>
 		</div>
 	</div>
 
@@ -384,7 +385,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<p>Toll Free&#58; <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a></p>
 							</div>
 						</div>
-						<hr> <!-- CHECK OUT WHY THIS ISNT DISPLAYING -->
+
 						<div class="col-lg-4">
 							<h5>Company Contacts</h5>
 							<div class="pb-3">
@@ -423,9 +424,8 @@ $headers = 'From: '.$email_from."\r\n".
 								<p><span class="font-italic">Email&#58;</span> <a href="mailto:alisha@careforce.ca">alisha@careforce.ca</a></p>
 							</div>
 						</div>
-						<hr>
-						<div class="col-lg-4">
 
+						<div class="col-lg-4">
 							<form name="contactForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>">
 								<fieldset>
 									<legend><h5>Leave us a message</h5></legend>
@@ -446,8 +446,8 @@ $headers = 'From: '.$email_from."\r\n".
 									<button name="submit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
 								</fieldset>
 							</form>
-
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -471,35 +471,230 @@ $headers = 'From: '.$email_from."\r\n".
 		</div>
 	</section>
 
-	<!-- TESTIMONIAL MODAL //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="testimonialModal">The following is a letter Careforce received from one of our many satisfied clients</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-				<p>Dear Careforce Staff,</p>
-				<p>You definitely chose the correct company name. The entire staff truly cares very deeply about the client’s overall health and happiness. The team goes to great lengths to provide stress-free, thoughtful and compassionate care. Your team (and you truly do work as such), is a real force for other care providers to use as a role model.</p>
-				<p>As of July 2014 we’ll be clients of Careforce for one year. All has been perfect in every way in dealing with the staff of Careforce. The gals who come to our home to help out are truly fantastic. We’ve grown very accustomed to “our gals” and they are very much like old friends. It’s a complete pleasure to talk to and spend time with all the Careforce Team.</p>
-				<p>Everyone from Careforce arrives at least 10 minutes prior to a scheduled shift without a hitch. They all come through the door with a sincerely cheery greeting and a happy face. They are ready to do whatever we need done, including taking us out in our car for a drive or shopping etc. Careforce staff are fantastic at keeping the number of gals who come to a clients home to a minimum. That is great as it creates a more personal feeling for the client and promotes continuity of care. </p>
-				<p>The detailed charting and oral communication among Careforce staff is excellent. It reminds me of nursing of years ago, in a very good way. The staff always has current information on a client’s health, medication and results of doctors appointments, etc. That enables the staff to give the correct care always. </p>
-				<p>“Our gal” Theresa has been with us twice a week for nearly one year. What a great all around caregiver, she’s always observant, anticipates when assistance is required, is so pleasant and knowledgeable of health care etc. Theresa quickly made us feel like she is family. Last summer she even brought us treats from her garden! We are totally pleased Theresa is in our life.</p>
-				<p>To relate all the wonderful things the gals from Careforce do for us would cause writer’s cramp. It’s always a pleasure to talk with Tracey in scheduling about any request we’ve had. Tracey’s reply is always, “no problem, give me a little while and I’ll get right back to you with a solution.” That’s exactly what she does, usually in a few minutes she phones with a perfect solution. I feel Tracey’s not happy until the clients are totally happy! To do a challenging scheduling job with such grace, and so very pleasantly takes a very special lady. Bravo Tracey</p>
-				<p>Gerry and I consider Careforce a huge blessing and a fantastic support system in our life. Keep up the fantastic work Careforce team. In the years ahead continue to bring peace of mind and excellent care to your clients.</p>
-				<p>Our very best wishes and sincere thanks to all the Careforce team.</p>
-				<p>Sincerely,</p>
-				<p>G. and L. Gallant</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<!-- ASSESSMENT MODAL ////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="modal fade" id="assessmentModal" tabindex="-1" role="dialog" aria-labelledby="assessmentModal" aria-hidden="true" aria-describedby="request form for family or client assessment">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="assessmentModal">Assessment Request Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <form name="contactForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>">
+            <fieldset>
+              <div class="container-fluid">
+                <legend><h6 class="text-muted">Please fill out all fields below</h6></legend>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="formName">Full Name</label>
+                      <input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Full Name" required>
+                      <small id="nameHelp" class="form-text text-muted">Please enter the name of client if inquiring for someone else.</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="email">Phone Number</label>
+                      <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Phone Number" required>
+                      <small id="emailHelp" class="form-text text-muted">Please enter phone number with area code.</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="comments">Address</label>
+                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter your full address here."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="comments">Diagnosis</label>
+                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter any diagnosis here."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="comments">Mobility Challenges</label>
+                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter any mobility challenges here."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <label>Would you like an information package mailed to you?</label>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">No
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-10">
+                    <div class="form-group">
+                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter address for info package here."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <label>Would you like an information package emailed to you?</label>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">No
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-10">
+                    <div class="form-group">
+                      <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+                      <small id="emailHelp" class="form-text text-muted">Please enter your email</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <label>Would you like a phone call regarding services and free in-home needs assessment?</label>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h6 class="text-muted">Inquiry Made By</h6>
+                <hr>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="formName">Full Name</label>
+                        <input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Full Name" required>
+                        <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="email">Date</label>
+                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Date dd/mm/yyyy" required>
+                        <small id="emailHelp" class="form-text text-muted">Please enter today's date.</small>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="formName">Phone Number</label>
+                        <input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Phone Number" required>
+                        <small id="nameHelp" class="form-text text-muted">Please enter your phone number with area code.</small>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="email">Relationship to client</label>
+                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Relationship" required>
+                        <small id="emailHelp" class="form-text text-muted">Please enter your relationship to the client.</small>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <h6 class="text-muted">Service Inquiries:</h6>
+                  <small class="text-muted">What type(s) of services does the client require/want?</small>
+                  <hr>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">Housekeeping
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">Meal Preparation
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">Personal Care
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">Errands/Appointments
+                            <small>(accompany to)</small>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">Other
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter other service requirements here."></textarea>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button name="submit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
+              </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
+
+<!-- TESTIMONIAL MODAL ///////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModal" aria-hidden="true" aria-describedby="a testimonial by a careforce client's family">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="testimonialModal">The following is a letter Careforce received from one of our many satisfied clients</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  				<p>Dear Careforce Staff,</p>
+  				<p>You definitely chose the correct company name. The entire staff truly cares very deeply about the client’s overall health and happiness. The team goes to great lengths to provide stress-free, thoughtful and compassionate care. Your team (and you truly do work as such), is a real force for other care providers to use as a role model.</p>
+  				<p>As of July 2014 we’ll be clients of Careforce for one year. All has been perfect in every way in dealing with the staff of Careforce. The gals who come to our home to help out are truly fantastic. We’ve grown very accustomed to “our gals” and they are very much like old friends. It’s a complete pleasure to talk to and spend time with all the Careforce Team.</p>
+  				<p>Everyone from Careforce arrives at least 10 minutes prior to a scheduled shift without a hitch. They all come through the door with a sincerely cheery greeting and a happy face. They are ready to do whatever we need done, including taking us out in our car for a drive or shopping etc. Careforce staff are fantastic at keeping the number of gals who come to a clients home to a minimum. That is great as it creates a more personal feeling for the client and promotes continuity of care. </p>
+  				<p>The detailed charting and oral communication among Careforce staff is excellent. It reminds me of nursing of years ago, in a very good way. The staff always has current information on a client’s health, medication and results of doctors appointments, etc. That enables the staff to give the correct care always. </p>
+  				<p>“Our gal” Theresa has been with us twice a week for nearly one year. What a great all around caregiver, she’s always observant, anticipates when assistance is required, is so pleasant and knowledgeable of health care etc. Theresa quickly made us feel like she is family. Last summer she even brought us treats from her garden! We are totally pleased Theresa is in our life.</p>
+  				<p>To relate all the wonderful things the gals from Careforce do for us would cause writer’s cramp. It’s always a pleasure to talk with Tracey in scheduling about any request we’ve had. Tracey’s reply is always, “no problem, give me a little while and I’ll get right back to you with a solution.” That’s exactly what she does, usually in a few minutes she phones with a perfect solution. I feel Tracey’s not happy until the clients are totally happy! To do a challenging scheduling job with such grace, and so very pleasantly takes a very special lady. Bravo Tracey</p>
+  				<p>Gerry and I consider Careforce a huge blessing and a fantastic support system in our life. Keep up the fantastic work Careforce team. In the years ahead continue to bring peace of mind and excellent care to your clients.</p>
+  				<p>Our very best wishes and sincere thanks to all the Careforce team.</p>
+  				<p>Sincerely,</p>
+  				<p>G. and L. Gallant</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- BOOTSTRAP 4 JS & JQUERY - jquery and popper first ///////////////////////////////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
