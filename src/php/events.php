@@ -215,18 +215,26 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////// -->
 
-	<div class="header text-light">
-		<div class="header-img-1">
-			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
-				<img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-				<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
-			</div>
-			<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
-				<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion</p>
-				<!-- <a href="" class="btn btn-info">Apply Here</a> -->
-			</div>
-		</div>
-	</div>
+<div class="header text-light header-img-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <div class="col-lg-8">
+        <div class="text-center" style="padding-top:50px;">
+          <img src="../assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
+          <p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+      </div>
+    </div>
+  </div>
+  <div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
+    <p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion </p>
+    <!-- <a href="" class="btn btn-info">Request an Assessment</a> -->
+  </div>
+</div>
 
 <!-- EVENTS //////////////////////////////////////////////////////////////////////////////////////////////////// -->
 

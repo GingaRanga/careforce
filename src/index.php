@@ -119,16 +119,6 @@ $headers = 'From: '.$email_from."\r\n".
 	<link rel="icon" type="image/png" sizes="34x32" href="assets/img/favicon-34x32.png">
 	<link rel="icon" type="image/png" sizes="102x96" href="assets/img/favicon-102x96.png">
 
-	<!-- FACEBOOK OPEN GRAPH META -->
-	<meta property="fb:app_id" content="123456789">
-	<meta property="og:url" content="https://careforce.ca/">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Careforce">
-	<meta property="og:image" content="https://careforce.ca/assets/img/carousel-1.jpg">
-	<meta property="og:description" content="Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia.">
-	<meta property="og:site_name" content="Careforce">
-	<meta property="og:locale" content="en_US">
-
 	<!-- GOOGLE+ & SCHEMA.ORG META -->
 	<meta itemprop="name" content="Careforce">
 	<meta itemprop="description" content="Careforce is a home health care agency, serving clients and their families from Windsor to Bridgetown, Nova Scotia.">
@@ -217,16 +207,24 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- HTML5 HERO CAROUSEL /////////////////////////////////////////////////////////////////////////////////////// -->
 
-	<div class="hero text-light">
-		<div class="hero-img-1">
-			<div class="hero-text d-flex flex-column justify-content-center align-items-center">
-				<img src="assets/img/brand-logo-trans-2.svg" width="50%" height="40%" alt="company logo">
-				<p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
-			</div>
-			<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
-				<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion</p>
-				<!-- <a href="" class="btn btn-info">Apply Here</a> -->
-			</div>
+  <div class="header text-light hero-img-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+          <div class="text-center" style="padding-top:150px;">
+            <img src="../assets/img/brand-logo-trans-2.svg" width="90%" height="40%" alt="company logo">
+            <p class="text-dark">helping valley residents live comfortably &amp; safely at home for over 25 years</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+        </div>
+      </div>
+    </div>
+		<div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
+			<p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion </p>
+			<!-- <a href="" class="btn btn-info">Request an Assessment</a> -->
 		</div>
 	</div>
 
