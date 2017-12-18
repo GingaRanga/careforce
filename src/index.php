@@ -1,28 +1,161 @@
 <?php
-if(isset($_POST['email'])) {
+  if(isset($_POST['fEmail'])) {
+
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    //$email_to = "info@careforce.ca";
+    $email_to = "contact@elysianwebdesign.com";
+    $email_subject = "Assessment Request Form";
+
+    function died($error) {
+      // your error code can go here
+      echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+      echo "These errors appear below.<br /><br />";
+      echo $error."<br /><br />";
+      echo "Please go back and fix these errors.<br /><br />";
+      die();
+    }
+
+    // validation expected data exists
+    if(!isset($_POST['fName']) ||
+      !isset($_POST['fPhone']) ||
+      !isset($_POST['fAddress']) ||
+      !isset($_POST['fDiagnosis']) ||
+      !isset($_POST['fMobility']) ||
+      !isset($_POST['fRadios']) ||
+      !isset($_POST['fAddress2']) ||
+      !isset($_POST['ffRadios']) ||
+      !isset($_POST['fEmail']) ||
+      !isset($_POST['fffRadios']) ||
+      !isset($_POST['ffPhone']) ||
+      !isset($_POST['ffName']) ||
+      !isset($_POST['fDate']) ||
+      !isset($_POST['fffPhone']) ||
+      !isset($_POST['fRelation']) ||
+      !isset($_POST['fCheckbox1']) ||
+      !isset($_POST['fCheckbox2']) ||
+      !isset($_POST['fCheckbox3']) ||
+      !isset($_POST['fCheckbox4']) ||
+      !isset($_POST['fCheckbox5']) ||
+      !isset($_POST['fComments'])) {
+      died('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
+    $fName = $_POST['fName']; // required
+    $email_from = $_POST['fEmail']; // required
+    $fPhone = $_POST['fPhone'];
+    $fAddress = $_POST['fAddress']; // required
+    $fDiagnosis = $_POST['fDiagnosis']; // required
+    $fMobility = $_POST['fMobility']; // required
+    $fRadios = $_POST['fRadios']; // required
+    $fAddress2 = $_POST['fAddress2']; // required
+    $ffRadios = $_POST['ffRadios']; // required
+    $fEmail = $_POST['fEmail']; // required
+    $fffRadios = $_POST['fffRadios']; // required
+    $ffPhone = $_POST['ffPhone']; // required
+    $ffName = $_POST['ffName']; // required
+    $fDate = $_POST['fDate']; // required
+    $fffPhone = $_POST['fffPhone']; // required
+    $fRelation = $_POST['fRelation']; // required
+    $fCheckbox1 = $_POST['fCheckbox1']; // required
+    $fCheckbox2 = $_POST['fCheckbox2']; // required
+    $fCheckbox3 = $_POST['fCheckbox3']; // required
+    $fCheckbox4 = $_POST['fCheckbox4']; // required
+    $fCheckbox5 = $_POST['fCheckbox5']; // required
+    $fComments = $_POST['fComments']; // required
+
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+    if(!preg_match($email_exp,$email_from)) {
+      $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    }
+
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+    if(!preg_match($string_exp,$fName)) {
+      $error_message .= 'The Name you entered does not appear to be valid.<br />';
+    }
+
+    if(strlen($fAddress) < 2) {
+      $error_message .= 'The Address you entered does not appear to be valid.<br />';
+    }
+
+    if(strlen($error_message) > 0) {
+      died($error_message);
+    }
+
+    $email_message = "Form details below.\n\n";
+
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+
+    $email_message .= "Client Name: ".clean_string($fName)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Client Phone: ".clean_string($fPhone)."\n";
+    $email_message .= "Client Address: ".clean_string($fAddress)."\n";
+    $email_message .= "Client Diagnosis: ".clean_string($fDiagnosis)."\n";
+    $email_message .= "Client Mobility Challenges: ".clean_string($fMobility)."\n";
+    $email_message .= "Info Package Mailed? (Y/N): ".clean_string($fRadios)."\n";
+    $email_message .= "Info Package Mailing Address: ".clean_string($fAddress2)."\n";
+    $email_message .= "Info Package Emailed? (Y/N): ".clean_string($ffRadios)."\n";
+    $email_message .= "Info Package Email Address: ".clean_string($fEmail)."\n";
+    $email_message .= "Call Regarding Services/Needs Assessment? (Y/N): ".clean_string($fffRadios)."\n";
+    $email_message .= "Phone for Service/Needs Assessment Call: ".clean_string($ffPhone)."\n";
+    $email_message .= "Inquirer's Name: ".clean_string($ffName)."\n";
+    $email_message .= "Date of Inquiry: ".clean_string($fDate)."\n";
+    $email_message .= "Inquirer's Phone: ".clean_string($fffPhone)."\n";
+    $email_message .= "Inquirer's Relationship to Client: ".clean_string($fRelation)."\n";
+    $email_message .= "Housekeeping?: ".clean_string($fCheckbox1)."\n";
+    $email_message .= "Meal Preparation?: ".clean_string($fCheckbox2)."\n";
+    $email_message .= "Personal Care?: ".clean_string($fCheckbox3)."\n";
+    $email_message .= "Errands/Appointments?: ".clean_string($fCheckbox4)."\n";
+    $email_message .= "Other?: ".clean_string($fCheckbox5)."\n";
+    $email_message .= "Other Service Requirements: ".clean_string($fComments)."\n";
+
+    // create email headers
+    $headers = 'From: '.$email_from."\r\n".
+    'Reply-To: '.$email_from."\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    @mail($email_to, $email_subject, $email_message, $headers);
+
+?>
+
+    <!-- include your own success html here -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Thank you</strong> for contacting Careforce. We will be in touch with you very soon.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+  <?php
+  }
+  ?>
+
+<?php
+  if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "careforce@careforce.ca";
     $email_subject = "Message to Careforce";
 
     function died($error) {
-        // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
+      // your error code can go here
+      echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+      echo "These errors appear below.<br /><br />";
+      echo $error."<br /><br />";
+      echo "Please go back and fix these errors.<br /><br />";
+      die();
     }
-
 
     // validation expected data exists
     if(!isset($_POST['formName']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');
+      !isset($_POST['email']) ||
+      !isset($_POST['comments'])) {
+      died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
-
-
 
     $formName = $_POST['formName']; // required
     $email_from = $_POST['email']; // required
@@ -31,59 +164,54 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-  }
+    if(!preg_match($email_exp,$email_from)) {
+      $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    }
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-  if(!preg_match($string_exp,$formName)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
+    if(!preg_match($string_exp,$formName)) {
+      $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+    }
 
-  if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  }
+    if(strlen($comments) < 2) {
+      $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    }
 
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
+    if(strlen($error_message) > 0) {
+      died($error_message);
+    }
 
     $email_message = "Form details below.\n\n";
-
 
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
     }
 
-
-
     $email_message .= "Full Name: ".clean_string($formName)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
+    // create email headers
+    $headers = 'From: '.$email_from."\r\n".
+    'Reply-To: '.$email_from."\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    @mail($email_to, $email_subject, $email_message, $headers);
+
 ?>
 
-<!-- include your own success html here -->
+    <!-- include your own success html here -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Thank you</strong> for contacting Careforce. We will be in touch with you very soon.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Thank you</strong> for contacting Careforce. We will be in touch with you very soon.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-
-<?php
-
-}
-?>
+  <?php
+  }
+  ?>
 
 <!doctype html>
 <html lang="en">
@@ -476,195 +604,202 @@ $headers = 'From: '.$email_from."\r\n".
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="assessmentModal">Assessment Request Form</h5>
+          <h4 class="modal-title text-dark" id="assessmentModal">Assessment Request Form</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        </div><!-- ./modal-header -->
         <div class="modal-body">
-          
-          <form name="contactForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>">
+          <!-- FORM START ////////////////////////////////////////////////////////////////////////////////////// -->
+          <form id="needs-validation" name="assessForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>" novalidate>
             <fieldset>
-              <div class="container-fluid">
-                <legend><h6 class="text-muted">Please fill out all fields below</h6></legend>
-                <hr>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label for="formName">Full Name</label>
-                      <input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Full Name" required>
-                      <small id="nameHelp" class="form-text text-muted">Please enter the name of client if inquiring for someone else.</small>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label for="email">Phone Number</label>
-                      <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Phone Number" required>
-                      <small id="emailHelp" class="form-text text-muted">Please enter phone number with area code.</small>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <label for="comments">Address</label>
-                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter your full address here."></textarea>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <label for="comments">Diagnosis</label>
-                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter any diagnosis here."></textarea>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <label for="comments">Mobility Challenges</label>
-                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter any mobility challenges here."></textarea>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <label>Would you like an information package mailed to you?</label>
-                  </div>
-                  <div class="col-lg-2">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>Yes
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">No
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="form-group">
-                      <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter address for info package here."></textarea>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <label>Would you like an information package emailed to you?</label>
-                  </div>
-                  <div class="col-lg-2">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>Yes
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">No
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="form-group">
-                      <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
-                      <small id="emailHelp" class="form-text text-muted">Please enter your email</small>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <label>Would you like a phone call regarding services and free in-home needs assessment?</label>
-                  </div>
-                  <div class="col-lg-2">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>Yes
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">No
-                      </label>
-                    </div>
-                  </div>
+              <legend><h6 class="text-primary">*Please fill out all applicable fields below to the best of your ability.</h6></legend>
+              <hr>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fName">Full Name</label>
+                  <input type="name" class="form-control" id="fName" placeholder="Jane Doe" aria-describedby="fNameHelp" name="fName" required>
+                  <small id="fNameHelp" class="form-text text-muted">Please enter the name of client if you are inquiring for someone else.</small>
+                  <div class="invalid-feedback">Please provide full name.</div>
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fPhone">Phone Number</label>
+                  <input name="fPhone" type="text" class="form-control" id="fPhone" aria-describedby="fPhoneHelp" placeholder="(902) 111-1111" required>
+                  <small id="fPhoneHelp" class="form-text text-muted">Please enter client phone number with area code.</small>
+                  <div class="invalid-feedback">Please provide a valid phone number.</div>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <div class="form-group">
+                <label class="text-primary" for="fAddress">Address</label>
+                <input type="text" name="fAddress" class="form-control" id="fAddress" aria-describedby="fAddressHelp" placeholder="1 Example Street, Kentville, NS, B1B1B1" required>
+                <small id="fAddressHelp" class="form-text text-muted">Please enter full address of client with postal code.</small>
+                <div class="invalid-feedback">Please provide a valid address.</div>
+              </div>
+              <div class="form-group">
+                <label class="text-primary" for="fDiagnosis">Diagnosis</label>
+                <input type="text" name="fDiagnosis" class="form-control" id="fDiagnosis" aria-describedby="fDiagnosisHelp" placeholder="i.e. Diabetes.">
+                <small id="fDiagnosisHelp" class="form-text text-muted">Please enter any diagnosis the client has.</small>
+              </div>
+              <div class="form-group">
+                <label class="text-primary" for="fMobility">Mobility Challenges</label>
+                <input type="text" name="fMobility" class="form-control" id="fMobility" aria-describedby="fMobilityHelp" placeholder="i.e. Client uses wheelchair.">
+                <small id="fMobilityHelp" class="form-text text-muted">Please enter any mobility challenges the client has.</small>
+              </div>
+              <hr>
+              <hr>
+              <label class="text-primary">Would you like an information package mailed to you?</label>
+              <div class="form-row">
+                <div class="form-group col-lg-2">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios1" value="option1" checked>Yes
+                    </label>
+                  </div><!-- ./form-check -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios2" value="option2">No
+                    </label>
+                  </div><!-- form-check -->
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-10">
+                  <label for="fAddress2">Address</label>
+                  <input type="text" name="fAddress2" class="form-control" id="fAddress2" aria-describedby="fAddressHelp2" placeholder="1 Example Street, Kentville, NS, B1B1B1">
+                  <small id="fAddressHelp2" class="form-text text-muted">Please enter full address with postal code for your info package</small>
                 </div>
-                <hr>
-                <h6 class="text-muted">Inquiry Made By</h6>
-                <hr>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="formName">Full Name</label>
-                        <input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Full Name" required>
-                        <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="email">Date</label>
-                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Date dd/mm/yyyy" required>
-                        <small id="emailHelp" class="form-text text-muted">Please enter today's date.</small>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="formName">Phone Number</label>
-                        <input name="formName" type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Phone Number" required>
-                        <small id="nameHelp" class="form-text text-muted">Please enter your phone number with area code.</small>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="email">Relationship to client</label>
-                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Relationship" required>
-                        <small id="emailHelp" class="form-text text-muted">Please enter your relationship to the client.</small>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <h6 class="text-muted">Service Inquiries:</h6>
-                  <small class="text-muted">What type(s) of services does the client require/want?</small>
-                  <hr>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">Housekeeping
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">Meal Preparation
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">Personal Care
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">Errands/Appointments
-                            <small>(accompany to)</small>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">Other
-                          </label>
-                        </div>
-                        <div class="form-group">
-                          <textarea name="comments" class="form-control" id="comments" rows="3" placeholder="Please enter other service requirements here."></textarea>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button name="submit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
-              </div>
-              </div>
+              </div><!-- ./form-row -->
+              <label class="text-primary">Would you like an information package emailed to you?</label>
+              <div class="form-row">
+                <div class="form-group col-lg-2">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios1" value="option1" checked>Yes
+                    </label>
+                  </div><!-- ./form-check -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios2" value="option2">No
+                    </label>
+                  </div><!-- form-check -->
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-10">
+                  <label for="fEmail">Email</label>
+                  <input type="email" class="form-control" id="fEmail" placeholder="janedoe@exampleemail.ca" aria-describedby="fEmailHelp" name="fEmail">
+                  <small id="fEmailHelp" class="form-text text-muted">Please enter your email for your info package.</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <label class="text-primary">Would you like a phone call regarding services and free in-home needs assessment?</label>
+              <div class="form-row">
+                <div class="form-group col-lg-2">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios1" value="option1" checked>Yes
+                    </label>
+                  </div><!-- ./form-check -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios2" value="option2">No
+                    </label>
+                  </div><!-- form-check -->
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-10">
+                  <label for="ffPhone">Phone Number</label>
+                  <input name="ffPhone" type="text" class="form-control" id="ffPhone" aria-describedby="ffPhoneHelp" placeholder="(902) 111-1111">
+                  <small id="ffPhoneHelp" class="form-text text-muted">Please enter phone number with area code.</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <hr>
+              <hr>
+              <h4 class="text-dark">Inquiry Made By</h4>
+              <hr>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="ffName">Full Name</label>
+                  <input type="name" class="form-control" id="ffName" placeholder="Jane Doe" aria-describedby="ffNameHelp" name="ffName">
+                  <small id="ffNameHelp" class="form-text text-muted">Please enter your full name. Leave blank if same as above.</small>
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fDate">Date</label>
+                  <input type="text" class="form-control" id="fDate" placeholder="DD/MM/YYYY" aria-describedby="fDateHelp" name="fDate">
+                  <small id="fDateHelp" class="form-text text-muted">Please enter today's date (DD/MM/YYYY).</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fffPhone">Phone Number</label>
+                  <input name="fffPhone" type="text" class="form-control" id="fffPhone" aria-describedby="fffPhoneHelp" placeholder="(902) 111-1111">
+                  <small id="fffPhoneHelp" class="form-text text-muted">Please enter your phone number with area code. Leave blank if same as above.</small>
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fRelation">Relationship to Client</label>
+                  <input name="fRelation" type="text" class="form-control" id="fRelation" aria-describedby="fRelationHelp" placeholder="i.e. Son">
+                  <small id="fRelationHelp" class="form-text text-muted">Please enter your relationship to the client. Leave blank if you are the client.</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <hr>
+              <hr>
+              <h4 class="text-dark">Service Inquiries:</h4>
+              <small class="text-muted">What type(s) of services does the client require/want?</small>
+              <hr>
+              <div class="form-group">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox1" id="fCheckbox1">Housekeeping
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox2" id="fCheckbox2">Meal Preparation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox3" id="fCheckbox3">Personal Care
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox4" id="fCheckbox4">Errands/Appointments
+                    <small>(accompany to)</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox5" id="fCheckbox5">Other
+                  </label>
+                </div>
+              </div><!-- ./form-group -->
+              <div class="form-group">
+                <textarea name="fComments" class="form-control" id="fComments" rows="3" placeholder="Please enter other service requirements here."></textarea>
+              </div><!-- ./form-group -->
+              <button name="fSubmit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
             </fieldset>
           </form>
-        </div>
 
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+
+              window.addEventListener('load', function() {
+                var form = document.getElementById('needs-validation');
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              }, false);
+            })();
+            </script>
+
+        </div><!-- ./modal-body -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
+        </div><!-- ./modal-footer -->
+      </div><!-- ./modal-content -->
+    </div><!-- ./modal-dialog -->
+  </div><!-- ./modal -->
 
 <!-- TESTIMONIAL MODAL ///////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModal" aria-hidden="true" aria-describedby="a testimonial by a careforce client's family">
