@@ -1,140 +1,4 @@
 <?php
-  if(isset($_POST['fEmail'])) {
-
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    //$email_to = "info@careforce.ca";
-    $email_to = "contact@elysianwebdesign.com";
-    $email_subject = "Assessment Request Form";
-
-    function died($error) {
-      // your error code can go here
-      echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-      echo "These errors appear below.<br /><br />";
-      echo $error."<br /><br />";
-      echo "Please go back and fix these errors.<br /><br />";
-      die();
-    }
-
-    // validation expected data exists
-    if(!isset($_POST['fName']) ||
-      !isset($_POST['fPhone']) ||
-      !isset($_POST['fAddress']) ||
-      !isset($_POST['fDiagnosis']) ||
-      !isset($_POST['fMobility']) ||
-      !isset($_POST['fRadios']) ||
-      !isset($_POST['fAddress2']) ||
-      !isset($_POST['ffRadios']) ||
-      !isset($_POST['fEmail']) ||
-      !isset($_POST['fffRadios']) ||
-      !isset($_POST['ffPhone']) ||
-      !isset($_POST['ffName']) ||
-      !isset($_POST['fDate']) ||
-      !isset($_POST['fffPhone']) ||
-      !isset($_POST['fRelation']) ||
-      !isset($_POST['fCheckbox1']) ||
-      !isset($_POST['fCheckbox2']) ||
-      !isset($_POST['fCheckbox3']) ||
-      !isset($_POST['fCheckbox4']) ||
-      !isset($_POST['fCheckbox5']) ||
-      !isset($_POST['fComments'])) {
-      died('We are sorry, but there appears to be a problem with the form you submitted.');
-    }
-
-    $fName = $_POST['fName']; // required
-    $email_from = $_POST['fEmail']; // required
-    $fPhone = $_POST['fPhone'];
-    $fAddress = $_POST['fAddress']; // required
-    $fDiagnosis = $_POST['fDiagnosis']; // required
-    $fMobility = $_POST['fMobility']; // required
-    $fRadios = $_POST['fRadios']; // required
-    $fAddress2 = $_POST['fAddress2']; // required
-    $ffRadios = $_POST['ffRadios']; // required
-    $fEmail = $_POST['fEmail']; // required
-    $fffRadios = $_POST['fffRadios']; // required
-    $ffPhone = $_POST['ffPhone']; // required
-    $ffName = $_POST['ffName']; // required
-    $fDate = $_POST['fDate']; // required
-    $fffPhone = $_POST['fffPhone']; // required
-    $fRelation = $_POST['fRelation']; // required
-    $fCheckbox1 = $_POST['fCheckbox1']; // required
-    $fCheckbox2 = $_POST['fCheckbox2']; // required
-    $fCheckbox3 = $_POST['fCheckbox3']; // required
-    $fCheckbox4 = $_POST['fCheckbox4']; // required
-    $fCheckbox5 = $_POST['fCheckbox5']; // required
-    $fComments = $_POST['fComments']; // required
-
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-    if(!preg_match($email_exp,$email_from)) {
-      $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-    }
-
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-    if(!preg_match($string_exp,$fName)) {
-      $error_message .= 'The Name you entered does not appear to be valid.<br />';
-    }
-
-    if(strlen($fAddress) < 2) {
-      $error_message .= 'The Address you entered does not appear to be valid.<br />';
-    }
-
-    if(strlen($error_message) > 0) {
-      died($error_message);
-    }
-
-    $email_message = "Form details below.\n\n";
-
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
-
-    $email_message .= "Client Name: ".clean_string($fName)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Client Phone: ".clean_string($fPhone)."\n";
-    $email_message .= "Client Address: ".clean_string($fAddress)."\n";
-    $email_message .= "Client Diagnosis: ".clean_string($fDiagnosis)."\n";
-    $email_message .= "Client Mobility Challenges: ".clean_string($fMobility)."\n";
-    $email_message .= "Info Package Mailed? (Y/N): ".clean_string($fRadios)."\n";
-    $email_message .= "Info Package Mailing Address: ".clean_string($fAddress2)."\n";
-    $email_message .= "Info Package Emailed? (Y/N): ".clean_string($ffRadios)."\n";
-    $email_message .= "Info Package Email Address: ".clean_string($fEmail)."\n";
-    $email_message .= "Call Regarding Services/Needs Assessment? (Y/N): ".clean_string($fffRadios)."\n";
-    $email_message .= "Phone for Service/Needs Assessment Call: ".clean_string($ffPhone)."\n";
-    $email_message .= "Inquirer's Name: ".clean_string($ffName)."\n";
-    $email_message .= "Date of Inquiry: ".clean_string($fDate)."\n";
-    $email_message .= "Inquirer's Phone: ".clean_string($fffPhone)."\n";
-    $email_message .= "Inquirer's Relationship to Client: ".clean_string($fRelation)."\n";
-    $email_message .= "Housekeeping?: ".clean_string($fCheckbox1)."\n";
-    $email_message .= "Meal Preparation?: ".clean_string($fCheckbox2)."\n";
-    $email_message .= "Personal Care?: ".clean_string($fCheckbox3)."\n";
-    $email_message .= "Errands/Appointments?: ".clean_string($fCheckbox4)."\n";
-    $email_message .= "Other?: ".clean_string($fCheckbox5)."\n";
-    $email_message .= "Other Service Requirements: ".clean_string($fComments)."\n";
-
-    // create email headers
-    $headers = 'From: '.$email_from."\r\n".
-    'Reply-To: '.$email_from."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
-
-?>
-
-    <!-- include your own success html here -->
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Thank you</strong> for contacting Careforce. We will be in touch with you very soon.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-  <?php
-  }
-  ?>
-
-<?php
   if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
@@ -611,7 +475,8 @@
         </div><!-- ./modal-header -->
         <div class="modal-body">
           <!-- FORM START ////////////////////////////////////////////////////////////////////////////////////// -->
-          <form id="needs-validation" name="assessForm" method="post" action="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"] ); ?>" novalidate>
+          <form id="needs-validation" name="assessForm" method="post" role="form" action="php/forms/contact.php" novalidate>
+            <div class="messages"></div>
             <fieldset>
               <legend><h6 class="text-primary">*Please fill out all applicable fields below to the best of your ability.</h6></legend>
               <hr>
@@ -624,7 +489,7 @@
                 </div><!-- ./form-group -->
                 <div class="form-group col-lg-6">
                   <label class="text-primary" for="fPhone">Phone Number</label>
-                  <input name="fPhone" type="text" class="form-control" id="fPhone" aria-describedby="fPhoneHelp" placeholder="(902) 111-1111" required>
+                  <input name="fPhone" type="tel" class="form-control" id="fPhone" aria-describedby="fPhoneHelp" placeholder="(902) 111-1111" required>
                   <small id="fPhoneHelp" class="form-text text-muted">Please enter client phone number with area code.</small>
                   <div class="invalid-feedback">Please provide a valid phone number.</div>
                 </div><!-- ./form-group -->
@@ -652,12 +517,12 @@
                 <div class="form-group col-lg-2">
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios1" value="option1" checked>Yes
+                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios1" value="Yes" checked>Yes
                     </label>
                   </div><!-- ./form-check -->
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios2" value="option2">No
+                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios2" value="No">No
                     </label>
                   </div><!-- form-check -->
                 </div><!-- ./form-group -->
@@ -672,12 +537,12 @@
                 <div class="form-group col-lg-2">
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios1" value="option1" checked>Yes
+                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios1" value="Yes" checked>Yes
                     </label>
                   </div><!-- ./form-check -->
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios2" value="option2">No
+                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios2" value="No">No
                     </label>
                   </div><!-- form-check -->
                 </div><!-- ./form-group -->
@@ -692,18 +557,18 @@
                 <div class="form-group col-lg-2">
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios1" value="option1" checked>Yes
+                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios1" value="Yes" checked>Yes
                     </label>
                   </div><!-- ./form-check -->
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios2" value="option2">No
+                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios2" value="No">No
                     </label>
                   </div><!-- form-check -->
                 </div><!-- ./form-group -->
                 <div class="form-group col-lg-10">
                   <label for="ffPhone">Phone Number</label>
-                  <input name="ffPhone" type="text" class="form-control" id="ffPhone" aria-describedby="ffPhoneHelp" placeholder="(902) 111-1111">
+                  <input name="ffPhone" type="tel" class="form-control" id="ffPhone" aria-describedby="ffPhoneHelp" placeholder="(902) 111-1111">
                   <small id="ffPhoneHelp" class="form-text text-muted">Please enter phone number with area code.</small>
                 </div><!-- ./form-group -->
               </div><!-- ./form-row -->
@@ -726,7 +591,7 @@
               <div class="form-row">
                 <div class="form-group col-lg-6">
                   <label class="text-primary" for="fffPhone">Phone Number</label>
-                  <input name="fffPhone" type="text" class="form-control" id="fffPhone" aria-describedby="fffPhoneHelp" placeholder="(902) 111-1111">
+                  <input name="fffPhone" type="tel" class="form-control" id="fffPhone" aria-describedby="fffPhoneHelp" placeholder="(902) 111-1111">
                   <small id="fffPhoneHelp" class="form-text text-muted">Please enter your phone number with area code. Leave blank if same as above.</small>
                 </div><!-- ./form-group -->
                 <div class="form-group col-lg-6">
