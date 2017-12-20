@@ -4,10 +4,10 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <info@careforce.ca>';
+$from = 'Assessment Request Form <info@careforce.ca>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <info@careforce.ca>';
+$sendTo = 'Assessment Request Form <info@careforce.ca>';
 
 // subject of the email
 $subject = 'New Assessment Request';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
 
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "You have a new message from the website assessment request form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email
@@ -52,6 +52,7 @@ try
 
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
+		//mail('contact@elysianwebdesign.com', $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }

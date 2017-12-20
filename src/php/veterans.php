@@ -232,8 +232,9 @@ $headers = 'From: '.$email_from."\r\n".
     </div>
   </div>
   <div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
-    <p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion </p>
-    <!-- <a href="" class="btn btn-info">Request an Assessment</a> -->
+    <p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion OR </p>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#assessmentModal">Request an Assessment</button>
   </div>
 </div>
 
@@ -495,6 +496,209 @@ $headers = 'From: '.$email_from."\r\n".
 			</div>
 		</div>
 	</section>
+
+<!-- ASSESSMENT MODAL ////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="modal fade" id="assessmentModal" tabindex="-1" role="dialog" aria-labelledby="assessmentModal" aria-hidden="true" aria-describedby="request form for family or client assessment">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-dark" id="assessmentModal">Assessment Request Form</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!-- ./modal-header -->
+        <div class="modal-body">
+          <!-- FORM START ////////////////////////////////////////////////////////////////////////////////////// -->
+          <form id="needs-validation" name="assessForm" method="post" role="form" action="forms/contact.php" novalidate>
+            <div class="messages"></div>
+            <fieldset>
+              <legend><h6 class="text-primary">*Please fill out all applicable fields below to the best of your ability.</h6></legend>
+              <hr>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fName">Full Name</label>
+                  <input type="name" class="form-control" id="fName" placeholder="Jane Doe" aria-describedby="fNameHelp" name="fName" required>
+                  <small id="fNameHelp" class="form-text text-muted">Please enter the name of client if you are inquiring for someone else.</small>
+                  <div class="invalid-feedback">Please provide full name.</div>
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fPhone">Phone Number</label>
+                  <input name="fPhone" type="tel" class="form-control" id="fPhone" aria-describedby="fPhoneHelp" placeholder="(902) 111-1111" required>
+                  <small id="fPhoneHelp" class="form-text text-muted">Please enter client phone number with area code.</small>
+                  <div class="invalid-feedback">Please provide a valid phone number.</div>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <div class="form-group">
+                <label class="text-primary" for="fAddress">Address</label>
+                <input type="text" name="fAddress" class="form-control" id="fAddress" aria-describedby="fAddressHelp" placeholder="1 Example Street, Kentville, NS, B1B1B1" required>
+                <small id="fAddressHelp" class="form-text text-muted">Please enter full address of client with postal code.</small>
+                <div class="invalid-feedback">Please provide a valid address.</div>
+              </div>
+              <div class="form-group">
+                <label class="text-primary" for="fDiagnosis">Diagnosis</label>
+                <input type="text" name="fDiagnosis" class="form-control" id="fDiagnosis" aria-describedby="fDiagnosisHelp" placeholder="i.e. Diabetes.">
+                <small id="fDiagnosisHelp" class="form-text text-muted">Please enter any diagnosis the client has.</small>
+              </div>
+              <div class="form-group">
+                <label class="text-primary" for="fMobility">Mobility Challenges</label>
+                <input type="text" name="fMobility" class="form-control" id="fMobility" aria-describedby="fMobilityHelp" placeholder="i.e. Client uses wheelchair.">
+                <small id="fMobilityHelp" class="form-text text-muted">Please enter any mobility challenges the client has.</small>
+              </div>
+              <hr>
+              <hr>
+              <label class="text-primary">Would you like an information package mailed to you?</label>
+              <div class="form-row">
+                <div class="form-group col-lg-2">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios1" value="Yes" checked>Yes
+                    </label>
+                  </div><!-- ./form-check -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fRadios" id="fRadios2" value="No">No
+                    </label>
+                  </div><!-- form-check -->
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-10">
+                  <label for="fAddress2">Address</label>
+                  <input type="text" name="fAddress2" class="form-control" id="fAddress2" aria-describedby="fAddressHelp2" placeholder="1 Example Street, Kentville, NS, B1B1B1">
+                  <small id="fAddressHelp2" class="form-text text-muted">Please enter full address with postal code for your info package</small>
+                </div>
+              </div><!-- ./form-row -->
+              <label class="text-primary">Would you like an information package emailed to you?</label>
+              <div class="form-row">
+                <div class="form-group col-lg-2">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios1" value="Yes" checked>Yes
+                    </label>
+                  </div><!-- ./form-check -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="ffRadios" id="ffRadios2" value="No">No
+                    </label>
+                  </div><!-- form-check -->
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-10">
+                  <label for="fEmail">Email</label>
+                  <input type="email" class="form-control" id="fEmail" placeholder="janedoe@exampleemail.ca" aria-describedby="fEmailHelp" name="fEmail">
+                  <small id="fEmailHelp" class="form-text text-muted">Please enter your email for your info package.</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <label class="text-primary">Would you like a phone call regarding services and free in-home needs assessment?</label>
+              <div class="form-row">
+                <div class="form-group col-lg-2">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios1" value="Yes" checked>Yes
+                    </label>
+                  </div><!-- ./form-check -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="fffRadios" id="fffRadios2" value="No">No
+                    </label>
+                  </div><!-- form-check -->
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-10">
+                  <label for="ffPhone">Phone Number</label>
+                  <input name="ffPhone" type="tel" class="form-control" id="ffPhone" aria-describedby="ffPhoneHelp" placeholder="(902) 111-1111">
+                  <small id="ffPhoneHelp" class="form-text text-muted">Please enter phone number with area code.</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <hr>
+              <hr>
+              <h4 class="text-dark">Inquiry Made By</h4>
+              <hr>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="ffName">Full Name</label>
+                  <input type="name" class="form-control" id="ffName" placeholder="Jane Doe" aria-describedby="ffNameHelp" name="ffName">
+                  <small id="ffNameHelp" class="form-text text-muted">Please enter your full name. Leave blank if same as above.</small>
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fDate">Date</label>
+                  <input type="text" class="form-control" id="fDate" placeholder="DD/MM/YYYY" aria-describedby="fDateHelp" name="fDate">
+                  <small id="fDateHelp" class="form-text text-muted">Please enter today's date (DD/MM/YYYY).</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fffPhone">Phone Number</label>
+                  <input name="fffPhone" type="tel" class="form-control" id="fffPhone" aria-describedby="fffPhoneHelp" placeholder="(902) 111-1111">
+                  <small id="fffPhoneHelp" class="form-text text-muted">Please enter your phone number with area code. Leave blank if same as above.</small>
+                </div><!-- ./form-group -->
+                <div class="form-group col-lg-6">
+                  <label class="text-primary" for="fRelation">Relationship to Client</label>
+                  <input name="fRelation" type="text" class="form-control" id="fRelation" aria-describedby="fRelationHelp" placeholder="i.e. Son">
+                  <small id="fRelationHelp" class="form-text text-muted">Please enter your relationship to the client. Leave blank if you are the client.</small>
+                </div><!-- ./form-group -->
+              </div><!-- ./form-row -->
+              <hr>
+              <hr>
+              <h4 class="text-dark">Service Inquiries:</h4>
+              <small class="text-muted">What type(s) of services does the client require/want?</small>
+              <hr>
+              <div class="form-group">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox1" id="fCheckbox1">Housekeeping
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox2" id="fCheckbox2">Meal Preparation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox3" id="fCheckbox3">Personal Care
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox4" id="fCheckbox4">Errands/Appointments
+                    <small>(accompany to)</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" name="fCheckbox5" id="fCheckbox5">Other
+                  </label>
+                </div>
+              </div><!-- ./form-group -->
+              <div class="form-group">
+                <textarea name="fComments" class="form-control" id="fComments" rows="3" placeholder="Please enter other service requirements here."></textarea>
+              </div><!-- ./form-group -->
+              <button name="fSubmit" type="submit" class="btn btn-info btn-block" value="Submit">Submit</button>
+            </fieldset>
+          </form>
+
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+
+              window.addEventListener('load', function() {
+                var form = document.getElementById('needs-validation');
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              }, false);
+            })();
+            </script>
+
+        </div><!-- ./modal-body -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div><!-- ./modal-footer -->
+      </div><!-- ./modal-content -->
+    </div><!-- ./modal-dialog -->
+  </div><!-- ./modal -->
 
 <!-- BOOTSTRAP 4 JS & JQUERY - jquery and popper first ///////////////////////////////////////////////////////// -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
