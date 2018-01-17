@@ -245,9 +245,26 @@ $headers = 'From: '.$email_from."\r\n".
 
 	<section id="contact" class="footer">
 		<footer>
-			<div>
-				<iframe width="100%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=6%20webster%20court&key=AIzaSyAqCUj4KiU7VyBtMSaQibCMsaweePqYpKU" allowfullscreen></iframe>
-			</div>
+
+      <div id="map" style="width:100%;height:250px;"></div>
+      <script>
+        function initMap() {
+          var uluru = {lat: 45.078331, lng: -64.493532};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqCUj4KiU7VyBtMSaQibCMsaweePqYpKU&callback=initMap"></script>
+
+			<!-- <div>
+			  <iframe width="100%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=6%20webster%20court&key=AIzaSyAqCUj4KiU7VyBtMSaQibCMsaweePqYpKU" allowfullscreen></iframe>
+			</div> -->
 			<div class="main-footer">
 				<hr class="style15 pb-5">
 				<div class="container-fluid">
