@@ -135,11 +135,11 @@ $headers = 'From: '.$email_from."\r\n".
 	<meta itemprop="image" content="https://careforce.ca/assets/img/carousel-1.jpg">
 
 	<!-- BOOTSTRAP 4 STYLESHEETS & CUSTOM - before all other stylesheets -->
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.min.css">
 	<!-- Google Material Icons & MFB & MODERNIZR-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="../css/mfb.css">
+	<link rel="stylesheet" href="../css/mfb.min.css">
 	<script src="../js/modernizr.touch.js"></script>
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -232,7 +232,7 @@ $headers = 'From: '.$email_from."\r\n".
     </div>
   </div>
   <div class="apply text-center d-inline-flex p-2 justify-content-center align-items-center">
-    <p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultaion OR </p>
+    <p class="text-muted m-0 pr-2">Call <a href="tel:+18669661466">1&#45;866&#45;966&#45;1466</a> for a free consultation OR </p>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#assessmentModal">Request an Assessment</button>
   </div>
@@ -381,7 +381,7 @@ $headers = 'From: '.$email_from."\r\n".
 	<section id="contact" class="footer">
 		<footer>
 			<div>
-				<iframe width="100%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=careforce&key=AIzaSyBK3CAMRfxezsAwpO80qC1_-gdb-qV0VCc" allowfullscreen></iframe>
+				<iframe width="100%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=6%20webster%20court&key=AIzaSyAqCUj4KiU7VyBtMSaQibCMsaweePqYpKU" allowfullscreen></iframe>
 			</div>
 			<div class="main-footer">
 				<hr class="style15 pb-5">
